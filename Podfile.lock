@@ -1,0 +1,29 @@
+PODS:
+  - Aspects (1.4.1)
+  - Endo (0.0.1):
+    - Aspects
+
+DEPENDENCIES:
+  - Endo (from `https://github.com/XTStudio/Endo-iOS.git`, commit `be62735e3309a039b6333cf33c6558af001d6ea2`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Aspects
+
+EXTERNAL SOURCES:
+  Endo:
+    :commit: be62735e3309a039b6333cf33c6558af001d6ea2
+    :git: https://github.com/XTStudio/Endo-iOS.git
+
+CHECKOUT OPTIONS:
+  Endo:
+    :commit: be62735e3309a039b6333cf33c6558af001d6ea2
+    :git: https://github.com/XTStudio/Endo-iOS.git
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  Endo: ae9a61387e3c2690a0017501631293da43001dd4
+
+PODFILE CHECKSUM: 67bdafc226124c7215b75588e587502953e4aacc
+
+COCOAPODS: 1.5.3
