@@ -11,6 +11,10 @@ var ss = new UIView()
 ss.frame = { x: 44, y: 44, width: 44, height: 44 }
 ss.backgroundColor = new UIColor(0, 1, 1, 1)
 
-DispatchQueue.main.asyncAfter(3.0, function() {
-    main.addSubview(ss)
+main.addSubview(ss)
+
+DispatchQueue.main.asyncAfter(1.0, function () {
+    UIAnimator.shared.linear(1.0, function () {
+        main.backgroundColor = new UIColor(1, 0.5, 0, 1)
+    })
 })
