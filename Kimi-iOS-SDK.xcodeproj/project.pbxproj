@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */; };
+		901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */; };
+		901C4DF620D8A69C00A71C3D /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 901C4DF520D8A69C00A71C3D /* test.js */; };
 		9022D13F20D3C976002F016F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D13E20D3C976002F016F /* AppDelegate.m */; };
 		9022D14220D3C976002F016F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* ViewController.m */; };
 		9022D14520D3C976002F016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14320D3C976002F016F /* Main.storyboard */; };
@@ -20,6 +22,9 @@
 /* Begin PBXFileReference section */
 		901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Kimi.h"; sourceTree = "<group>"; };
 		901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Kimi.m"; sourceTree = "<group>"; };
+		901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Kimi.h"; sourceTree = "<group>"; };
+		901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Kimi.m"; sourceTree = "<group>"; };
+		901C4DF520D8A69C00A71C3D /* test.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 		9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimi-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9022D13D20D3C976002F016F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9022D13E20D3C976002F016F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +73,8 @@
 			children = (
 				901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */,
 				901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */,
+				901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */,
+				901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -98,6 +105,7 @@
 				9022D13E20D3C976002F016F /* AppDelegate.m */,
 				9022D14020D3C976002F016F /* ViewController.h */,
 				9022D14120D3C976002F016F /* ViewController.m */,
+				901C4DF520D8A69C00A71C3D /* test.js */,
 				9022D14320D3C976002F016F /* Main.storyboard */,
 				9022D14620D3C976002F016F /* Assets.xcassets */,
 				9022D14820D3C976002F016F /* LaunchScreen.storyboard */,
@@ -176,6 +184,7 @@
 			files = (
 				9022D14A20D3C976002F016F /* LaunchScreen.storyboard in Resources */,
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
+				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +221,7 @@
 				9022D14D20D3C976002F016F /* main.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
+				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
