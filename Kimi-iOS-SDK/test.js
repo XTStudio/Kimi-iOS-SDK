@@ -8,7 +8,9 @@ s.backgroundColor = new UIColor(1, 1, 0, 1);
 main.addSubview(s)
 
 var ss = new UIView()
-ss.frame = { x: 88, y: 88, width: 44, height: 44 }
+ss.frame = { x: 44, y: 44, width: 44, height: 44 }
 ss.backgroundColor = new UIColor(0, 1, 1, 1)
 
-main.addSubview(ss)
+DispatchQueue.main.asyncAfter(3.0, function() {
+    main.addSubview(ss)
+})
