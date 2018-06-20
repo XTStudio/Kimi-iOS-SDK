@@ -14,7 +14,8 @@ ss.backgroundColor = new UIColor(0, 1, 1, 1)
 main.addSubview(ss)
 
 DispatchQueue.main.asyncAfter(1.0, function () {
-    UIAnimator.shared.linear(1.0, function () {
-        main.backgroundColor = new UIColor(1, 0.5, 0, 1)
+    UIAnimator.shared.spring(70.0, 4.0, function () {
+        main.transform = { a: 1.5, b: 0, c: 0, d: 1.5, tx: 44, ty: 44 }
+        // main.backgroundColor = new UIColor(1, 0.5, 0, 1)
     })
 })
