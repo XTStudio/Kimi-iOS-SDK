@@ -2,7 +2,7 @@ platform :ios, '9.0'
 
 target 'Kimi-iOS-SDK' do
   
-  pod 'Endo', :git => 'https://github.com/XTStudio/Endo-iOS.git', :commit => 'e44afc7cd11904130bc4fad0aca991955edd39d7'
+  pod 'Endo', :git => 'https://github.com/XTStudio/Endo-iOS.git', :commit => '326ab7e5f486229e51df05068a60759fa7cbb15f'
   pod 'pop'
 
 end

@@ -20,6 +20,15 @@
     EDO_EXPORT_PROPERTY(@"requiresExclusiveTouchType");
     EDO_EXPORT_METHOD(requireGestureRecognizerToFail:);
     EDO_EXPORT_METHOD(locationInView:);
+    [[EDOExporter sharedExporter] exportEnum:@"UIGestureRecognizerState"
+                                      values:@{
+                                               @"possible": @(UIGestureRecognizerStatePossible),
+                                               @"began": @(UIGestureRecognizerStateBegan),
+                                               @"changed": @(UIGestureRecognizerStateChanged),
+                                               @"ended": @(UIGestureRecognizerStateEnded),
+                                               @"cancelled": @(UIGestureRecognizerStateCancelled),
+                                               @"failed": @(UIGestureRecognizerStateFailed),
+                                               }];
 }
 
 - (void)edo_handleTouch:(UIGestureRecognizer *)sender {}
