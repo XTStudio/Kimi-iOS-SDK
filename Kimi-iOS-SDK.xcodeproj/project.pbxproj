@@ -14,6 +14,10 @@
 		901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */; };
 		901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DFF20DA093000A71C3D /* UIGestureRecognizer+Kimi.m */; };
 		901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0220DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m */; };
+		901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0520DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m */; };
+		901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0820DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m */; };
+		901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */; };
+		901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */; };
 		9022D13F20D3C976002F016F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D13E20D3C976002F016F /* AppDelegate.m */; };
 		9022D14220D3C976002F016F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* ViewController.m */; };
 		9022D14520D3C976002F016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14320D3C976002F016F /* Main.storyboard */; };
@@ -37,6 +41,14 @@
 		901C4DFF20DA093000A71C3D /* UIGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
 		901C4E0120DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Kimi.h"; sourceTree = "<group>"; };
 		901C4E0220DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
+		901C4E0420DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILongPressGestureRecognizer+Kimi.h"; sourceTree = "<group>"; };
+		901C4E0520DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILongPressGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
+		901C4E0720DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPanGestureRecognizer+Kimi.h"; sourceTree = "<group>"; };
+		901C4E0820DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPanGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
+		901C4E0A20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPinchGestureRecognizer+Kimi.h"; sourceTree = "<group>"; };
+		901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPinchGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
+		901C4E0D20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRotationGestureRecognizer+Kimi.h"; sourceTree = "<group>"; };
+		901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRotationGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
 		9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimi-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9022D13D20D3C976002F016F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9022D13E20D3C976002F016F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +104,14 @@
 				901C4DFF20DA093000A71C3D /* UIGestureRecognizer+Kimi.m */,
 				901C4E0120DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.h */,
 				901C4E0220DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m */,
+				901C4E0420DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.h */,
+				901C4E0520DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m */,
+				901C4E0720DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.h */,
+				901C4E0820DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m */,
+				901C4E0A20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.h */,
+				901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */,
+				901C4E0D20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.h */,
+				901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */,
 				901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */,
 				901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */,
 			);
@@ -245,10 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
+				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
+				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
 				901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */,
 				9022D14D20D3C976002F016F /* main.m in Sources */,
+				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,

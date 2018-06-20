@@ -8,6 +8,7 @@
 
 #import "UITapGestureRecognizer+Kimi.h"
 #import <Endo/EDOExporter.h>
+#import "UIGestureRecognizer+Kimi.h"
 
 @implementation UITapGestureRecognizer (Kimi)
 
@@ -15,6 +16,10 @@
     EDO_EXPORT_CLASS(@"UITapGestureRecognizer", @"UIGestureRecognizer");
     EDO_EXPORT_PROPERTY(@"numberOfTapsRequired");
     EDO_EXPORT_PROPERTY(@"numberOfTouchesRequired");
+}
+
+- (void)edo_handleTouch:(UIGestureRecognizer *)sender {
+    [self edo_emitWithEventName:@"touch" arguments:@[sender]];
 }
 
 @end

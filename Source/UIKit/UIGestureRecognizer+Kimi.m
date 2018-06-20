@@ -22,9 +22,7 @@
     EDO_EXPORT_METHOD(locationInView:);
 }
 
-- (void)edo_handleTouch:(UIGestureRecognizer *)sender {
-    [self edo_emitWithEventName:@"touch" arguments:nil];
-}
+- (void)edo_handleTouch:(UIGestureRecognizer *)sender {}
 
 - (void)setEdo_objectRef:(NSString *)edo_objectRef {
     [super setEdo_objectRef:edo_objectRef];

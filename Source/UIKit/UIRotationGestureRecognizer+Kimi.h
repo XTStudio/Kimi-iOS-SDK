@@ -1,5 +1,5 @@
 //
-//  UIGestureRecognizer+Kimi.h
+//  UIRotationGestureRecognizer+Kimi.h
 //  Kimi-iOS-SDK
 //
 //  Created by 崔明辉 on 2018/6/20.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIGestureRecognizer (Kimi)
-
-- (void)edo_handleTouch:(UIGestureRecognizer *)sender;
+@interface UIRotationGestureRecognizer (Kimi)
 
 @end
