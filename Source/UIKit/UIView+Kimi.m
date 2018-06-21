@@ -74,6 +74,12 @@
             }
         }
     } error:NULL];
+    [[EDOExporter sharedExporter] exportEnum:@"UIViewContentMode"
+                                      values:@{
+                                               @"scaleToFill": @(UIViewContentModeScaleToFill),
+                                               @"scaleAspectFit": @(UIViewContentModeScaleAspectFit),
+                                               @"scaleAspectFill": @(UIViewContentModeScaleAspectFill),
+                                               }];
 }
 
 @end
