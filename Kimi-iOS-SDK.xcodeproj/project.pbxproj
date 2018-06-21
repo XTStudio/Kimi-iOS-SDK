@@ -19,6 +19,8 @@
 		901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */; };
 		901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */; };
 		901C4E1920DB70F200A71C3D /* CALayer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E1820DB70F200A71C3D /* CALayer+Kimi.m */; };
+		901C4E1C20DB958800A71C3D /* UIButton+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E1B20DB958800A71C3D /* UIButton+Kimi.m */; };
+		901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E1E20DBA0CB00A71C3D /* UIFont+Kimi.m */; };
 		9022D13F20D3C976002F016F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D13E20D3C976002F016F /* AppDelegate.m */; };
 		9022D14220D3C976002F016F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* ViewController.m */; };
 		9022D14520D3C976002F016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14320D3C976002F016F /* Main.storyboard */; };
@@ -52,6 +54,10 @@
 		901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRotationGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
 		901C4E1720DB70F200A71C3D /* CALayer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Kimi.h"; sourceTree = "<group>"; };
 		901C4E1820DB70F200A71C3D /* CALayer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Kimi.m"; sourceTree = "<group>"; };
+		901C4E1A20DB958800A71C3D /* UIButton+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Kimi.h"; sourceTree = "<group>"; };
+		901C4E1B20DB958800A71C3D /* UIButton+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Kimi.m"; sourceTree = "<group>"; };
+		901C4E1D20DBA0CB00A71C3D /* UIFont+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Kimi.h"; sourceTree = "<group>"; };
+		901C4E1E20DBA0CB00A71C3D /* UIFont+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Kimi.m"; sourceTree = "<group>"; };
 		9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimi-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9022D13D20D3C976002F016F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9022D13E20D3C976002F016F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,8 +108,12 @@
 			children = (
 				901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */,
 				901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */,
+				901C4E1A20DB958800A71C3D /* UIButton+Kimi.h */,
+				901C4E1B20DB958800A71C3D /* UIButton+Kimi.m */,
 				901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */,
 				901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */,
+				901C4E1D20DBA0CB00A71C3D /* UIFont+Kimi.h */,
+				901C4E1E20DBA0CB00A71C3D /* UIFont+Kimi.m */,
 				901C4DFE20DA093000A71C3D /* UIGestureRecognizer+Kimi.h */,
 				901C4DFF20DA093000A71C3D /* UIGestureRecognizer+Kimi.m */,
 				901C4E0120DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.h */,
@@ -280,6 +290,7 @@
 			files = (
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
+				901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */,
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
@@ -288,6 +299,7 @@
 				901C4E1920DB70F200A71C3D /* CALayer+Kimi.m in Sources */,
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
+				901C4E1C20DB958800A71C3D /* UIButton+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
