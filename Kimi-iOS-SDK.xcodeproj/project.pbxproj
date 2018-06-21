@@ -23,6 +23,7 @@
 		901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E1E20DBA0CB00A71C3D /* UIFont+Kimi.m */; };
 		901C4E2220DBB17900A71C3D /* UIImageView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E2120DBB17900A71C3D /* UIImageView+Kimi.m */; };
 		901C4E2520DBB47200A71C3D /* UIImage+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E2420DBB47200A71C3D /* UIImage+Kimi.m */; };
+		901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E2720DBC92900A71C3D /* UILabel+Kimi.m */; };
 		9022D13F20D3C976002F016F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D13E20D3C976002F016F /* AppDelegate.m */; };
 		9022D14220D3C976002F016F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* ViewController.m */; };
 		9022D14520D3C976002F016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14320D3C976002F016F /* Main.storyboard */; };
@@ -64,6 +65,8 @@
 		901C4E2120DBB17900A71C3D /* UIImageView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Kimi.m"; sourceTree = "<group>"; };
 		901C4E2320DBB47200A71C3D /* UIImage+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Kimi.h"; sourceTree = "<group>"; };
 		901C4E2420DBB47200A71C3D /* UIImage+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Kimi.m"; sourceTree = "<group>"; };
+		901C4E2620DBC92900A71C3D /* UILabel+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Kimi.h"; sourceTree = "<group>"; };
+		901C4E2720DBC92900A71C3D /* UILabel+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Kimi.m"; sourceTree = "<group>"; };
 		9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimi-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9022D13D20D3C976002F016F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9022D13E20D3C976002F016F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				901C4E2120DBB17900A71C3D /* UIImageView+Kimi.m */,
 				901C4E2320DBB47200A71C3D /* UIImage+Kimi.h */,
 				901C4E2420DBB47200A71C3D /* UIImage+Kimi.m */,
+				901C4E2620DBC92900A71C3D /* UILabel+Kimi.h */,
+				901C4E2720DBC92900A71C3D /* UILabel+Kimi.m */,
 				901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */,
 				901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */,
 				901C4E1D20DBA0CB00A71C3D /* UIFont+Kimi.h */,
@@ -300,6 +305,7 @@
 			files = (
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
+				901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */,
 				901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */,
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,

@@ -1,5 +1,10 @@
-var main = new UIImageView()
-main.image = new UIImage({ name: 'animal' })
+var main = new UILabel()
+main.text = "Hello, Worldhfkdjhsafkldshakfjahskjlfhdsklhf"
+main.font = new UIFont(24)
+main.textColor = new UIColor(1,0,0,1)
+main.textAlignment = UITextAlignment.center
+main.lineBreakMode = UILineBreakMode.truncatingMiddle
+main.numberOfLines = 0
 // main.contentMode = UIViewContentMode.scaleAspectFill
 // main.clipsToBounds = true
 main.frame = { x: 44, y: 44, width: 200, height: 200 }
