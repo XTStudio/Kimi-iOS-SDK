@@ -18,6 +18,7 @@
 		901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0820DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m */; };
 		901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */; };
 		901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */; };
+		901C4E1920DB70F200A71C3D /* CALayer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E1820DB70F200A71C3D /* CALayer+Kimi.m */; };
 		9022D13F20D3C976002F016F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D13E20D3C976002F016F /* AppDelegate.m */; };
 		9022D14220D3C976002F016F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* ViewController.m */; };
 		9022D14520D3C976002F016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14320D3C976002F016F /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPinchGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
 		901C4E0D20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRotationGestureRecognizer+Kimi.h"; sourceTree = "<group>"; };
 		901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRotationGestureRecognizer+Kimi.m"; sourceTree = "<group>"; };
+		901C4E1720DB70F200A71C3D /* CALayer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Kimi.h"; sourceTree = "<group>"; };
+		901C4E1820DB70F200A71C3D /* CALayer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Kimi.m"; sourceTree = "<group>"; };
 		9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimi-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9022D13D20D3C976002F016F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9022D13E20D3C976002F016F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 			children = (
 				901C4DF720D8BCA600A71C3D /* Foundation */,
 				901C4DEE20D3CB6200A71C3D /* UIKit */,
+				901C4E1620DB70DA00A71C3D /* CoreGraphics */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -125,6 +129,15 @@
 				901C4DF920D8BCC800A71C3D /* KIMIDispatchQueue.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		901C4E1620DB70DA00A71C3D /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				901C4E1720DB70F200A71C3D /* CALayer+Kimi.h */,
+				901C4E1820DB70F200A71C3D /* CALayer+Kimi.m */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 		9022D13120D3C975002F016F = {
@@ -272,6 +285,7 @@
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
 				901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */,
 				9022D14D20D3C976002F016F /* main.m in Sources */,
+				901C4E1920DB70F200A71C3D /* CALayer+Kimi.m in Sources */,
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,

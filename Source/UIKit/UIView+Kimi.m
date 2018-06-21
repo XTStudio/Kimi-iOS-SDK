@@ -14,6 +14,7 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UIView", nil);
+    EDO_EXPORT_PROPERTY(@"layer");
     // Geometry
     EDO_EXPORT_PROPERTY(@"frame");
     EDO_EXPORT_PROPERTY(@"bounds");
