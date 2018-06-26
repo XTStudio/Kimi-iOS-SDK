@@ -43,11 +43,15 @@
     [self aspect_hookSelector:@selector(removeFromSuperlayer) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
         EDO_RELEASE(aspectInfo.instance);
     } error:NULL];
-    [self aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        for (CALayer *sublayer in [aspectInfo.instance sublayers]) {
-            EDO_RELEASE(sublayer);
-        }
+    [[CALayer class] aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+        [aspectInfo.instance kimi_dealloc];
     } error:NULL];
+}
+
+- (void)kimi_dealloc {
+    for (CALayer *sublayer in self.sublayers) {
+        EDO_RELEASE(sublayer);
+    }
 }
 
 - (UIColor *)edo_backgroundColor {

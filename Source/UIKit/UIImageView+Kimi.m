@@ -7,6 +7,7 @@
 //
 
 #import "UIImageView+Kimi.h"
+#import "UIView+Kimi.h"
 #import <Endo/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
@@ -23,11 +24,12 @@
             EDO_RETAIN(image);
         }
     } error:NULL];
-    [self aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        if ([(UIImageView *)aspectInfo.instance image] != nil) {
-            EDO_RELEASE([(UIImageView *)aspectInfo.instance image]);
-        }
-    } error:NULL];
+}
+
+- (void)kimi_dealloc {
+    if (self.image != nil) {
+        EDO_RELEASE(self.image);
+    }
 }
 
 @end

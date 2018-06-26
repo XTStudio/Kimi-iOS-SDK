@@ -57,22 +57,17 @@
     EDO_EXPORT_METHOD(addGestureRecognizer:);
     EDO_EXPORT_METHOD(removeGestureRecognizer:);
     // Retain & Release
-    [self aspect_hookSelector:@selector(didAddSubview:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *subview) {
+    [[UIView class] aspect_hookSelector:@selector(didAddSubview:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *subview) {
         EDO_RETAIN(subview);
     } error:NULL];
-    [self aspect_hookSelector:@selector(willRemoveSubview:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *subview) {
+    [[UIView class] aspect_hookSelector:@selector(willRemoveSubview:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *subview) {
         EDO_RELEASE(subview);
     } error:NULL];
-    [self aspect_hookSelector:@selector(addGestureRecognizer:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIGestureRecognizer *gestureRecognizer) {
+    [[UIView class] aspect_hookSelector:@selector(addGestureRecognizer:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIGestureRecognizer *gestureRecognizer) {
         EDO_RETAIN(gestureRecognizer);
     } error:NULL];
-    [self aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        NSArray<UIGestureRecognizer *> *gestureRecognizers = [(UIView *)aspectInfo.instance gestureRecognizers];
-        if (gestureRecognizers != nil) {
-            for (UIGestureRecognizer *gestureRecognizer in gestureRecognizers) {
-                EDO_RELEASE(gestureRecognizer);
-            }
-        }
+    [[UIView class] aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+        [aspectInfo.instance kimi_dealloc];
     } error:NULL];
     [[EDOExporter sharedExporter] exportEnum:@"UIViewContentMode"
                                       values:@{
@@ -80,6 +75,15 @@
                                                @"scaleAspectFit": @(UIViewContentModeScaleAspectFit),
                                                @"scaleAspectFill": @(UIViewContentModeScaleAspectFill),
                                                }];
+}
+
+- (void)kimi_dealloc {
+    NSArray<UIGestureRecognizer *> *gestureRecognizers = [self gestureRecognizers];
+    if (gestureRecognizers != nil) {
+        for (UIGestureRecognizer *gestureRecognizer in gestureRecognizers) {
+            EDO_RELEASE(gestureRecognizer);
+        }
+    }
 }
 
 @end

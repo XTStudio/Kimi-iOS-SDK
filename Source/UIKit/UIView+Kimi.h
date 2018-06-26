@@ -10,4 +10,6 @@
 
 @interface UIView (Kimi)
 
+- (void)kimi_dealloc;
+
 @end
