@@ -27,6 +27,7 @@
 }
 
 - (void)kimi_dealloc {
+    [super kimi_dealloc];
     if (self.image != nil) {
         EDO_RELEASE(self.image);
     }

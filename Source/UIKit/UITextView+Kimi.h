@@ -1,14 +1,14 @@
 //
-//  UITextField+Kimi.h
+//  UITextView+Kimi.h
 //  Kimi-iOS-SDK
 //
-//  Created by 崔明辉 on 2018/6/21.
+//  Created by 崔明辉 on 2018/6/26.
 //  Copyright © 2018年 XT Studio. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UITextField (Kimi)<UITextFieldDelegate>
+@interface UITextView (Kimi)<UITextViewDelegate>
 
 @property (nonatomic, readwrite) UITextAutocapitalizationType edo_autocapitalizationType;
 @property (nonatomic, readwrite) UITextAutocorrectionType edo_autocorrectionType;

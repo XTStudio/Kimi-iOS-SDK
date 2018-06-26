@@ -7,6 +7,7 @@
 //
 
 #import "UITextField+Kimi.h"
+#import "UIView+Kimi.h"
 #import <Endo/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
@@ -103,9 +104,10 @@
             EDO_RETAIN(rightView);
         }
     } error:NULL];
-    [self aspect_hookSelector:@selector(setKeyboardType:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        NSLog(@"123");
-    } error:NULL];
+}
+
+- (void)kimi_dealloc {
+    [super kimi_dealloc];
 }
 
 - (UITextAutocapitalizationType)edo_autocapitalizationType {
@@ -125,7 +127,7 @@
 }
 
 - (UITextSpellCheckingType)edo_spellCheckingType {
-    return self.edo_spellCheckingType;
+    return self.spellCheckingType;
 }
 
 - (void)setEdo_spellCheckingType:(UITextSpellCheckingType)edo_spellCheckingType {
@@ -204,22 +206,6 @@
         return [value boolValue];
     }
     return YES;
-}
-
-- (void)selectionWillChange:(id<UITextInput>)textInput {
-    [self edo_emitWithEventName:@"willChangeSelection" arguments:@[self]];
-}
-
-- (void)selectionDidChange:(id<UITextInput>)textInput {
-    [self edo_emitWithEventName:@"didChangeSelection" arguments:@[self]];
-}
-
-- (void)textWillChange:(id<UITextInput>)textInput {
-    [self edo_emitWithEventName:@"willChangeText" arguments:@[self]];
-}
-
-- (void)textDidChange:(id<UITextInput>)textInput {
-    [self edo_emitWithEventName:@"didChangeText" arguments:@[self]];
 }
 
 @end
