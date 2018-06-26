@@ -1,18 +1,10 @@
-var main = new UITextView()
-// main.text = "123213"
-// main.textColor = new UIColor(1, 0, 0, 1)
-// main.font = new UIFont(24)
-// main.textAlignment = UITextAlignment.center
-// main.placeholder = "HHHHH"
-// main.clearsOnBeginEditing = true
-main.keyboardType = UIKeyboardType.numberPad
-// main.secureTextEntry = true
-main.frame = { x: 44, y: 44, width: 200, height: 100 }
-main.backgroundColor = new UIColor(1, 1, 0, 1)
+var main = new UIScrollView()
+main.frame = { x: 0, y: 0, width: 300, height: 300 }
+main.contentSize = { width: 0, height: 1000 }
+main.pagingEnabled = true
 
-// DispatchQueue.main.asyncAfter(5.0, function() {
-//     main.focus()
-// })
-// DispatchQueue.main.asyncAfter(10.0, function() {
-//     main.blur()
-// })
+var subview = new UIView()
+subview.backgroundColor = new UIColor(1, 0, 0, 1)
+subview.frame = { x: 0, y: 100, width: 44, height: 44 }
+main.addSubview(subview)
+
