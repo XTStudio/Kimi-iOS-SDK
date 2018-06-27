@@ -15,6 +15,6 @@
 @property (nonatomic, strong) UIColor *edo_borderColor;
 @property (nonatomic, strong) UIColor *edo_shadowColor;
 
-- (void)kimi_dealloc;
+- (void)edo_release;
 
 @end

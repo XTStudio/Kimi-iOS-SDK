@@ -106,8 +106,8 @@
     } error:NULL];
 }
 
-- (void)kimi_dealloc {
-    [super kimi_dealloc];
+- (void)edo_release {
+    [super edo_release];
 }
 
 - (UITextAutocapitalizationType)edo_autocapitalizationType {

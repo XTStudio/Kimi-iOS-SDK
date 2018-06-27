@@ -30,8 +30,8 @@
                                                               error:NULL]];
     UIView *mainView = [[EDOExporter sharedExporter] nsValueWithJSValue:[self.context objectForKeyedSubscript:@"main"]];
     [self.view addSubview:mainView];
-}
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

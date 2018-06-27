@@ -43,12 +43,13 @@
     [self aspect_hookSelector:@selector(removeFromSuperlayer) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
         EDO_RELEASE(aspectInfo.instance);
     } error:NULL];
-    [[CALayer class] aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        [aspectInfo.instance kimi_dealloc];
-    } error:NULL];
 }
 
-- (void)kimi_dealloc {
+- (void)edo_release {
+    [super edo_release];
+#ifdef DEV
+    NSLog(@"%@ released", [self class]);
+#endif
     for (CALayer *sublayer in self.sublayers) {
         EDO_RELEASE(sublayer);
     }

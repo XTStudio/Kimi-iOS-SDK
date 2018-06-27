@@ -26,8 +26,8 @@
     } error:NULL];
 }
 
-- (void)kimi_dealloc {
-    [super kimi_dealloc];
+- (void)edo_release {
+    [super edo_release];
     if (self.image != nil) {
         EDO_RELEASE(self.image);
     }

@@ -66,9 +66,6 @@
     [[UIView class] aspect_hookSelector:@selector(addGestureRecognizer:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIGestureRecognizer *gestureRecognizer) {
         EDO_RETAIN(gestureRecognizer);
     } error:NULL];
-    [[UIView class] aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        [aspectInfo.instance kimi_dealloc];
-    } error:NULL];
     [[EDOExporter sharedExporter] exportEnum:@"UIViewContentMode"
                                       values:@{
                                                @"scaleToFill": @(UIViewContentModeScaleToFill),
@@ -77,7 +74,11 @@
                                                }];
 }
 
-- (void)kimi_dealloc {
+- (void)edo_release {
+    [super edo_release];
+#ifdef DEV
+    NSLog(@"%@ released", [self class]);
+#endif
     NSArray<UIGestureRecognizer *> *gestureRecognizers = [self gestureRecognizers];
     if (gestureRecognizers != nil) {
         for (UIGestureRecognizer *gestureRecognizer in gestureRecognizers) {
