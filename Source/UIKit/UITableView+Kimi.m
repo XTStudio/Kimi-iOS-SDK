@@ -7,9 +7,7 @@
 //
 
 #import "UITableView+Kimi.h"
-#import "UIView+Kimi.h"
 #import <Endo/EDOExporter.h>
-#import <Aspects/Aspects.h>
 #import <objc/runtime.h>
 
 typedef id(^KimiTableViewCellInitializer)(NSArray *arguments, BOOL);
@@ -123,6 +121,42 @@ static int kCellInitializerTag;
         return [value floatValue];
     }
     return self.rowHeight;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *view = [self edo_valueWithEventName:@"viewForHeader"
+                                      arguments:@[@(section)]];
+    if ([view isKindOfClass:[UIView class]]) {
+        return view;
+    }
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    id value = [self edo_valueWithEventName:@"heightForHeader"
+                                  arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [value floatValue];
+    }
+    return 0.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *view = [self edo_valueWithEventName:@"viewForFooter"
+                                      arguments:@[@(section)]];
+    if ([view isKindOfClass:[UIView class]]) {
+        return view;
+    }
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    id value = [self edo_valueWithEventName:@"heightForFooter"
+                                  arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [value floatValue];
+    }
+    return 0.0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

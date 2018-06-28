@@ -4,36 +4,45 @@ var FooCell = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     return FooCell;
-}(UITableViewCell));
+}(UICollectionViewCell));
 
-var main = new UITableView()
-main.frame = { x: 0, y: 0, width: 300, height: 300 }
+var layout = new UICollectionViewFlowLayout
+var main = new UICollectionView(layout)
+main.frame = { x: 0, y: 0, width: 375, height: 500 }
 main.register(function (context) {
     var cell = new FooCell(context)
-    cell.hasSelectionStyle = false
+    cell.backgroundColor = new UIColor(1, 1, 0, 1)
     cell.on('selected', function (sender, selected, animated) {
         if (animated) {
             UIAnimator.shared.linear(0.3, function () {
-                sender.backgroundColor = selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
+                sender.backgroundColor = !selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
             })
         }
         else {
-            sender.backgroundColor = selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
+            sender.backgroundColor = !selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
         }
     })
     return cell
 }, "Cell")
 main.on('numberOfSections', function () { return 1 })
-main.on('numberOfRows', function () { return 10 })
-main.on('cellForRow', function (indexPath) {
+main.on('numberOfItems', function () { return 10000 })
+main.on('cellForItem', function (indexPath) {
     return main.dequeueReusableCell("Cell", indexPath);
 });
-main.on('heightForRow', function () {
-    return 66
+layout.on('sizeForItem', function () {
+    return { width: 100, height: 100 }
 });
-main.on('didSelectRow', function (indexPath) {
-    main.deselectRow(indexPath, true)
-})
+// main.on('didSelectRow', function (indexPath) {
+//     main.deselectRow(indexPath, true)
+// })
+// main.on('viewForHeader', function (section) {
+//     var view = new UIView()
+//     view.backgroundColor = new UIColor(1, 1, 0, 1)
+//     return view
+// });
+// main.on('heightForHeader', function (section) {
+//     return 22
+// });
 main.reloadData()
 
 // var subview = new UIView()
