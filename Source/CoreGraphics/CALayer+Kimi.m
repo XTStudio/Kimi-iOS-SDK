@@ -37,22 +37,6 @@
     EDO_EXPORT_PROPERTY(@"shadowOpacity");
     EDO_EXPORT_PROPERTY(@"shadowOffset");
     EDO_EXPORT_PROPERTY(@"shadowRadius");
-    [self aspect_hookSelector:@selector(addSublayer:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, CALayer *sublayer) {
-        EDO_RETAIN(sublayer);
-    } error:NULL];
-    [self aspect_hookSelector:@selector(removeFromSuperlayer) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
-        EDO_RELEASE(aspectInfo.instance);
-    } error:NULL];
-}
-
-- (void)edo_release {
-    [super edo_release];
-#ifdef DEV
-    NSLog(@"%@ released", [self class]);
-#endif
-    for (CALayer *sublayer in self.sublayers) {
-        EDO_RELEASE(sublayer);
-    }
 }
 
 - (UIColor *)edo_backgroundColor {

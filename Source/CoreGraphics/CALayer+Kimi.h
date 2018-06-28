@@ -15,6 +15,4 @@
 @property (nonatomic, strong) UIColor *edo_borderColor;
 @property (nonatomic, strong) UIColor *edo_shadowColor;
 
-- (void)edo_release;
-
 @end

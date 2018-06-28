@@ -57,34 +57,12 @@
     EDO_EXPORT_METHOD(addGestureRecognizer:);
     EDO_EXPORT_METHOD(removeGestureRecognizer:);
     // Retain & Release
-    [[UIView class] aspect_hookSelector:@selector(didAddSubview:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *subview) {
-        EDO_RETAIN(subview);
-    } error:NULL];
-    [[UIView class] aspect_hookSelector:@selector(willRemoveSubview:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *subview) {
-        EDO_RELEASE(subview);
-    } error:NULL];
-    [[UIView class] aspect_hookSelector:@selector(addGestureRecognizer:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIGestureRecognizer *gestureRecognizer) {
-        EDO_RETAIN(gestureRecognizer);
-    } error:NULL];
     [[EDOExporter sharedExporter] exportEnum:@"UIViewContentMode"
                                       values:@{
                                                @"scaleToFill": @(UIViewContentModeScaleToFill),
                                                @"scaleAspectFit": @(UIViewContentModeScaleAspectFit),
                                                @"scaleAspectFill": @(UIViewContentModeScaleAspectFill),
                                                }];
-}
-
-- (void)edo_release {
-    [super edo_release];
-#ifdef DEV
-    NSLog(@"%@ released", [self class]);
-#endif
-    NSArray<UIGestureRecognizer *> *gestureRecognizers = [self gestureRecognizers];
-    if (gestureRecognizers != nil) {
-        for (UIGestureRecognizer *gestureRecognizer in gestureRecognizers) {
-            EDO_RELEASE(gestureRecognizer);
-        }
-    }
 }
 
 @end

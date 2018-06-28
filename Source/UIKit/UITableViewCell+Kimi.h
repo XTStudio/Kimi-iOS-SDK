@@ -10,4 +10,6 @@
 
 @interface UITableViewCell (Kimi)
 
+@property (nonatomic, assign) BOOL edo_hasSelectionStyle;
+
 @end

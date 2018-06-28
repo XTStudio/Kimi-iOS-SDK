@@ -5,7 +5,7 @@ PODS:
   - pop (1.0.10)
 
 DEPENDENCIES:
-  - Endo (from `https://github.com/XTStudio/Endo-iOS.git`, commit `43850cb5961f6c547e868faae8afbfd9120e48bc`)
+  - Endo (from `https://github.com/XTStudio/Endo-iOS.git`, commit `f9c02be02f649c992845e1f8fe6f173984acee36`)
   - pop
 
 SPEC REPOS:
@@ -15,12 +15,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Endo:
-    :commit: 43850cb5961f6c547e868faae8afbfd9120e48bc
+    :commit: f9c02be02f649c992845e1f8fe6f173984acee36
     :git: https://github.com/XTStudio/Endo-iOS.git
 
 CHECKOUT OPTIONS:
   Endo:
-    :commit: 43850cb5961f6c547e868faae8afbfd9120e48bc
+    :commit: f9c02be02f649c992845e1f8fe6f173984acee36
     :git: https://github.com/XTStudio/Endo-iOS.git
 
 SPEC CHECKSUMS:
@@ -28,6 +28,6 @@ SPEC CHECKSUMS:
   Endo: ae9a61387e3c2690a0017501631293da43001dd4
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
 
-PODFILE CHECKSUM: 2cce5f4ecfab5350e349cd77a6277f2e11106a5e
+PODFILE CHECKSUM: 7ccf53b528d146beb3ef736d62a8d103d1bf90d3
 
 COCOAPODS: 1.5.3

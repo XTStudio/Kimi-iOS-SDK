@@ -88,26 +88,6 @@
                                                @"send": @(UIReturnKeySend),
                                                @"done": @(UIReturnKeyDone),
                                                }];
-    [self aspect_hookSelector:@selector(setLeftView:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *leftView) {
-        if ([(UITextField *)aspectInfo.instance leftView] != nil) {
-            EDO_RELEASE([(UITextField *)aspectInfo.instance leftView]);
-        }
-        if (leftView != nil) {
-            EDO_RETAIN(leftView);
-        }
-    } error:NULL];
-    [self aspect_hookSelector:@selector(setRightView:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIView *rightView) {
-        if ([(UITextField *)aspectInfo.instance rightView] != nil) {
-            EDO_RELEASE([(UITextField *)aspectInfo.instance rightView]);
-        }
-        if (rightView != nil) {
-            EDO_RETAIN(rightView);
-        }
-    } error:NULL];
-}
-
-- (void)edo_release {
-    [super edo_release];
 }
 
 - (UITextAutocapitalizationType)edo_autocapitalizationType {

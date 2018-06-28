@@ -16,21 +16,6 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UIImageView", @"UIView");
     EDO_EXPORT_PROPERTY(@"image");
-    [self aspect_hookSelector:@selector(setImage:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo, UIImage *image) {
-        if ([(UIImageView *)aspectInfo.instance image] != nil) {
-            EDO_RELEASE([(UIImageView *)aspectInfo.instance image]);
-        }
-        if (image != nil) {
-            EDO_RETAIN(image);
-        }
-    } error:NULL];
-}
-
-- (void)edo_release {
-    [super edo_release];
-    if (self.image != nil) {
-        EDO_RELEASE(self.image);
-    }
 }
 
 @end

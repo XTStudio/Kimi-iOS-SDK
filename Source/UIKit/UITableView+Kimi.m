@@ -12,21 +12,19 @@
 #import <Aspects/Aspects.h>
 #import <objc/runtime.h>
 
-typedef id(^KimiTableViewCellInitializer)(NSArray *arguments);
+typedef id(^KimiTableViewCellInitializer)(NSArray *arguments, BOOL);
 
 @interface UITableView(Kimi_Private)
 
-@property (nonatomic, strong) NSMutableSet<UITableViewCell *> *kimi_allocatedCells;
-@property (nonatomic, strong) NSMutableSet<NSIndexPath *> *kimi_allocatedIndexes;
+@property (nonatomic, strong) JSContext *kimi_context;
 @property (nonatomic, copy) NSDictionary<NSString *, KimiTableViewCellInitializer> *kimi_cellInitializer;
 
 @end
 
 @implementation UITableView(Kimi_Private)
 
+static int kKimiContextTag;
 static int kCellInitializerTag;
-static int kAllocatedCellsTag;
-static int kAllocatedIndexesTag;
 
 - (NSDictionary<NSString *,KimiTableViewCellInitializer> *)kimi_cellInitializer {
     return objc_getAssociatedObject(self, &kCellInitializerTag);
@@ -36,26 +34,12 @@ static int kAllocatedIndexesTag;
     objc_setAssociatedObject(self, &kCellInitializerTag, kimi_cellInitializer, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (NSMutableSet<UITableViewCell *> *)kimi_allocatedCells {
-    if (objc_getAssociatedObject(self, &kAllocatedCellsTag) == nil) {
-        self.kimi_allocatedCells = [NSMutableSet set];
-    }
-    return objc_getAssociatedObject(self, &kAllocatedCellsTag);
+- (JSContext *)kimi_context {
+    return [objc_getAssociatedObject(self, &kKimiContextTag) nonretainedObjectValue];
 }
 
-- (void)setKimi_allocatedCells:(NSMutableSet<UITableViewCell *> *)kimi_allocatedCells {
-    objc_setAssociatedObject(self, &kAllocatedCellsTag, kimi_allocatedCells, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (NSMutableSet<UITableViewCell *> *)kimi_allocatedIndexes {
-    if (objc_getAssociatedObject(self, &kAllocatedIndexesTag) == nil) {
-        self.kimi_allocatedIndexes = [NSMutableSet set];
-    }
-    return objc_getAssociatedObject(self, &kAllocatedIndexesTag);
-}
-
-- (void)setKimi_allocatedIndexes:(NSMutableSet<UITableViewCell *> *)kimi_allocatedIndexes {
-    objc_setAssociatedObject(self, &kAllocatedIndexesTag, kimi_allocatedIndexes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setKimi_context:(JSContext *)kimi_context {
+    objc_setAssociatedObject(self, &kKimiContextTag, [NSValue valueWithNonretainedObject:kimi_context], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end
@@ -66,6 +50,8 @@ static int kAllocatedIndexesTag;
     EDO_EXPORT_CLASS(@"UITableView", @"UIScrollView");
     EDO_EXPORT_PROPERTY(@"tableHeaderView");
     EDO_EXPORT_PROPERTY(@"tableFooterView");
+    EDO_EXPORT_PROPERTY(@"separatorColor");
+    EDO_EXPORT_PROPERTY(@"separatorInset");
     EDO_EXPORT_METHOD_ALIAS(edo_register:reuseIdentifier:, @"register");
     EDO_EXPORT_METHOD_ALIAS(edo_dequeueReusableCell:indexPath:, @"dequeueReusableCell");
     EDO_EXPORT_METHOD(reloadData);
@@ -73,6 +59,7 @@ static int kAllocatedIndexesTag;
     EDO_EXPORT_METHOD_ALIAS(deselectRowAtIndexPath:animated:, @"deselectRow");
     [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {
         UITableView *view = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        view.kimi_context = [JSContext currentContext];
         view.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
         view.backgroundColor = [UIColor clearColor];
         UIView *headerView = [UIView new];
@@ -82,23 +69,12 @@ static int kAllocatedIndexesTag;
         [footerView setBackgroundColor:[UIColor redColor]];
         footerView.frame = CGRectMake(0, 0, 0, 0.01);
         view.tableFooterView = footerView;
-//        view.contentInset = UIEdgeInsetsMake(0, 0, -20, 0);
         if (@available(iOS 11.0, *)) {
             view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
         view.delegate = view;
         view.dataSource = view;
         return view;
-    }];
-}
-
-- (void)edo_release {
-    [super edo_release];
-    [self.kimi_allocatedCells enumerateObjectsUsingBlock:^(UITableViewCell * _Nonnull obj, BOOL * _Nonnull stop) {
-        EDO_RELEASE(obj);
-    }];
-    [self.kimi_allocatedIndexes enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, BOOL * _Nonnull stop) {
-        EDO_RELEASE(obj);
     }];
 }
 
@@ -110,16 +86,8 @@ static int kAllocatedIndexesTag;
 }
 
 - (UITableViewCell *)edo_dequeueReusableCell:(NSString *)reuseIdentifier indexPath:(NSIndexPath *)indexPath {
-    [self kimi_retainIndexPath:indexPath];
     UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
-    if (![self.kimi_allocatedCells containsObject:cell]) {
-        KimiTableViewCellInitializer cellInitializer = self.kimi_cellInitializer[reuseIdentifier];
-        if (cellInitializer != nil) {
-            [[EDOExporter sharedExporter] scriptObjectWithObject:cell initializer:cellInitializer];
-            EDO_RETAIN(cell);
-        }
-        [self.kimi_allocatedCells addObject:cell];
-    }
+    [[EDOExporter sharedExporter] scriptObjectWithObject:cell context:self.kimi_context initializer:self.kimi_cellInitializer[reuseIdentifier] createIfNeeded:YES];
     return cell;
 }
 
@@ -140,7 +108,6 @@ static int kAllocatedIndexesTag;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self kimi_retainIndexPath:indexPath];
     UITableViewCell *cell = [self edo_valueWithEventName:@"cellForRow"
                                                arguments:@[indexPath]];
     if (![cell isKindOfClass:[UITableViewCell class]]) {
@@ -150,7 +117,6 @@ static int kAllocatedIndexesTag;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self kimi_retainIndexPath:indexPath];
     id value = [self edo_valueWithEventName:@"heightForRow"
                                   arguments:@[indexPath]];
     if ([value isKindOfClass:[NSNumber class]]) {
@@ -160,7 +126,6 @@ static int kAllocatedIndexesTag;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self kimi_retainIndexPath:indexPath];
     [self edo_emitWithEventName:@"didSelectRow"
                       arguments:@[
                                   indexPath,
@@ -169,20 +134,11 @@ static int kAllocatedIndexesTag;
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self kimi_retainIndexPath:indexPath];
     [self edo_emitWithEventName:@"didDeselectRow"
                       arguments:@[
                                   indexPath,
                                   [tableView cellForRowAtIndexPath:indexPath] ?: [NSNull null],
                                   ]];
-}
-
-- (void)kimi_retainIndexPath:(NSIndexPath *)indexPath {
-    if (![self.kimi_allocatedIndexes containsObject:indexPath]) {
-        [[EDOExporter sharedExporter] scriptObjectWithObject:indexPath];
-        EDO_RETAIN(indexPath);
-        [self.kimi_allocatedIndexes addObject:indexPath];
-    }
 }
 
 @end

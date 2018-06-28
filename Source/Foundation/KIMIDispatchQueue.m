@@ -12,10 +12,18 @@
 @implementation KIMIDispatchQueue
 
 + (void)load {
-    EDO_EXPORT_CLASS(@"DispatchQueue", nil)
+    EDO_EXPORT_CLASS(@"DispatchQueue", nil);
     EDO_EXPORT_SCRIPT(@"Initializer.main = new Initializer('main');");
-    EDO_EXPORT_METHOD(async:)
-    EDO_EXPORT_METHOD_ALIAS(asyncAfter:asyncBlock:, @"asyncAfter")
+    EDO_EXPORT_METHOD(async:);
+    EDO_EXPORT_METHOD_ALIAS(asyncAfter:asyncBlock:, @"asyncAfter");
+    static KIMIDispatchQueue *mainQueueDispatcher;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        mainQueueDispatcher = [KIMIDispatchQueue new];
+    });
+    [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {
+        return mainQueueDispatcher;
+    }];
 }
 
 - (void)async:(void (^)(NSArray *arguments))asyncBlock {
