@@ -50,6 +50,8 @@ static int kCellInitializerTag;
     EDO_EXPORT_PROPERTY(@"tableFooterView");
     EDO_EXPORT_PROPERTY(@"separatorColor");
     EDO_EXPORT_PROPERTY(@"separatorInset");
+    EDO_EXPORT_PROPERTY(@"allowsSelection");
+    EDO_EXPORT_PROPERTY(@"allowsMultipleSelection");
     EDO_EXPORT_METHOD_ALIAS(edo_register:reuseIdentifier:, @"register");
     EDO_EXPORT_METHOD_ALIAS(edo_dequeueReusableCell:indexPath:, @"dequeueReusableCell");
     EDO_EXPORT_METHOD(reloadData);

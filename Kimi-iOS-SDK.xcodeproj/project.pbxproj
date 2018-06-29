@@ -40,6 +40,9 @@
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
 		90AAD8F820E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F720E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m */; };
 		90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8FA20E4EFE300D82173 /* UICollectionViewCell+Kimi.m */; };
+		90AAD8FE20E600A700D82173 /* KIMIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8FD20E600A700D82173 /* KIMIAlert.m */; };
+		90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD90020E603D900D82173 /* KIMIPrompt.m */; };
+		90AAD90420E6060100D82173 /* KIMIConfirm.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD90320E6060100D82173 /* KIMIConfirm.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +110,12 @@
 		90AAD8F720E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewFlowLayout+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F920E4EFE300D82173 /* UICollectionViewCell+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Kimi.h"; sourceTree = "<group>"; };
 		90AAD8FA20E4EFE300D82173 /* UICollectionViewCell+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Kimi.m"; sourceTree = "<group>"; };
+		90AAD8FC20E600A700D82173 /* KIMIAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIAlert.h; sourceTree = "<group>"; };
+		90AAD8FD20E600A700D82173 /* KIMIAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIAlert.m; sourceTree = "<group>"; };
+		90AAD8FF20E603D900D82173 /* KIMIPrompt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIPrompt.h; sourceTree = "<group>"; };
+		90AAD90020E603D900D82173 /* KIMIPrompt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIPrompt.m; sourceTree = "<group>"; };
+		90AAD90220E6060100D82173 /* KIMIConfirm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIConfirm.h; sourceTree = "<group>"; };
+		90AAD90320E6060100D82173 /* KIMIConfirm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIConfirm.m; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +202,12 @@
 				901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */,
 				901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */,
 				901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */,
+				90AAD8FC20E600A700D82173 /* KIMIAlert.h */,
+				90AAD8FD20E600A700D82173 /* KIMIAlert.m */,
+				90AAD8FF20E603D900D82173 /* KIMIPrompt.h */,
+				90AAD90020E603D900D82173 /* KIMIPrompt.m */,
+				90AAD90220E6060100D82173 /* KIMIConfirm.h */,
+				90AAD90320E6060100D82173 /* KIMIConfirm.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -353,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AAD90420E6060100D82173 /* KIMIConfirm.m in Sources */,
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
 				901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */,
@@ -367,6 +383,7 @@
 				901C4E2520DBB47200A71C3D /* UIImage+Kimi.m in Sources */,
 				902D65E120E21C9F00A32EB8 /* UIScrollView+Kimi.m in Sources */,
 				9022D14D20D3C976002F016F /* main.m in Sources */,
+				90AAD8FE20E600A700D82173 /* KIMIAlert.m in Sources */,
 				901C4E1920DB70F200A71C3D /* CALayer+Kimi.m in Sources */,
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
@@ -378,6 +395,7 @@
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
 				909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,
+				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,

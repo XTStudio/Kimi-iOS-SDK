@@ -13,25 +13,33 @@ main.register(function (context) {
     var cell = new FooCell(context)
     cell.backgroundColor = new UIColor(1, 1, 0, 1)
     cell.on('selected', function (sender, selected, animated) {
-        if (animated) {
-            UIAnimator.shared.linear(0.3, function () {
-                sender.backgroundColor = !selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
-            })
-        }
-        else {
+        new UIConfirm("Destory earth.").show(function() {
             sender.backgroundColor = !selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
-        }
+        })
+        // if (animated) {
+        //     UIAnimator.shared.linear(0.3, function () {
+        //         sender.backgroundColor = !selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
+        //     })
+        // }
+        // else {
+        //     sender.backgroundColor = !selected ? new UIColor(1, 1, 0, 1) : new UIColor(1, 1, 1, 1)
+        // }
     })
     return cell
 }, "Cell")
+main.allowsMultipleSelection = true
 main.on('numberOfSections', function () { return 1 })
 main.on('numberOfItems', function () { return 10000 })
 main.on('cellForItem', function (indexPath) {
     return main.dequeueReusableCell("Cell", indexPath);
 });
+layout.minimumLineSpacing = 44
 layout.on('sizeForItem', function () {
     return { width: 100, height: 100 }
 });
+layout.on('insetForSection', function () {
+    return { left: 20, right: 20 }
+})
 // main.on('didSelectRow', function (indexPath) {
 //     main.deselectRow(indexPath, true)
 // })

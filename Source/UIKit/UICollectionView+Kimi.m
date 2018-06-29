@@ -47,9 +47,13 @@ static int kCellInitializerTag;
 + (void)load {
     EDO_EXPORT_CLASS(@"UICollectionView", @"UIScrollView");
     EDO_EXPORT_PROPERTY(@"collectionViewLayout");
+    EDO_EXPORT_PROPERTY(@"allowsSelection");
+    EDO_EXPORT_PROPERTY(@"allowsMultipleSelection");
     EDO_EXPORT_METHOD_ALIAS(edo_register:reuseIdentifier:, @"register");
     EDO_EXPORT_METHOD_ALIAS(edo_dequeueReusableCell:indexPath:, @"dequeueReusableCell");
     EDO_EXPORT_METHOD(reloadData);
+    EDO_EXPORT_METHOD_ALIAS(selectItemAtIndexPath:animated:scrollPosition:, @"selectItem");
+    EDO_EXPORT_METHOD_ALIAS(deselectItemAtIndexPath:animated:, @"deselectItem");
     [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {
         if (0 < arguments.count && [arguments[0] isKindOfClass:[UICollectionViewLayout class]]) {
             UICollectionView *instance = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:arguments[0]];
@@ -105,13 +109,75 @@ static int kCellInitializerTag;
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self edo_emitWithEventName:@"didSelectItem"
+                      arguments:@[
+                                  indexPath,
+                                  [collectionView cellForItemAtIndexPath:indexPath] ?: [NSNull null],
+                                  ]];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self edo_emitWithEventName:@"didDeselectItem"
+                      arguments:@[
+                                  indexPath,
+                                  [collectionView cellForItemAtIndexPath:indexPath] ?: [NSNull null],
+                                  ]];
+}
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *value = [collectionViewLayout edo_valueWithEventName:@"sizeForItem"
                                                              arguments:@[indexPath]];
     if ([value isKindOfClass:[NSDictionary class]]) {
         return CGSizeMake([value[@"width"] floatValue], [value[@"height"] floatValue]);
     }
-    return CGSizeZero;
+    return [collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]] ? [(UICollectionViewFlowLayout *)collectionViewLayout itemSize] : CGSizeZero;
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    NSDictionary *value = [collectionViewLayout edo_valueWithEventName:@"insetForSection"
+                                                             arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSDictionary class]]) {
+        return UIEdgeInsetsMake([value[@"top"] floatValue],
+                                [value[@"left"] floatValue],
+                                [value[@"bottom"] floatValue],
+                                [value[@"right"] floatValue]);
+    }
+    return [collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]] ? [(UICollectionViewFlowLayout *)collectionViewLayout sectionInset] : UIEdgeInsetsZero;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    id value = [collectionViewLayout edo_valueWithEventName:@"minimumLineSpacing" arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [value integerValue];
+    }
+    return [collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]] ? [(UICollectionViewFlowLayout *)collectionViewLayout minimumLineSpacing] : 0;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    id value = [collectionViewLayout edo_valueWithEventName:@"minimumInteritemSpacing" arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [value integerValue];
+    }
+    return [collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]] ? [(UICollectionViewFlowLayout *)collectionViewLayout minimumInteritemSpacing] : 0;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    NSDictionary *value = [collectionViewLayout edo_valueWithEventName:@"referenceSizeForHeader"
+                                                             arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSDictionary class]]) {
+        return CGSizeMake([value[@"width"] floatValue], [value[@"height"] floatValue]);
+    }
+    return [collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]] ? [(UICollectionViewFlowLayout *)collectionViewLayout headerReferenceSize] : CGSizeZero;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    NSDictionary *value = [collectionViewLayout edo_valueWithEventName:@"referenceSizeForFooter"
+                                                             arguments:@[@(section)]];
+    if ([value isKindOfClass:[NSDictionary class]]) {
+        return CGSizeMake([value[@"width"] floatValue], [value[@"height"] floatValue]);
+    }
+    return [collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]] ? [(UICollectionViewFlowLayout *)collectionViewLayout footerReferenceSize] : CGSizeZero;
 }
 
 @end
