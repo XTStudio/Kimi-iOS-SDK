@@ -23,12 +23,11 @@
                                                                              @(selected),
                                                                              ]];
     } error:NULL];
-    [self aspect_hookSelector:@selector(setHighlighted:animated:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, BOOL highlighted, BOOL animated) {
+    [self aspect_hookSelector:@selector(setHighlighted:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, BOOL highlighted) {
         [(UICollectionViewCell *)aspectInfo.instance edo_emitWithEventName:@"highlighted"
                                                                  arguments:@[
                                                                              aspectInfo.instance,
                                                                              @(highlighted),
-                                                                             @(animated),
                                                                              ]];
     } error:NULL];
 }
