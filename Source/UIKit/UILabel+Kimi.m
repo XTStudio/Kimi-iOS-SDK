@@ -14,6 +14,7 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UILabel", @"UIView");
     EDO_EXPORT_PROPERTY(@"text");
+    EDO_EXPORT_PROPERTY(@"attributedText");
     EDO_EXPORT_PROPERTY(@"font");
     EDO_EXPORT_PROPERTY(@"textColor");
     EDO_EXPORT_PROPERTY(@"textAlignment");
