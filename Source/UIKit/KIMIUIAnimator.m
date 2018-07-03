@@ -171,13 +171,13 @@ typedef POPPropertyAnimation *(^KIMIAnimationCreater)(void);
     dispatch_once(&onceToken, ^{
         sharedAnimator = [KIMIUIAnimator new];
     });
-    EDO_EXPORT_CLASS(@"UIAnimator", nil)
-    EDO_EXPORT_SCRIPT(@"Initializer.shared = new Initializer();")
+    EDO_EXPORT_CLASS(@"UIAnimator", nil);
+    EDO_EXPORT_SCRIPT(@"Initializer.shared = new Initializer();");
     EDO_EXPORT_INITIALIZER({
         return sharedAnimator;
-    })
-    EDO_EXPORT_METHOD_ALIAS(linear:animations:completion:, @"linear")
-    EDO_EXPORT_METHOD_ALIAS(spring:friction:animations:completion:, @"spring")
+    });
+    EDO_EXPORT_METHOD_ALIAS(linear:animations:completion:, @"linear");
+    EDO_EXPORT_METHOD_ALIAS(spring:friction:animations:completion:, @"spring");
 
 }
 

@@ -37,6 +37,7 @@
     EDO_EXPORT_METHOD_ALIAS(setTitleColor:forState:, @"setTitleColor");
     EDO_EXPORT_METHOD_ALIAS(edo_setTitleFont:, @"setTitleFont");
     EDO_EXPORT_METHOD_ALIAS(setImage:forState:, @"setImage");
+    EDO_EXPORT_METHOD_ALIAS(setAttributedTitle:forState:, @"setAttributedTitle");
     EDO_EXPORT_PROPERTY(@"contentEdgeInsets");
     EDO_EXPORT_PROPERTY(@"titleEdgeInsets");
     EDO_EXPORT_PROPERTY(@"imageEdgeInsets");
