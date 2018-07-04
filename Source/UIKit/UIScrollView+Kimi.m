@@ -28,9 +28,9 @@
     EDO_EXPORT_PROPERTY(@"decelerationRate");
     EDO_EXPORT_METHOD_ALIAS(setContentOffset:animated:, @"setContentOffset");
     EDO_EXPORT_METHOD_ALIAS(scrollRectToVisible:animated:, @"scrollRectToVisible");
-    EDO_EXPORT_PROPERTY(@"tracking");
-    EDO_EXPORT_PROPERTY(@"dragging");
-    EDO_EXPORT_PROPERTY(@"decelerating");
+    EDO_EXPORT_READONLY_PROPERTY(@"tracking");
+    EDO_EXPORT_READONLY_PROPERTY(@"dragging");
+    EDO_EXPORT_READONLY_PROPERTY(@"decelerating");
     EDO_EXPORT_PROPERTY(@"scrollsToTop");
     // Classes
     [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {

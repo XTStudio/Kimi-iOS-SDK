@@ -22,7 +22,7 @@
     EDO_EXPORT_PROPERTY(@"textAlignment");
     EDO_EXPORT_PROPERTY(@"placeholder");
     EDO_EXPORT_PROPERTY(@"clearsOnBeginEditing");
-    EDO_EXPORT_PROPERTY(@"editing");
+    EDO_EXPORT_READONLY_PROPERTY(@"editing");
     EDO_EXPORT_PROPERTY(@"clearButtonMode");
     EDO_EXPORT_PROPERTY(@"leftView");
     EDO_EXPORT_PROPERTY(@"leftViewMode");

@@ -13,9 +13,9 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"WKWebView", @"UIView");
-    EDO_EXPORT_PROPERTY(@"title");
-    EDO_EXPORT_PROPERTY(@"URL");
-    EDO_EXPORT_PROPERTY(@"loading");   
+    EDO_EXPORT_READONLY_PROPERTY(@"title");
+    EDO_EXPORT_READONLY_PROPERTY(@"URL");
+    EDO_EXPORT_READONLY_PROPERTY(@"loading");
 }
 
 @end

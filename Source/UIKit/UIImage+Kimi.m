@@ -27,8 +27,8 @@
         }
         return nil;
     });
-    EDO_EXPORT_PROPERTY(@"size");
-    EDO_EXPORT_PROPERTY(@"scale");
+    EDO_EXPORT_READONLY_PROPERTY(@"size");
+    EDO_EXPORT_READONLY_PROPERTY(@"scale");
     [[EDOExporter sharedExporter] exportEnum:@"UIImageRenderingMode"
                                       values:@{
                                                @"automatic": @(UIImageRenderingModeAutomatic),

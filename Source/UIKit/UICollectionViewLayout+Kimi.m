@@ -13,7 +13,7 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UICollectionViewLayout", nil);
-    EDO_EXPORT_PROPERTY(@"collectionView");
+    EDO_EXPORT_READONLY_PROPERTY(@"collectionView");
     EDO_EXPORT_METHOD(invalidateLayout);
 }
 

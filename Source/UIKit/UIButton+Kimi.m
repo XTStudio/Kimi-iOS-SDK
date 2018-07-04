@@ -28,9 +28,9 @@
     });
     EDO_EXPORT_PROPERTY(@"enabled");
     EDO_EXPORT_PROPERTY(@"selected");
-    EDO_EXPORT_PROPERTY(@"highlighted");
-    EDO_EXPORT_PROPERTY(@"tracking");
-    EDO_EXPORT_PROPERTY(@"touchInside");
+    EDO_EXPORT_READONLY_PROPERTY(@"highlighted");
+    EDO_EXPORT_READONLY_PROPERTY(@"tracking");
+    EDO_EXPORT_READONLY_PROPERTY(@"touchInside");
     EDO_EXPORT_PROPERTY(@"contentVerticalAlignment");
     EDO_EXPORT_PROPERTY(@"contentHorizontalAlignment");
     EDO_EXPORT_METHOD_ALIAS(setTitle:forState:, @"setTitle");

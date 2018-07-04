@@ -46,7 +46,7 @@ static int kCellInitializerTag;
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UICollectionView", @"UIScrollView");
-    EDO_EXPORT_PROPERTY(@"collectionViewLayout");
+    EDO_EXPORT_READONLY_PROPERTY(@"collectionViewLayout");
     EDO_EXPORT_PROPERTY(@"allowsSelection");
     EDO_EXPORT_PROPERTY(@"allowsMultipleSelection");
     EDO_EXPORT_METHOD_ALIAS(edo_register:reuseIdentifier:, @"register");

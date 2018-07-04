@@ -14,8 +14,8 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UITableViewCell", @"UIView");
-    EDO_EXPORT_PROPERTY(@"contentView");
-    EDO_EXPORT_PROPERTY(@"reuseIdentifier");
+    EDO_EXPORT_READONLY_PROPERTY(@"contentView");
+    EDO_EXPORT_READONLY_PROPERTY(@"reuseIdentifier");
     EDO_EXPORT_PROPERTY(@"edo_hasSelectionStyle");
     [self aspect_hookSelector:@selector(setSelected:animated:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, BOOL selected, BOOL animated) {
         [(UITableViewCell *)aspectInfo.instance edo_emitWithEventName:@"selected"

@@ -49,6 +49,8 @@
 		90AAD91020E6420800D82173 /* WKWebView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD90F20E6420800D82173 /* WKWebView+Kimi.m */; };
 		90AAD91320E645F400D82173 /* NSAttributedString+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD91220E645F400D82173 /* NSAttributedString+Kimi.m */; };
 		90AAD94E20EA06B500D82173 /* NSMutableAttributedString+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD94D20EA06B500D82173 /* NSMutableAttributedString+Kimi.m */; };
+		90AAD95B20EB700E00D82173 /* UIScreen+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD95A20EB700E00D82173 /* UIScreen+Kimi.m */; };
+		90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD95D20EB71CF00D82173 /* UIDevice+Kimi.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,10 @@
 		90AAD91220E645F400D82173 /* NSAttributedString+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Kimi.m"; sourceTree = "<group>"; };
 		90AAD94C20EA06B500D82173 /* NSMutableAttributedString+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Kimi.h"; sourceTree = "<group>"; };
 		90AAD94D20EA06B500D82173 /* NSMutableAttributedString+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Kimi.m"; sourceTree = "<group>"; };
+		90AAD95920EB700E00D82173 /* UIScreen+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Kimi.h"; sourceTree = "<group>"; };
+		90AAD95A20EB700E00D82173 /* UIScreen+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Kimi.m"; sourceTree = "<group>"; };
+		90AAD95C20EB71CF00D82173 /* UIDevice+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Kimi.h"; sourceTree = "<group>"; };
+		90AAD95D20EB71CF00D82173 /* UIDevice+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Kimi.m"; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +224,10 @@
 				901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */,
 				901C4E1D20DBA0CB00A71C3D /* UIFont+Kimi.h */,
 				901C4E1E20DBA0CB00A71C3D /* UIFont+Kimi.m */,
+				90AAD95920EB700E00D82173 /* UIScreen+Kimi.h */,
+				90AAD95A20EB700E00D82173 /* UIScreen+Kimi.m */,
+				90AAD95C20EB71CF00D82173 /* UIDevice+Kimi.h */,
+				90AAD95D20EB71CF00D82173 /* UIDevice+Kimi.m */,
 				901C4DFE20DA093000A71C3D /* UIGestureRecognizer+Kimi.h */,
 				901C4DFF20DA093000A71C3D /* UIGestureRecognizer+Kimi.m */,
 				901C4E0120DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.h */,
@@ -411,6 +421,7 @@
 				902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */,
 				90AAD90D20E62E8600D82173 /* UISlider+Kimi.m in Sources */,
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
+				90AAD95B20EB700E00D82173 /* UIScreen+Kimi.m in Sources */,
 				901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */,
 				90AAD94E20EA06B500D82173 /* NSMutableAttributedString+Kimi.m in Sources */,
 				901C4E2520DBB47200A71C3D /* UIImage+Kimi.m in Sources */,
@@ -434,6 +445,7 @@
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,
+				90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */,
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
 			);

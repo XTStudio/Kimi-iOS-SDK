@@ -1,33 +1,51 @@
 PODS:
   - Aspects (1.4.1)
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
   - Endo (0.0.1):
     - Aspects
   - pop (1.0.10)
+  - UULog (0.0.1):
+    - CocoaLumberjack
 
 DEPENDENCIES:
-  - Endo (from `https://github.com/XTStudio/Endo-iOS.git`, commit `7e326d41d178042c6fb4bbd75aa80e4b6e1c3205`)
+  - Endo (from `https://github.com/XTStudio/Endo-iOS.git`, commit `f7409b9117c0f26e4d12dc31d53fd9d7bb5a8685`)
   - pop
+  - UULog (from `https://github.com/XTStudio/UULog-iOS.git`, commit `e5e4c194ee5698eea44f727d9faa3de94b043672`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Aspects
+    - CocoaLumberjack
     - pop
 
 EXTERNAL SOURCES:
   Endo:
-    :commit: 7e326d41d178042c6fb4bbd75aa80e4b6e1c3205
+    :commit: f7409b9117c0f26e4d12dc31d53fd9d7bb5a8685
     :git: https://github.com/XTStudio/Endo-iOS.git
+  UULog:
+    :commit: e5e4c194ee5698eea44f727d9faa3de94b043672
+    :git: https://github.com/XTStudio/UULog-iOS.git
 
 CHECKOUT OPTIONS:
   Endo:
-    :commit: 7e326d41d178042c6fb4bbd75aa80e4b6e1c3205
+    :commit: f7409b9117c0f26e4d12dc31d53fd9d7bb5a8685
     :git: https://github.com/XTStudio/Endo-iOS.git
+  UULog:
+    :commit: e5e4c194ee5698eea44f727d9faa3de94b043672
+    :git: https://github.com/XTStudio/UULog-iOS.git
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   Endo: ae9a61387e3c2690a0017501631293da43001dd4
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  UULog: 1720baa78488dc78023d8fee753fc2dc9548974e
 
-PODFILE CHECKSUM: 1b16e89143b2d78bd991bcffc12c54a0ec9fcbb7
+PODFILE CHECKSUM: b1aeb0f1b2ef8320888e4d08780fabe8e1ef115a
 
 COCOAPODS: 1.5.3

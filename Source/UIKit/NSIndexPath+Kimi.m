@@ -13,8 +13,8 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UIIndexPath", nil);
-    EDO_EXPORT_PROPERTY(@"row");
-    EDO_EXPORT_PROPERTY(@"section");
+    EDO_EXPORT_READONLY_PROPERTY(@"row");
+    EDO_EXPORT_READONLY_PROPERTY(@"section");
     [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {
         if ([arguments count] == 2 && [arguments[0] isKindOfClass:[NSNumber class]] && [arguments[1] isKindOfClass:[NSNumber class]]) {
             return [NSIndexPath indexPathForRow:[arguments[0] integerValue]

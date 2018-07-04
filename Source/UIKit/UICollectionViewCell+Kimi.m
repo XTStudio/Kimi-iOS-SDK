@@ -14,8 +14,8 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UICollectionViewCell", @"UIView");
-    EDO_EXPORT_PROPERTY(@"contentView");
-    EDO_EXPORT_PROPERTY(@"reuseIdentifier");
+    EDO_EXPORT_READONLY_PROPERTY(@"contentView");
+    EDO_EXPORT_READONLY_PROPERTY(@"reuseIdentifier");
     [self aspect_hookSelector:@selector(setSelected:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, BOOL selected) {
         [(UICollectionViewCell *)aspectInfo.instance edo_emitWithEventName:@"selected"
                                                                  arguments:@[

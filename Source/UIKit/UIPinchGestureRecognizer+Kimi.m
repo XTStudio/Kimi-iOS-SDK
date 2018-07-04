@@ -15,7 +15,7 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UIPinchGestureRecognizer", @"UIGestureRecognizer");
     EDO_EXPORT_PROPERTY(@"scale");
-    EDO_EXPORT_PROPERTY(@"velocity");
+    EDO_EXPORT_READONLY_PROPERTY(@"velocity");
 }
 
 - (void)edo_handleTouch:(UIGestureRecognizer *)sender {

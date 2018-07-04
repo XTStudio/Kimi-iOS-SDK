@@ -21,7 +21,7 @@
     EDO_EXPORT_PROPERTY(@"textAlignment");
     EDO_EXPORT_PROPERTY(@"editable");
     EDO_EXPORT_PROPERTY(@"selectable");
-    EDO_EXPORT_PROPERTY(@"editing");
+    EDO_EXPORT_READONLY_PROPERTY(@"editing");
     EDO_EXPORT_METHOD(edo_focus);
     EDO_EXPORT_METHOD(edo_blur);
     // UITextInput

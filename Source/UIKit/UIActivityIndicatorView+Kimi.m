@@ -14,7 +14,7 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UIActivityIndicatorView", @"UIView");
     EDO_EXPORT_PROPERTY(@"color");
-    EDO_EXPORT_PROPERTY(@"animating");
+    EDO_EXPORT_READONLY_PROPERTY(@"animating");
     EDO_EXPORT_PROPERTY(@"edo_largeStyle");
     EDO_EXPORT_METHOD(startAnimating);
     EDO_EXPORT_METHOD(stopAnimating);

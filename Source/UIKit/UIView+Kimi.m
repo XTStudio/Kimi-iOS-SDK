@@ -14,7 +14,7 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UIView", nil);
-    EDO_EXPORT_PROPERTY(@"layer");
+    EDO_EXPORT_READONLY_PROPERTY(@"layer");
     // Geometry
     EDO_EXPORT_PROPERTY(@"frame");
     EDO_EXPORT_PROPERTY(@"bounds");
@@ -22,8 +22,8 @@
     EDO_EXPORT_PROPERTY(@"transform");
     // Hierarchy
     EDO_EXPORT_PROPERTY(@"tag");
-    EDO_EXPORT_PROPERTY(@"superview");
-    EDO_EXPORT_PROPERTY(@"subviews");
+    EDO_EXPORT_READONLY_PROPERTY(@"superview");
+    EDO_EXPORT_READONLY_PROPERTY(@"subviews");
     EDO_EXPORT_METHOD(removeFromSuperview);
     EDO_EXPORT_METHOD(insertSubview:atIndex:);
     EDO_EXPORT_METHOD_ALIAS(exchangeSubviewAtIndex:withSubviewAtIndex:, @"exchangeSubview");

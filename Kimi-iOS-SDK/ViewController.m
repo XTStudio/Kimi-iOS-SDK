@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <Endo/EDOExporter.h>
+#import <UULog/UULog.h>
 
 @interface ViewController ()
 
@@ -22,9 +23,7 @@
     [super viewDidLoad];
     self.context = [[JSContext alloc] init];
     [[EDOExporter sharedExporter] exportWithContext:self.context];
-    [self.context setExceptionHandler:^(JSContext *context, JSValue *exception) {
-        NSLog(@"%@", exception);
-    }];
+    [UULog attachToContext:self.context];
     [self.context evaluateScript:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"]
                                                        usedEncoding:nil
                                                               error:NULL]];

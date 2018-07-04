@@ -17,9 +17,9 @@
     // Geometry
     EDO_EXPORT_PROPERTY(@"frame");
     // Hierarchy
-    EDO_EXPORT_PROPERTY(@"superlayer");
+    EDO_EXPORT_READONLY_PROPERTY(@"superlayer");
     EDO_EXPORT_METHOD(removeFromSuperlayer);
-    EDO_EXPORT_PROPERTY(@"sublayers");
+    EDO_EXPORT_READONLY_PROPERTY(@"sublayers");
     EDO_EXPORT_METHOD(addSublayer:);
     EDO_EXPORT_METHOD(insertSublayer:atIndex:);
     EDO_EXPORT_METHOD(insertSublayer:below:);

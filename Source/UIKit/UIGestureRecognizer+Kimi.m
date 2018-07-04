@@ -14,9 +14,9 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UIGestureRecognizer", nil);
-    EDO_EXPORT_PROPERTY(@"state");
+    EDO_EXPORT_READONLY_PROPERTY(@"state");
     EDO_EXPORT_PROPERTY(@"enabled");
-    EDO_EXPORT_PROPERTY(@"view");
+    EDO_EXPORT_READONLY_PROPERTY(@"view");
     EDO_EXPORT_PROPERTY(@"requiresExclusiveTouchType");
     EDO_EXPORT_METHOD(requireGestureRecognizerToFail:);
     EDO_EXPORT_METHOD(locationInView:);

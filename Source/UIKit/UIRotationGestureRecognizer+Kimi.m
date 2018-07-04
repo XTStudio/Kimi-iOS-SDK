@@ -15,7 +15,7 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UIRotationGestureRecognizer", @"UIGestureRecognizer");
     EDO_EXPORT_PROPERTY(@"rotation");
-    EDO_EXPORT_PROPERTY(@"velocity");
+    EDO_EXPORT_READONLY_PROPERTY(@"velocity");
 }
 
 - (void)edo_handleTouch:(UIGestureRecognizer *)sender {
