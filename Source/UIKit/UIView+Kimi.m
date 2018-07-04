@@ -8,7 +8,6 @@
 
 #import "UIView+Kimi.h"
 #import <Endo/EDOExporter.h>
-#import <Aspects/Aspects.h>
 
 @implementation UIView (Kimi)
 

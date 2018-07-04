@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+#import <Endo/EDOExporter.h>
+#import <UULog/UULog.h>
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) JSContext *context;
 
 @end
 
@@ -16,7 +21,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.context = [[JSContext alloc] init];
+    [[EDOExporter sharedExporter] exportWithContext:self.context];
+    [UULog attachToContext:self.context];
+    [self.context evaluateScript:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"]
+                                                       usedEncoding:nil
+                                                              error:NULL]];
+    UIViewController *mainViewController = [[EDOExporter sharedExporter] nsValueWithJSValue:[self.context objectForKeyedSubscript:@"main"]];
+    self.window.rootViewController = mainViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

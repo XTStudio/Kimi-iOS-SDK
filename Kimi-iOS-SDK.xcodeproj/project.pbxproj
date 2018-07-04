@@ -51,6 +51,11 @@
 		90AAD94E20EA06B500D82173 /* NSMutableAttributedString+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD94D20EA06B500D82173 /* NSMutableAttributedString+Kimi.m */; };
 		90AAD95B20EB700E00D82173 /* UIScreen+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD95A20EB700E00D82173 /* UIScreen+Kimi.m */; };
 		90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD95D20EB71CF00D82173 /* UIDevice+Kimi.m */; };
+		90AAD99E20EC9C7100D82173 /* UIViewController+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD99D20EC9C7100D82173 /* UIViewController+Kimi.m */; };
+		90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9A020ECA5B700D82173 /* UINavigationController+Kimi.m */; };
+		90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9A320ECB24400D82173 /* UINavigationBar+Kimi.m */; };
+		90AAD9A720ECB93A00D82173 /* UINavigationItem+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9A620ECB93A00D82173 /* UINavigationItem+Kimi.m */; };
+		90AAD9AA20ECBD6000D82173 /* UIBarButtonItem+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9A920ECBD6000D82173 /* UIBarButtonItem+Kimi.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +145,16 @@
 		90AAD95A20EB700E00D82173 /* UIScreen+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Kimi.m"; sourceTree = "<group>"; };
 		90AAD95C20EB71CF00D82173 /* UIDevice+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Kimi.h"; sourceTree = "<group>"; };
 		90AAD95D20EB71CF00D82173 /* UIDevice+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Kimi.m"; sourceTree = "<group>"; };
+		90AAD99C20EC9C7100D82173 /* UIViewController+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Kimi.h"; sourceTree = "<group>"; };
+		90AAD99D20EC9C7100D82173 /* UIViewController+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Kimi.m"; sourceTree = "<group>"; };
+		90AAD99F20ECA5B700D82173 /* UINavigationController+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Kimi.h"; sourceTree = "<group>"; };
+		90AAD9A020ECA5B700D82173 /* UINavigationController+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Kimi.m"; sourceTree = "<group>"; };
+		90AAD9A220ECB24300D82173 /* UINavigationBar+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Kimi.h"; sourceTree = "<group>"; };
+		90AAD9A320ECB24400D82173 /* UINavigationBar+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Kimi.m"; sourceTree = "<group>"; };
+		90AAD9A520ECB93A00D82173 /* UINavigationItem+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Kimi.h"; sourceTree = "<group>"; };
+		90AAD9A620ECB93A00D82173 /* UINavigationItem+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Kimi.m"; sourceTree = "<group>"; };
+		90AAD9A820ECBD6000D82173 /* UIBarButtonItem+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Kimi.h"; sourceTree = "<group>"; };
+		90AAD9A920ECBD6000D82173 /* UIBarButtonItem+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Kimi.m"; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +255,16 @@
 				901C4E0B20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m */,
 				901C4E0D20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.h */,
 				901C4E0E20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m */,
+				90AAD99C20EC9C7100D82173 /* UIViewController+Kimi.h */,
+				90AAD99D20EC9C7100D82173 /* UIViewController+Kimi.m */,
+				90AAD99F20ECA5B700D82173 /* UINavigationController+Kimi.h */,
+				90AAD9A020ECA5B700D82173 /* UINavigationController+Kimi.m */,
+				90AAD9A220ECB24300D82173 /* UINavigationBar+Kimi.h */,
+				90AAD9A320ECB24400D82173 /* UINavigationBar+Kimi.m */,
+				90AAD9A520ECB93A00D82173 /* UINavigationItem+Kimi.h */,
+				90AAD9A620ECB93A00D82173 /* UINavigationItem+Kimi.m */,
+				90AAD9A820ECBD6000D82173 /* UIBarButtonItem+Kimi.h */,
+				90AAD9A920ECBD6000D82173 /* UIBarButtonItem+Kimi.m */,
 				901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */,
 				901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */,
 				90AAD8FC20E600A700D82173 /* KIMIAlert.h */,
@@ -432,6 +457,7 @@
 				90AAD90A20E62BE400D82173 /* UISwitch+Kimi.m in Sources */,
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
+				90AAD9A720ECB93A00D82173 /* UINavigationItem+Kimi.m in Sources */,
 				901C4E2220DBB17900A71C3D /* UIImageView+Kimi.m in Sources */,
 				901C4E1C20DB958800A71C3D /* UIButton+Kimi.m in Sources */,
 				90AAD91020E6420800D82173 /* WKWebView+Kimi.m in Sources */,
@@ -441,12 +467,16 @@
 				90AAD90720E6265B00D82173 /* UIActivityIndicatorView+Kimi.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
 				909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */,
+				90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */,
+				90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,
 				90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */,
+				90AAD9AA20ECBD6000D82173 /* UIBarButtonItem+Kimi.m in Sources */,
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,
+				90AAD99E20EC9C7100D82173 /* UIViewController+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
