@@ -32,7 +32,8 @@ class MyViewController extends UIViewController {
 
     viewDidLoad() {
         super.viewDidLoad()
-        this.title = "Green"
+        // this.title = "Green"
+        this.navigationItem.title = "Green"
         this.view.backgroundColor = UIColor.greenColor;
         this.view.addGestureRecognizer(new UITapGestureRecognizer().on('touch', function () {
             this.navigationController.pushViewController(new SecondViewController, true)
@@ -53,5 +54,10 @@ class MyViewController extends UIViewController {
 
 }
 
-var main = new UINavigationController(new MyViewController);
+var my = new MyViewController
+var first = new UINavigationController(my)
+first.tabBarItem.title = "Home"
+var tabBarController = new UITabBarController()
+tabBarController.setViewControllers([first])
+var main = tabBarController;
 // main.navigationBar.translucent = false

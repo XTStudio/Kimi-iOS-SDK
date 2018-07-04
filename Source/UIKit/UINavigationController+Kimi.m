@@ -32,6 +32,7 @@
 }
 
 - (void)edo_pushViewController:(UIViewController *)viewController animated:(NSNumber *)animated {
+    viewController.hidesBottomBarWhenPushed = YES;
     [self pushViewController:viewController
                     animated:(animated == nil || ![animated isKindOfClass:[NSNumber class]] ? YES : animated.boolValue)];
 }

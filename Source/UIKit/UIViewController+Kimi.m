@@ -37,6 +37,8 @@
     EDO_BIND_METHOD(didMoveToParentViewController:);
     EDO_EXPORT_READONLY_PROPERTY(@"navigationController");
     EDO_EXPORT_READONLY_PROPERTY(@"navigationItem");
+    EDO_EXPORT_READONLY_PROPERTY(@"tabBarController");
+    EDO_EXPORT_READONLY_PROPERTY(@"tabBarItem");
     [self aspect_hookSelector:@selector(viewWillLayoutSubviews) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
         [aspectInfo.instance edo_emitWithEventName:@"viewWillLayoutSubviews" arguments:@[aspectInfo.instance]];
     } error:NULL];
