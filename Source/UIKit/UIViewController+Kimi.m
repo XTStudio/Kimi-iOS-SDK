@@ -10,6 +10,19 @@
 #import <Endo/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
+@interface KIMIDefaultViewController: UIViewController
+
+@end
+
+@implementation KIMIDefaultViewController
+
+- (void)loadView {
+    [super loadView];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+@end
+
 @implementation UIViewController (Kimi)
 
 + (void)load {
@@ -39,9 +52,13 @@
     EDO_EXPORT_READONLY_PROPERTY(@"navigationItem");
     EDO_EXPORT_READONLY_PROPERTY(@"tabBarController");
     EDO_EXPORT_READONLY_PROPERTY(@"tabBarItem");
+    EDO_EXPORT_INITIALIZER({
+        return [[KIMIDefaultViewController alloc] initWithNibName:nil bundle:nil];
+    });
     [self aspect_hookSelector:@selector(viewWillLayoutSubviews) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
         [aspectInfo.instance edo_emitWithEventName:@"viewWillLayoutSubviews" arguments:@[aspectInfo.instance]];
     } error:NULL];
+    
 }
 
 - (UIEdgeInsets)edo_safeAreaInsets {

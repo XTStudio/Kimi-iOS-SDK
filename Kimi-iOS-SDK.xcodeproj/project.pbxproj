@@ -60,6 +60,7 @@
 		90AAD9B020ECC41F00D82173 /* UITabBar+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9AF20ECC41F00D82173 /* UITabBar+Kimi.m */; };
 		90AAD9B320ECC5E100D82173 /* UITabBarItem+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B220ECC5E100D82173 /* UITabBarItem+Kimi.m */; };
 		90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B520ECE14300D82173 /* UIPageViewController+Kimi.m */; };
+		90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +168,8 @@
 		90AAD9B220ECC5E100D82173 /* UITabBarItem+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Kimi.m"; sourceTree = "<group>"; };
 		90AAD9B420ECE14300D82173 /* UIPageViewController+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+Kimi.h"; sourceTree = "<group>"; };
 		90AAD9B520ECE14300D82173 /* UIPageViewController+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+Kimi.m"; sourceTree = "<group>"; };
+		90AAD9B720EDCF0E00D82173 /* UIStackView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStackView+Kimi.h"; sourceTree = "<group>"; };
+		90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStackView+Kimi.m"; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				90AAD9B220ECC5E100D82173 /* UITabBarItem+Kimi.m */,
 				90AAD9B420ECE14300D82173 /* UIPageViewController+Kimi.h */,
 				90AAD9B520ECE14300D82173 /* UIPageViewController+Kimi.m */,
+				90AAD9B720EDCF0E00D82173 /* UIStackView+Kimi.h */,
+				90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */,
 				901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */,
 				901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */,
 				90AAD8FC20E600A700D82173 /* KIMIAlert.h */,
@@ -492,6 +497,7 @@
 				909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */,
 				90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */,
 				90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */,
+				90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,
 				90AAD9AD20ECC17900D82173 /* UITabBarController+Kimi.m in Sources */,
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
