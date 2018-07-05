@@ -36,9 +36,12 @@ class MyViewController extends UIViewController {
         aView.frame = { x: 44, y: 44, width: 200, height: 28 }
         aView.progress = 0.5
         this.view.addSubview(aView)
-        DispatchQueue.main.asyncAfter(3.0, function () {
-            aView.setProgress(1.0, true)
-        })
+        DispatchQueue.global.isolate(function (aView) {
+            var newValue = 0.2
+            DispatchQueue.main.isolate(function (aView, newValue) {
+                aView.setProgress(newValue, true)
+            }, aView, newValue)
+        }, aView);
     }
 
 }
