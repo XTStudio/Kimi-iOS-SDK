@@ -14,6 +14,12 @@ class SecondViewController extends UIViewController {
         this.view.addGestureRecognizer(new UITapGestureRecognizer().on('touch', function () {
             this.navigationController.popViewController()
         }.bind(this)))
+        var redView = new UIView()
+        redView.backgroundColor = UIColor.redColor
+        this.on('viewWillLayoutSubviews', function (sender) {
+            redView.frame = { x: 0, y: sender.safeAreaInsets.top, width: 44, height: 44 }
+        })
+        this.view.addSubview(redView)
     }
 
     viewWillAppear() {
@@ -54,10 +60,29 @@ class MyViewController extends UIViewController {
 
 }
 
-var my = new MyViewController
-var first = new UINavigationController(my)
-first.tabBarItem.title = "Home"
-var tabBarController = new UITabBarController()
-tabBarController.setViewControllers([first])
-var main = tabBarController;
+// var my = new MyViewController
+// var first = new UINavigationController(my)
+// first.tabBarItem.title = "Home"
+// var tabBarController = new UITabBarController()
+// tabBarController.setViewControllers([first])
+// var main = tabBarController;
 // main.navigationBar.translucent = false
+
+var pageViewController = new UIPageViewController(true)
+pageViewController.loops = true
+// pageViewController.bounces = false
+pageViewController.pageItems = [
+    new MyViewController,
+    new SecondViewController,
+]
+main = pageViewController
+// main.currentPage = new MyViewController
+// main.on('beforeViewController', function() { return new SecondViewController })
+// main.on('afterViewController', function() { return new SecondViewController })
+
+// DispatchQueue.main.asyncAfter(3.0, function () {
+//     main.scrollToNextPage()
+// })
+// DispatchQueue.main.asyncAfter(6.0, function () {
+//     main.scrollToPreviousPage()
+// })
