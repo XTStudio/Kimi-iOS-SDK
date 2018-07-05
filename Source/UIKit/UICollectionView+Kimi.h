@@ -2,7 +2,7 @@
 //  UICollectionView+Kimi.h
 //  Kimi-iOS-SDK
 //
-//  Created by 崔明辉 on 2018/6/28.
+//  Created by PonyCui on 2018/6/28.
 //  Copyright © 2018年 XT Studio. All rights reserved.
 //
 
