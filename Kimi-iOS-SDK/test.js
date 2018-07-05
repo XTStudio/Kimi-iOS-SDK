@@ -32,22 +32,13 @@ class MyViewController extends UIViewController {
 
     viewDidLoad() {
         super.viewDidLoad()
-        var aView = new UIView
-        aView.backgroundColor = UIColor.redColor
-        var bView = new UIView
-        bView.backgroundColor = UIColor.grayColor
-        var cView = new UIView
-        cView.backgroundColor = UIColor.greenColor
-        var stackView = new UIStackView([aView, bView, cView])
-        stackView.layoutArrangedSubview(aView, { height: 66 })
-        stackView.layoutArrangedSubview(bView, { width: 66, height: 88 })
-        stackView.layoutArrangedSubview(cView, { width: 88, height: 100 })
-        stackView.frame = { x: 0, y: 200, width: UIScreen.mainScreen.bounds.width, height: 200 }
-        stackView.axis = UILayoutConstraintAxis.horizontal
-        stackView.distribution = UIStackViewDistribution.fill
-        stackView.alignment = UIStackViewAlignment.center
-        stackView.spacing = 20
-        this.view.addSubview(stackView)
+        var aView = new UIProgressView
+        aView.frame = { x: 44, y: 44, width: 200, height: 28 }
+        aView.progress = 0.5
+        this.view.addSubview(aView)
+        DispatchQueue.main.asyncAfter(3.0, function () {
+            aView.setProgress(1.0, true)
+        })
     }
 
 }
