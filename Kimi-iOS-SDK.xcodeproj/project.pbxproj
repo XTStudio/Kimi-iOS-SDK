@@ -73,6 +73,8 @@
 		90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7BB20F35DE200E13294 /* UserDefaultsTests.m */; };
 		90F4B7BF20F3660200E13294 /* KIMITimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7BE20F3660200E13294 /* KIMITimer.m */; };
 		90F4B7C120F3665200E13294 /* TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C020F3665200E13294 /* TimerTests.m */; };
+		90F4B7C420F374FF00E13294 /* NSURL+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C320F374FF00E13294 /* NSURL+Kimi.m */; };
+		90F4B7C620F3783100E13294 /* URLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C520F3783100E13294 /* URLTests.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +217,9 @@
 		90F4B7BD20F3660200E13294 /* KIMITimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMITimer.h; sourceTree = "<group>"; };
 		90F4B7BE20F3660200E13294 /* KIMITimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMITimer.m; sourceTree = "<group>"; };
 		90F4B7C020F3665200E13294 /* TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerTests.m; sourceTree = "<group>"; };
+		90F4B7C220F374FF00E13294 /* NSURL+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7C320F374FF00E13294 /* NSURL+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7C520F3783100E13294 /* URLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLTests.m; sourceTree = "<group>"; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -371,6 +376,8 @@
 				90F4B7B620F358F500E13294 /* NSMutableData+Kimi.m */,
 				90F4B7B820F35BBE00E13294 /* NSUserDefaults+Kimi.h */,
 				90F4B7B920F35BBE00E13294 /* NSUserDefaults+Kimi.m */,
+				90F4B7C220F374FF00E13294 /* NSURL+Kimi.h */,
+				90F4B7C320F374FF00E13294 /* NSURL+Kimi.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -449,6 +456,7 @@
 				90F4B7B320F344E300E13294 /* DataTests.m */,
 				90F4B7BB20F35DE200E13294 /* UserDefaultsTests.m */,
 				90F4B7C020F3665200E13294 /* TimerTests.m */,
+				90F4B7C520F3783100E13294 /* URLTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -623,6 +631,7 @@
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				90AAD90720E6265B00D82173 /* UIActivityIndicatorView+Kimi.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
+				90F4B7C420F374FF00E13294 /* NSURL+Kimi.m in Sources */,
 				90AAD9B020ECC41F00D82173 /* UITabBar+Kimi.m in Sources */,
 				909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */,
 				90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */,
@@ -652,6 +661,7 @@
 				90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */,
 				90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */,
 				90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */,
+				90F4B7C620F3783100E13294 /* URLTests.m in Sources */,
 				90F4B7C120F3665200E13294 /* TimerTests.m in Sources */,
 				90F4B7B420F344E300E13294 /* DataTests.m in Sources */,
 			);
