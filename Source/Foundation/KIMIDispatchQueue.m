@@ -86,9 +86,14 @@
         self.operationContext = [[JSContext alloc] init];
         [[EDOExporter sharedExporter] exportWithContext:self.operationContext];
         Class uulogClazz = NSClassFromString(@"UULog");
-        if (uulogClazz != NULL) {
-            [uulogClazz performSelector:NSSelectorFromString(@"attachToContext:") withObject:self.operationContext];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+        if (uulogClazz != NULL && [uulogClazz respondsToSelector:@selector(attachToContext:)]) {
+            [uulogClazz performSelector:@selector(attachToContext:) withObject:self.operationContext];
         }
+#pragma clang diagnostic pop
+#pragma clang diagnostic pop
     }
     [self.operationQueue addOperationWithBlock:^{
         [self.operationContext evaluateScript:[NSString stringWithFormat:@"var __isolate_exec_func = %@", script]];

@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
+
+@class EDOExporter;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (JSContext *)unitTestContext;
++ (void)setUnitTestObject:(NSObject *)anObject forKey:(NSString *)forKey;
 
 @end
 

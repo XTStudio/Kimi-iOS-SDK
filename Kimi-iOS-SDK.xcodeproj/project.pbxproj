@@ -62,10 +62,23 @@
 		90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B520ECE14300D82173 /* UIPageViewController+Kimi.m */; };
 		90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */; };
 		90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */; };
+		90F4B7A520F33B5100E13294 /* KimiTestExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A420F33B5100E13294 /* KimiTestExpectation.m */; };
+		90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		90AAD9C620EF7AA200D82173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9022D13220D3C975002F016F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9022D13920D3C976002F016F;
+			remoteInfo = "Kimi-iOS-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0ABCAEF4154C941559666683 /* libPods-Kimi-iOS-SDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Kimi.h"; sourceTree = "<group>"; };
 		901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Kimi.m"; sourceTree = "<group>"; };
 		901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Kimi.h"; sourceTree = "<group>"; };
@@ -173,7 +186,12 @@
 		90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStackView+Kimi.m"; sourceTree = "<group>"; };
 		90AAD9BA20EE0C1400D82173 /* UIProgressView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+Kimi.h"; sourceTree = "<group>"; };
 		90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Kimi.m"; sourceTree = "<group>"; };
+		90AAD9C120EF7AA200D82173 /* Kimi-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kimi-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90AAD9C520EF7AA200D82173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F4B7A320F33B5100E13294 /* KimiTestExpectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KimiTestExpectation.h; sourceTree = "<group>"; };
+		90F4B7A420F33B5100E13294 /* KimiTestExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimiTestExpectation.m; sourceTree = "<group>"; };
+		90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueTests.m; sourceTree = "<group>"; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +205,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90AAD9BE20EF7AA200D82173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -194,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */,
+				0ABCAEF4154C941559666683 /* libPods-Kimi-iOS-SDKTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,6 +356,7 @@
 			children = (
 				901C4DED20D3CB6200A71C3D /* Source */,
 				9022D13C20D3C976002F016F /* Kimi-iOS-SDK */,
+				90AAD9C220EF7AA200D82173 /* Kimi-iOS-SDKTests */,
 				9022D13B20D3C976002F016F /* Products */,
 				961CCC4BDAFFD64368A856C5 /* Pods */,
 				3360B36EDDE0C031825CD25B /* Frameworks */,
@@ -340,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */,
+				90AAD9C120EF7AA200D82173 /* Kimi-iOS-SDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,6 +375,7 @@
 		9022D13C20D3C976002F016F /* Kimi-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				90F4B7A220F33B4600E13294 /* Unit Test Supporing Files */,
 				9022D13D20D3C976002F016F /* AppDelegate.h */,
 				9022D13E20D3C976002F016F /* AppDelegate.m */,
 				9022D14020D3C976002F016F /* ViewController.h */,
@@ -359,6 +388,32 @@
 				9022D14C20D3C976002F016F /* main.m */,
 			);
 			path = "Kimi-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		90AAD9C220EF7AA200D82173 /* Kimi-iOS-SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				90F4B7A620F33E8B00E13294 /* Foundation */,
+				90AAD9C520EF7AA200D82173 /* Info.plist */,
+			);
+			path = "Kimi-iOS-SDKTests";
+			sourceTree = "<group>";
+		};
+		90F4B7A220F33B4600E13294 /* Unit Test Supporing Files */ = {
+			isa = PBXGroup;
+			children = (
+				90F4B7A320F33B5100E13294 /* KimiTestExpectation.h */,
+				90F4B7A420F33B5100E13294 /* KimiTestExpectation.m */,
+			);
+			path = "Unit Test Supporing Files";
+			sourceTree = "<group>";
+		};
+		90F4B7A620F33E8B00E13294 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		961CCC4BDAFFD64368A856C5 /* Pods */ = {
@@ -391,6 +446,24 @@
 			productReference = 9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */;
 			productType = "com.apple.product-type.application";
 		};
+		90AAD9C020EF7AA200D82173 /* Kimi-iOS-SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90AAD9C820EF7AA200D82173 /* Build configuration list for PBXNativeTarget "Kimi-iOS-SDKTests" */;
+			buildPhases = (
+				90AAD9BD20EF7AA200D82173 /* Sources */,
+				90AAD9BE20EF7AA200D82173 /* Frameworks */,
+				90AAD9BF20EF7AA200D82173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90AAD9C720EF7AA200D82173 /* PBXTargetDependency */,
+			);
+			name = "Kimi-iOS-SDKTests";
+			productName = "Kimi-iOS-SDKTests";
+			productReference = 90AAD9C120EF7AA200D82173 /* Kimi-iOS-SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -402,6 +475,10 @@
 				TargetAttributes = {
 					9022D13920D3C976002F016F = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					90AAD9C020EF7AA200D82173 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9022D13920D3C976002F016F;
 					};
 				};
 			};
@@ -419,6 +496,7 @@
 			projectRoot = "";
 			targets = (
 				9022D13920D3C976002F016F /* Kimi-iOS-SDK */,
+				90AAD9C020EF7AA200D82173 /* Kimi-iOS-SDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -432,6 +510,13 @@
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
 				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90AAD9BF20EF7AA200D82173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +578,7 @@
 				901C4E1C20DB958800A71C3D /* UIButton+Kimi.m in Sources */,
 				90AAD91020E6420800D82173 /* WKWebView+Kimi.m in Sources */,
 				90AAD9B320ECC5E100D82173 /* UITabBarItem+Kimi.m in Sources */,
+				90F4B7A520F33B5100E13294 /* KimiTestExpectation.m in Sources */,
 				90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */,
 				90AAD8F820E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
@@ -517,7 +603,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90AAD9BD20EF7AA200D82173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90AAD9C720EF7AA200D82173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9022D13920D3C976002F016F /* Kimi-iOS-SDK */;
+			targetProxy = 90AAD9C620EF7AA200D82173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9022D14320D3C976002F016F /* Main.storyboard */ = {
@@ -692,6 +794,44 @@
 			};
 			name = Release;
 		};
+		90AAD9C920EF7AA200D82173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kimi-iOS-SDKTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xt.Kimi-iOS-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kimi-iOS-SDK.app/Kimi-iOS-SDK";
+			};
+			name = Debug;
+		};
+		90AAD9CA20EF7AA200D82173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kimi-iOS-SDKTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xt.Kimi-iOS-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kimi-iOS-SDK.app/Kimi-iOS-SDK";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -709,6 +849,15 @@
 			buildConfigurations = (
 				9022D15120D3C976002F016F /* Debug */,
 				9022D15220D3C976002F016F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90AAD9C820EF7AA200D82173 /* Build configuration list for PBXNativeTarget "Kimi-iOS-SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90AAD9C920EF7AA200D82173 /* Debug */,
+				90AAD9CA20EF7AA200D82173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
