@@ -64,6 +64,13 @@
 		90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */; };
 		90F4B7A520F33B5100E13294 /* KimiTestExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A420F33B5100E13294 /* KimiTestExpectation.m */; };
 		90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */; };
+		90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AA20F340AC00E13294 /* NSUUID+Kimi.m */; };
+		90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AD20F3413600E13294 /* UUIDTests.m */; };
+		90F4B7B220F3425C00E13294 /* NSData+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7B020F3424900E13294 /* NSData+Kimi.m */; };
+		90F4B7B420F344E300E13294 /* DataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7B320F344E300E13294 /* DataTests.m */; };
+		90F4B7B720F358F500E13294 /* NSMutableData+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7B620F358F500E13294 /* NSMutableData+Kimi.m */; };
+		90F4B7BA20F35BBE00E13294 /* NSUserDefaults+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7B920F35BBE00E13294 /* NSUserDefaults+Kimi.m */; };
+		90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7BB20F35DE200E13294 /* UserDefaultsTests.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -192,6 +199,17 @@
 		90F4B7A320F33B5100E13294 /* KimiTestExpectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KimiTestExpectation.h; sourceTree = "<group>"; };
 		90F4B7A420F33B5100E13294 /* KimiTestExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimiTestExpectation.m; sourceTree = "<group>"; };
 		90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueTests.m; sourceTree = "<group>"; };
+		90F4B7A920F340AC00E13294 /* NSUUID+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUUID+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7AA20F340AC00E13294 /* NSUUID+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUUID+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7AD20F3413600E13294 /* UUIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUIDTests.m; sourceTree = "<group>"; };
+		90F4B7AF20F3424900E13294 /* NSData+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7B020F3424900E13294 /* NSData+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7B320F344E300E13294 /* DataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataTests.m; sourceTree = "<group>"; };
+		90F4B7B520F358F500E13294 /* NSMutableData+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7B620F358F500E13294 /* NSMutableData+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7B820F35BBE00E13294 /* NSUserDefaults+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7B920F35BBE00E13294 /* NSUserDefaults+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7BB20F35DE200E13294 /* UserDefaultsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsTests.m; sourceTree = "<group>"; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -338,6 +356,14 @@
 			children = (
 				901C4DF820D8BCC800A71C3D /* KIMIDispatchQueue.h */,
 				901C4DF920D8BCC800A71C3D /* KIMIDispatchQueue.m */,
+				90F4B7A920F340AC00E13294 /* NSUUID+Kimi.h */,
+				90F4B7AA20F340AC00E13294 /* NSUUID+Kimi.m */,
+				90F4B7AF20F3424900E13294 /* NSData+Kimi.h */,
+				90F4B7B020F3424900E13294 /* NSData+Kimi.m */,
+				90F4B7B520F358F500E13294 /* NSMutableData+Kimi.h */,
+				90F4B7B620F358F500E13294 /* NSMutableData+Kimi.m */,
+				90F4B7B820F35BBE00E13294 /* NSUserDefaults+Kimi.h */,
+				90F4B7B920F35BBE00E13294 /* NSUserDefaults+Kimi.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -412,6 +438,9 @@
 			isa = PBXGroup;
 			children = (
 				90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */,
+				90F4B7AD20F3413600E13294 /* UUIDTests.m */,
+				90F4B7B320F344E300E13294 /* DataTests.m */,
+				90F4B7BB20F35DE200E13294 /* UserDefaultsTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -581,6 +610,7 @@
 				90F4B7A520F33B5100E13294 /* KimiTestExpectation.m in Sources */,
 				90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */,
 				90AAD8F820E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m in Sources */,
+				90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				90AAD90720E6265B00D82173 /* UIActivityIndicatorView+Kimi.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
@@ -593,11 +623,14 @@
 				90AAD9AD20ECC17900D82173 /* UITabBarController+Kimi.m in Sources */,
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
+				90F4B7B220F3425C00E13294 /* NSData+Kimi.m in Sources */,
+				90F4B7B720F358F500E13294 /* NSMutableData+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,
 				90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */,
 				90AAD9AA20ECBD6000D82173 /* UIBarButtonItem+Kimi.m in Sources */,
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,
 				90AAD99E20EC9C7100D82173 /* UIViewController+Kimi.m in Sources */,
+				90F4B7BA20F35BBE00E13294 /* NSUserDefaults+Kimi.m in Sources */,
 				90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
 			);
@@ -607,7 +640,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */,
+				90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */,
 				90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */,
+				90F4B7B420F344E300E13294 /* DataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

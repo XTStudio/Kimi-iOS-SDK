@@ -36,6 +36,11 @@
                     forKeyedSubscript:forKey];
 }
 
++ (id)fetchUnitTestObjectForKey:(NSString *)forKey {
+    JSValue *value = [[self unitTestContext] objectForKeyedSubscript:forKey];
+    return [EDOObjectTransfer convertToNSValueWithJSValue:value owner:value];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.context = [[JSContext alloc] init];

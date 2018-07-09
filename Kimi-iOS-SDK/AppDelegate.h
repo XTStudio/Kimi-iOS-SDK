@@ -17,6 +17,7 @@
 
 + (JSContext *)unitTestContext;
 + (void)setUnitTestObject:(NSObject *)anObject forKey:(NSString *)forKey;
++ (id)fetchUnitTestObjectForKey:(NSString *)forKey;
 
 @end
 
