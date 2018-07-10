@@ -75,6 +75,11 @@
 		90F4B7C120F3665200E13294 /* TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C020F3665200E13294 /* TimerTests.m */; };
 		90F4B7C420F374FF00E13294 /* NSURL+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C320F374FF00E13294 /* NSURL+Kimi.m */; };
 		90F4B7C620F3783100E13294 /* URLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C520F3783100E13294 /* URLTests.m */; };
+		90F4B7C920F45E8500E13294 /* NSURLRequest+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7C820F45E8500E13294 /* NSURLRequest+Kimi.m */; };
+		90F4B7CC20F4602400E13294 /* NSMutableURLRequest+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7CB20F4602400E13294 /* NSMutableURLRequest+Kimi.m */; };
+		90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7CE20F460DA00E13294 /* NSURLResponse+Kimi.m */; };
+		90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7D120F4612200E13294 /* NSURLSession+Kimi.m */; };
+		90F4B7D520F462BE00E13294 /* NSURLSessionTask+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7D420F462BE00E13294 /* NSURLSessionTask+Kimi.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +225,16 @@
 		90F4B7C220F374FF00E13294 /* NSURL+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Kimi.h"; sourceTree = "<group>"; };
 		90F4B7C320F374FF00E13294 /* NSURL+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Kimi.m"; sourceTree = "<group>"; };
 		90F4B7C520F3783100E13294 /* URLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLTests.m; sourceTree = "<group>"; };
+		90F4B7C720F45E8500E13294 /* NSURLRequest+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7C820F45E8500E13294 /* NSURLRequest+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7CA20F4602400E13294 /* NSMutableURLRequest+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7CB20F4602400E13294 /* NSMutableURLRequest+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7CD20F460DA00E13294 /* NSURLResponse+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLResponse+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7CE20F460DA00E13294 /* NSURLResponse+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLResponse+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7D020F4612200E13294 /* NSURLSession+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7D120F4612200E13294 /* NSURLSession+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7D320F462BE00E13294 /* NSURLSessionTask+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7D420F462BE00E13294 /* NSURLSessionTask+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+Kimi.m"; sourceTree = "<group>"; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -378,6 +393,16 @@
 				90F4B7B920F35BBE00E13294 /* NSUserDefaults+Kimi.m */,
 				90F4B7C220F374FF00E13294 /* NSURL+Kimi.h */,
 				90F4B7C320F374FF00E13294 /* NSURL+Kimi.m */,
+				90F4B7C720F45E8500E13294 /* NSURLRequest+Kimi.h */,
+				90F4B7C820F45E8500E13294 /* NSURLRequest+Kimi.m */,
+				90F4B7CA20F4602400E13294 /* NSMutableURLRequest+Kimi.h */,
+				90F4B7CB20F4602400E13294 /* NSMutableURLRequest+Kimi.m */,
+				90F4B7CD20F460DA00E13294 /* NSURLResponse+Kimi.h */,
+				90F4B7CE20F460DA00E13294 /* NSURLResponse+Kimi.m */,
+				90F4B7D020F4612200E13294 /* NSURLSession+Kimi.h */,
+				90F4B7D120F4612200E13294 /* NSURLSession+Kimi.m */,
+				90F4B7D320F462BE00E13294 /* NSURLSessionTask+Kimi.h */,
+				90F4B7D420F462BE00E13294 /* NSURLSessionTask+Kimi.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -600,9 +625,12 @@
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
 				901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */,
 				901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */,
+				90F4B7D520F462BE00E13294 /* NSURLSessionTask+Kimi.m in Sources */,
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
+				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
+				90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */,
 				902D65DE20E2163B00A32EB8 /* UITextView+Kimi.m in Sources */,
 				902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */,
 				90AAD90D20E62E8600D82173 /* UISlider+Kimi.m in Sources */,
@@ -628,6 +656,7 @@
 				90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */,
 				90AAD8F820E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m in Sources */,
 				90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */,
+				90F4B7C920F45E8500E13294 /* NSURLRequest+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				90AAD90720E6265B00D82173 /* UIActivityIndicatorView+Kimi.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
@@ -649,6 +678,7 @@
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,
 				90AAD99E20EC9C7100D82173 /* UIViewController+Kimi.m in Sources */,
 				90F4B7BA20F35BBE00E13294 /* NSUserDefaults+Kimi.m in Sources */,
+				90F4B7CC20F4602400E13294 /* NSMutableURLRequest+Kimi.m in Sources */,
 				90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
 			);
