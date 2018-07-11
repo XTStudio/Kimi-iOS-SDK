@@ -22,6 +22,7 @@
         }
         return [[NSURLSession alloc] init];
     }];
+    EDO_EXPORT_METHOD_ALIAS(edo_dataTask:completion:, @"dataTask");
 }
 
 - (NSURLSessionTask *)edo_dataTask:(id)obj completion:(void (^)(NSArray *))completion {

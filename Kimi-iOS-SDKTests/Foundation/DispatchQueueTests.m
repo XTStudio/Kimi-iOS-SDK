@@ -37,28 +37,18 @@
 
 - (void)testDispatchQueueIsolate {
     JSContext *context = [AppDelegate unitTestContext];
-    XCTestExpectation *isolateTestExpectation = [[XCTestExpectation alloc] init];
     KimiTestExpectation *isolateTest = [[KimiTestExpectation alloc] init];
     [AppDelegate setUnitTestObject:isolateTest forKey:@"isolateTest"];
     [context evaluateScript:@"DispatchQueue.global.isolate(function(isolateTest){ isolateTest.fulfill(); }, isolateTest);"];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        XCTAssertTrue(isolateTest.fulfilled);
-        [isolateTestExpectation fulfill];
-    });
-    [self waitForExpectations:@[isolateTestExpectation] timeout:0.2];
+    [self waitForExpectations:@[isolateTest] timeout:0.2];
 }
 
 - (void)testDispatchQueueIsolateTwice {
     JSContext *context = [AppDelegate unitTestContext];
-    XCTestExpectation *isolateTwiceTestExpectation = [[XCTestExpectation alloc] init];
     KimiTestExpectation *isolateTwiceTest = [[KimiTestExpectation alloc] init];
     [AppDelegate setUnitTestObject:isolateTwiceTest forKey:@"isolateTwiceTest"];
     [context evaluateScript:@"DispatchQueue.global.isolate(function(isolateTwiceTest){ DispatchQueue.main.isolate(function(isolateTwiceTest){ isolateTwiceTest.fulfill(); }, isolateTwiceTest); }, isolateTwiceTest);"];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        XCTAssertTrue(isolateTwiceTest.fulfilled);
-        [isolateTwiceTestExpectation fulfill];
-    });
-    [self waitForExpectations:@[isolateTwiceTestExpectation] timeout:0.2];
+    [self waitForExpectations:@[isolateTwiceTest] timeout:0.2];
 }
 
 @end

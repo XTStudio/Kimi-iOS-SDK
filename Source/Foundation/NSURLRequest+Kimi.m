@@ -21,6 +21,9 @@
     EDO_EXPORT_METHOD(edo_mutable);
     [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {
         NSURL *aURL = 0 < arguments.count && [arguments[0] isKindOfClass:[NSURL class]] ? arguments[0] : nil;
+        if (aURL == nil) {
+            aURL = 0 < arguments.count && [arguments[0] isKindOfClass:[NSString class]] ? [NSURL URLWithString:arguments[0]] : nil;
+        }
         NSURLRequestCachePolicy cachePolicy = 1 < arguments.count && [arguments[1] isKindOfClass:[NSNumber class]] ? [arguments[1] integerValue] : NSURLRequestUseProtocolCachePolicy;
         NSTimeInterval timeoutInterval = 2 < arguments.count && [arguments[2] isKindOfClass:[NSNumber class]] ? [arguments[2] floatValue] : 15.0;
         if (aURL == nil) {

@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
-@interface KimiTestExpectation : NSObject
-
-@property (nonatomic, assign) BOOL fulfilled;
+@interface KimiTestExpectation : XCTestExpectation
 
 @end

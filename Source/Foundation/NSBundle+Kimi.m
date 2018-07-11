@@ -13,8 +13,10 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"Bundle", nil);
-    EDO_EXPORT_SCRIPT(@";Initializer.nativeBundle = new Initializer('__native__');");
-    EDO_EXPORT_SCRIPT(@";Initializer.jsBundle = new Initializer('__js__');");
+    EDO_EXPORT_SCRIPT(@";Initializer.native = new Initializer('__native__');");
+    EDO_EXPORT_SCRIPT(@";Initializer.js = new Initializer('__js__');");
+    EDO_EXPORT_METHOD_ALIAS(edo_resourcePath:type:inDirectory:, @"resourcePath");
+    EDO_EXPORT_METHOD_ALIAS(edo_resourceURL:type:inDirectory:, @"resourceURL");
     EDO_EXPORT_INITIALIZER({
         if (0 < arguments.count && [arguments[0] isKindOfClass:[NSString class]]) {
             return [NSBundle mainBundle];
