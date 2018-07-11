@@ -80,6 +80,9 @@
 		90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7CE20F460DA00E13294 /* NSURLResponse+Kimi.m */; };
 		90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7D120F4612200E13294 /* NSURLSession+Kimi.m */; };
 		90F4B7D520F462BE00E13294 /* NSURLSessionTask+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7D420F462BE00E13294 /* NSURLSessionTask+Kimi.m */; };
+		90F4B7D820F4680000E13294 /* NSBundle+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7D720F4680000E13294 /* NSBundle+Kimi.m */; };
+		90F4B7DB20F468CC00E13294 /* NSFileManager+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7DA20F468CC00E13294 /* NSFileManager+Kimi.m */; };
+		90F4B7DD20F5A2EB00E13294 /* FileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7DC20F5A2EB00E13294 /* FileManagerTests.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +238,11 @@
 		90F4B7D120F4612200E13294 /* NSURLSession+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Kimi.m"; sourceTree = "<group>"; };
 		90F4B7D320F462BE00E13294 /* NSURLSessionTask+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+Kimi.h"; sourceTree = "<group>"; };
 		90F4B7D420F462BE00E13294 /* NSURLSessionTask+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7D620F4680000E13294 /* NSBundle+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7D720F4680000E13294 /* NSBundle+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7D920F468CC00E13294 /* NSFileManager+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Kimi.h"; sourceTree = "<group>"; };
+		90F4B7DA20F468CC00E13294 /* NSFileManager+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Kimi.m"; sourceTree = "<group>"; };
+		90F4B7DC20F5A2EB00E13294 /* FileManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -403,6 +411,10 @@
 				90F4B7D120F4612200E13294 /* NSURLSession+Kimi.m */,
 				90F4B7D320F462BE00E13294 /* NSURLSessionTask+Kimi.h */,
 				90F4B7D420F462BE00E13294 /* NSURLSessionTask+Kimi.m */,
+				90F4B7D620F4680000E13294 /* NSBundle+Kimi.h */,
+				90F4B7D720F4680000E13294 /* NSBundle+Kimi.m */,
+				90F4B7D920F468CC00E13294 /* NSFileManager+Kimi.h */,
+				90F4B7DA20F468CC00E13294 /* NSFileManager+Kimi.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -482,6 +494,7 @@
 				90F4B7BB20F35DE200E13294 /* UserDefaultsTests.m */,
 				90F4B7C020F3665200E13294 /* TimerTests.m */,
 				90F4B7C520F3783100E13294 /* URLTests.m */,
+				90F4B7DC20F5A2EB00E13294 /* FileManagerTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -644,6 +657,7 @@
 				90AAD8FE20E600A700D82173 /* KIMIAlert.m in Sources */,
 				901C4E1920DB70F200A71C3D /* CALayer+Kimi.m in Sources */,
 				90AAD90A20E62BE400D82173 /* UISwitch+Kimi.m in Sources */,
+				90F4B7D820F4680000E13294 /* NSBundle+Kimi.m in Sources */,
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
 				90F4B7BF20F3660200E13294 /* KIMITimer.m in Sources */,
@@ -668,6 +682,7 @@
 				90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,
 				90AAD9AD20ECC17900D82173 /* UITabBarController+Kimi.m in Sources */,
+				90F4B7DB20F468CC00E13294 /* NSFileManager+Kimi.m in Sources */,
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
 				90F4B7B220F3425C00E13294 /* NSData+Kimi.m in Sources */,
@@ -688,6 +703,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F4B7DD20F5A2EB00E13294 /* FileManagerTests.m in Sources */,
 				90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */,
 				90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */,
 				90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */,
