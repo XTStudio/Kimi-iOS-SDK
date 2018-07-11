@@ -35,6 +35,8 @@
 		902D65E120E21C9F00A32EB8 /* UIScrollView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D65E020E21C9F00A32EB8 /* UIScrollView+Kimi.m */; };
 		902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D65E320E222BF00A32EB8 /* UITableView+Kimi.m */; };
 		902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D65E620E22BB000A32EB8 /* UITableViewCell+Kimi.m */; };
+		907D740620F613F900C1D7D7 /* CADisplayLink+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B81820F60B8700E13294 /* CADisplayLink+Kimi.m */; };
+		907D740720F6141600C1D7D7 /* CAGradientLayer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B81520F6084F00E13294 /* CAGradientLayer+Kimi.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -253,6 +255,10 @@
 		90F4B7E920F5B2CA00E13294 /* KimiTestExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KimiTestExpectation.m; path = "Kimi-iOS-SDK/Unit Test Supporing Files/KimiTestExpectation.m"; sourceTree = SOURCE_ROOT; };
 		90F4B7EB20F5B32600E13294 /* NSObject+KimiTestExpectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KimiTestExpectation.h"; sourceTree = "<group>"; };
 		90F4B7EC20F5B32600E13294 /* NSObject+KimiTestExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KimiTestExpectation.m"; sourceTree = "<group>"; };
+		90F4B81420F6084F00E13294 /* CAGradientLayer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+Kimi.h"; sourceTree = "<group>"; };
+		90F4B81520F6084F00E13294 /* CAGradientLayer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+Kimi.m"; sourceTree = "<group>"; };
+		90F4B81720F60B8700E13294 /* CADisplayLink+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CADisplayLink+Kimi.h"; sourceTree = "<group>"; };
+		90F4B81820F60B8700E13294 /* CADisplayLink+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CADisplayLink+Kimi.m"; sourceTree = "<group>"; };
 		B78C791A06EF5BC4DCC1AC17 /* Pods-Kimi-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD3F36ABFC565ED8CF5D31 /* Pods-Kimi-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimi-iOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kimi-iOS-SDK/Pods-Kimi-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -435,6 +441,10 @@
 			children = (
 				901C4E1720DB70F200A71C3D /* CALayer+Kimi.h */,
 				901C4E1820DB70F200A71C3D /* CALayer+Kimi.m */,
+				90F4B81420F6084F00E13294 /* CAGradientLayer+Kimi.h */,
+				90F4B81520F6084F00E13294 /* CAGradientLayer+Kimi.m */,
+				90F4B81720F60B8700E13294 /* CADisplayLink+Kimi.h */,
+				90F4B81820F60B8700E13294 /* CADisplayLink+Kimi.m */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -660,11 +670,13 @@
 				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
+				907D740620F613F900C1D7D7 /* CADisplayLink+Kimi.m in Sources */,
 				90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */,
 				902D65DE20E2163B00A32EB8 /* UITextView+Kimi.m in Sources */,
 				902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */,
 				90AAD90D20E62E8600D82173 /* UISlider+Kimi.m in Sources */,
 				90F4B7ED20F5B32600E13294 /* NSObject+KimiTestExpectation.m in Sources */,
+				907D740720F6141600C1D7D7 /* CAGradientLayer+Kimi.m in Sources */,
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
 				90AAD95B20EB700E00D82173 /* UIScreen+Kimi.m in Sources */,
 				901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */,

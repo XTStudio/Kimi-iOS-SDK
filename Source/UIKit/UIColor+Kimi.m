@@ -22,14 +22,14 @@
         }
         return [UIColor clearColor];
     });
-    EDO_EXPORT_SCRIPT(@"Initializer.blackColor = new Initializer(0,0,0,1);");
-    EDO_EXPORT_SCRIPT(@"Initializer.clearColor = new Initializer(0,0,0,0);");
-    EDO_EXPORT_SCRIPT(@"Initializer.grayColor = new Initializer(0.5,0.5,0.5,1);");
-    EDO_EXPORT_SCRIPT(@"Initializer.redColor = new Initializer(1,0,0,1);");
-    EDO_EXPORT_SCRIPT(@"Initializer.yellowColor = new Initializer(1,1,0,1);");
-    EDO_EXPORT_SCRIPT(@"Initializer.greenColor = new Initializer(0,1,0,1);");
-    EDO_EXPORT_SCRIPT(@"Initializer.blueColor = new Initializer(0,0,1,1);");
-    EDO_EXPORT_SCRIPT(@"Initializer.whiteColor = new Initializer(1,1,1,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.black = new Initializer(0,0,0,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.clear = new Initializer(0,0,0,0);");
+    EDO_EXPORT_SCRIPT(@";Initializer.gray = new Initializer(0.5,0.5,0.5,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.red = new Initializer(1,0,0,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.yellow = new Initializer(1,1,0,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.green = new Initializer(0,1,0,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.blue = new Initializer(0,0,1,1);");
+    EDO_EXPORT_SCRIPT(@";Initializer.white = new Initializer(1,1,1,1);");
 }
 
 @end

@@ -22,9 +22,9 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"DispatchQueue", nil);
-    EDO_EXPORT_SCRIPT(@"Initializer.main = new Initializer('main');");
-    EDO_EXPORT_SCRIPT(@"Initializer.global = new Initializer('global');");
-    EDO_EXPORT_SCRIPT(@"Initializer.prototype.isolate = function(){ var args = []; for(var i=1;i<arguments.length;i++){ args.push(arguments[i]); } this._isolate(arguments[0].toString(), args); }");
+    EDO_EXPORT_SCRIPT(@";Initializer.main = new Initializer('main');");
+    EDO_EXPORT_SCRIPT(@";Initializer.global = new Initializer('global');");
+    EDO_EXPORT_SCRIPT(@";Initializer.prototype.isolate = function(){ var args = []; for(var i=1;i<arguments.length;i++){ args.push(arguments[i]); } this._isolate(arguments[0].toString(), args); };");
     EDO_EXPORT_METHOD(async:);
     EDO_EXPORT_METHOD_ALIAS(asyncAfter:asyncBlock:, @"asyncAfter");
     EDO_EXPORT_METHOD_ALIAS(_isolate:arguments:, @"_isolate");

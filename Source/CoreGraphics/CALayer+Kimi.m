@@ -8,7 +8,6 @@
 
 #import "CALayer+Kimi.h"
 #import <Endo/EDOExporter.h>
-#import <Aspects/Aspects.h>
 
 @implementation CALayer (Kimi)
 
