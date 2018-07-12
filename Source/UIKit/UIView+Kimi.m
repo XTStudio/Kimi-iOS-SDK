@@ -55,7 +55,11 @@
     EDO_EXPORT_PROPERTY(@"gestureRecognizers");
     EDO_EXPORT_METHOD(addGestureRecognizer:);
     EDO_EXPORT_METHOD(removeGestureRecognizer:);
-    // Retain & Release
+    // Accessibility
+    EDO_EXPORT_PROPERTY(@"isAccessibilityElement");
+    EDO_EXPORT_PROPERTY(@"accessibilityLabel");
+    EDO_EXPORT_PROPERTY(@"accessibilityHint");
+    EDO_EXPORT_PROPERTY(@"accessibilityValue");
     [[EDOExporter sharedExporter] exportEnum:@"UIViewContentMode"
                                       values:@{
                                                @"scaleToFill": @(UIViewContentModeScaleToFill),
