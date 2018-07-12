@@ -39,6 +39,7 @@
 		907D740720F6141600C1D7D7 /* CAGradientLayer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B81520F6084F00E13294 /* CAGradientLayer+Kimi.m */; };
 		907D740A20F618AF00C1D7D7 /* CAShapeLayer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D740920F618AF00C1D7D7 /* CAShapeLayer+Kimi.m */; };
 		907D740D20F61A8100C1D7D7 /* UIBezierPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D740C20F61A8100C1D7D7 /* UIBezierPath+Kimi.m */; };
+		907D741520F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D741420F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -163,6 +164,8 @@
 		907D740920F618AF00C1D7D7 /* CAShapeLayer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+Kimi.m"; sourceTree = "<group>"; };
 		907D740B20F61A8100C1D7D7 /* UIBezierPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Kimi.h"; sourceTree = "<group>"; };
 		907D740C20F61A8100C1D7D7 /* UIBezierPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Kimi.m"; sourceTree = "<group>"; };
+		907D741320F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableParagraphStyle+Kimi.h"; sourceTree = "<group>"; };
+		907D741420F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableParagraphStyle+Kimi.m"; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -325,6 +328,8 @@
 				90AAD91220E645F400D82173 /* NSAttributedString+Kimi.m */,
 				90AAD94C20EA06B500D82173 /* NSMutableAttributedString+Kimi.h */,
 				90AAD94D20EA06B500D82173 /* NSMutableAttributedString+Kimi.m */,
+				907D741320F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.h */,
+				907D741420F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m */,
 				901C4E2920DBCDCA00A71C3D /* UITextField+Kimi.h */,
 				901C4E2A20DBCDCA00A71C3D /* UITextField+Kimi.m */,
 				902D65DC20E2163B00A32EB8 /* UITextView+Kimi.h */,
@@ -736,6 +741,7 @@
 				90F4B7BA20F35BBE00E13294 /* NSUserDefaults+Kimi.m in Sources */,
 				90F4B7CC20F4602400E13294 /* NSMutableURLRequest+Kimi.m in Sources */,
 				90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */,
+				907D741520F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
