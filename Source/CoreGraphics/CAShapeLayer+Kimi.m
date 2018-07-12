@@ -26,6 +26,23 @@
     EDO_EXPORT_PROPERTY(@"edo_strokeColor");
     EDO_EXPORT_PROPERTY(@"strokeStart");
     EDO_EXPORT_PROPERTY(@"strokeEnd");
+    [[EDOExporter sharedExporter] exportEnum:@"CAShapeFillRule"
+                                      values:@{
+                                               @"nonZero": kCAFillRuleNonZero,
+                                               @"evenOdd": kCAFillRuleEvenOdd,
+                                               }];
+    [[EDOExporter sharedExporter] exportEnum:@"CAShapeLineCap"
+                                      values:@{
+                                               @"butt": kCALineCapButt,
+                                               @"round": kCALineCapRound,
+                                               @"square": kCALineCapSquare,
+                                               }];
+    [[EDOExporter sharedExporter] exportEnum:@"CAShapeLineJoin"
+                                      values:@{
+                                               @"miter": kCALineJoinMiter,
+                                               @"round": kCALineJoinRound,
+                                               @"bevel": kCALineJoinBevel,
+                                               }];
 }
 
 - (UIBezierPath *)edo_path {
