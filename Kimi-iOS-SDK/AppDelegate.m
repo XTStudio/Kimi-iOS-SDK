@@ -42,16 +42,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.context = [[JSContext alloc] init];
-    [[EDOExporter sharedExporter] exportWithContext:self.context];
-    [UULog attachToContext:self.context];
-    [self.context evaluateScript:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"]
-                                                       usedEncoding:nil
-                                                              error:NULL]];
-    UIViewController *mainViewController = [[EDOExporter sharedExporter] nsValueWithJSValue:[self.context objectForKeyedSubscript:@"main"]];
-    self.window.rootViewController = mainViewController;
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

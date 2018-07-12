@@ -19,22 +19,4 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.context = [[JSContext alloc] init];
-    [[EDOExporter sharedExporter] exportWithContext:self.context];
-    [UULog attachToContext:self.context];
-    [self.context evaluateScript:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"]
-                                                       usedEncoding:nil
-                                                              error:NULL]];
-    UIView *mainView = [[EDOExporter sharedExporter] nsValueWithJSValue:[self.context objectForKeyedSubscript:@"main"]];
-    [self.view addSubview:mainView];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 @end

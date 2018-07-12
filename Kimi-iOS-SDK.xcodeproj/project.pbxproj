@@ -40,6 +40,16 @@
 		907D740A20F618AF00C1D7D7 /* CAShapeLayer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D740920F618AF00C1D7D7 /* CAShapeLayer+Kimi.m */; };
 		907D740D20F61A8100C1D7D7 /* UIBezierPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D740C20F61A8100C1D7D7 /* UIBezierPath+Kimi.m */; };
 		907D741520F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D741420F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m */; };
+		907D741E20F7063200C1D7D7 /* NSObject+KimiTestExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D741A20F7063200C1D7D7 /* NSObject+KimiTestExpectation.m */; };
+		907D741F20F7063200C1D7D7 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 907D741B20F7063200C1D7D7 /* test.txt */; };
+		907D742120F7067B00C1D7D7 /* KimiUITest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907D742020F7067B00C1D7D7 /* KimiUITest.storyboard */; };
+		907D742220F706C900C1D7D7 /* KimiTestExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D741820F7063200C1D7D7 /* KimiTestExpectation.m */; };
+		907D742520F7081D00C1D7D7 /* KimiUITestViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D742420F7081D00C1D7D7 /* KimiUITestViewsViewController.m */; };
+		907D742820F7085400C1D7D7 /* KimiUITestMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D742720F7085400C1D7D7 /* KimiUITestMainTableViewController.m */; };
+		907D742B20F7089400C1D7D7 /* UIViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D742A20F7089400C1D7D7 /* UIViewTests.js */; };
+		907D743520F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D743420F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m */; };
+		907D743E20F74CDB00C1D7D7 /* UIViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D743D20F74CDB00C1D7D7 /* UIViewAsserts.m */; };
+		907D744120F74D4500C1D7D7 /* KIMIUITestAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D744020F74D4500C1D7D7 /* KIMIUITestAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -88,14 +98,18 @@
 		90F4B7DB20F468CC00E13294 /* NSFileManager+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7DA20F468CC00E13294 /* NSFileManager+Kimi.m */; };
 		90F4B7DD20F5A2EB00E13294 /* FileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7DC20F5A2EB00E13294 /* FileManagerTests.m */; };
 		90F4B7DF20F5AD2C00E13294 /* BundleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7DE20F5AD2C00E13294 /* BundleTests.m */; };
-		90F4B7E320F5AF6B00E13294 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 90F4B7E020F5AEEC00E13294 /* test.txt */; };
 		90F4B7E520F5B02F00E13294 /* URLSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7E420F5B02F00E13294 /* URLSessionTests.m */; };
-		90F4B7EA20F5B2CA00E13294 /* KimiTestExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7E920F5B2CA00E13294 /* KimiTestExpectation.m */; };
-		90F4B7ED20F5B32600E13294 /* NSObject+KimiTestExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7EC20F5B32600E13294 /* NSObject+KimiTestExpectation.m */; };
 		ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		907D743720F7449900C1D7D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9022D13220D3C975002F016F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9022D13920D3C976002F016F;
+			remoteInfo = "Kimi-iOS-SDK";
+		};
 		90AAD9C620EF7AA200D82173 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9022D13220D3C975002F016F /* Project object */;
@@ -166,6 +180,24 @@
 		907D740C20F61A8100C1D7D7 /* UIBezierPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Kimi.m"; sourceTree = "<group>"; };
 		907D741320F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableParagraphStyle+Kimi.h"; sourceTree = "<group>"; };
 		907D741420F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableParagraphStyle+Kimi.m"; sourceTree = "<group>"; };
+		907D741720F7063200C1D7D7 /* KimiTestExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KimiTestExpectation.h; sourceTree = "<group>"; };
+		907D741820F7063200C1D7D7 /* KimiTestExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KimiTestExpectation.m; sourceTree = "<group>"; };
+		907D741920F7063200C1D7D7 /* NSObject+KimiTestExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KimiTestExpectation.h"; sourceTree = "<group>"; };
+		907D741A20F7063200C1D7D7 /* NSObject+KimiTestExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KimiTestExpectation.m"; sourceTree = "<group>"; };
+		907D741B20F7063200C1D7D7 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		907D742020F7067B00C1D7D7 /* KimiUITest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KimiUITest.storyboard; sourceTree = "<group>"; };
+		907D742320F7081D00C1D7D7 /* KimiUITestViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KimiUITestViewsViewController.h; sourceTree = "<group>"; };
+		907D742420F7081D00C1D7D7 /* KimiUITestViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimiUITestViewsViewController.m; sourceTree = "<group>"; };
+		907D742620F7085400C1D7D7 /* KimiUITestMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KimiUITestMainTableViewController.h; sourceTree = "<group>"; };
+		907D742720F7085400C1D7D7 /* KimiUITestMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimiUITestMainTableViewController.m; sourceTree = "<group>"; };
+		907D742A20F7089400C1D7D7 /* UIViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIViewTests.js; sourceTree = "<group>"; };
+		907D743220F7449900C1D7D7 /* Kimi-iOS-SDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kimi-iOS-SDKUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907D743420F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kimi_iOS_SDKUITests.m; sourceTree = "<group>"; };
+		907D743620F7449900C1D7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907D743C20F74CDB00C1D7D7 /* UIViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewAsserts.h; sourceTree = "<group>"; };
+		907D743D20F74CDB00C1D7D7 /* UIViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAsserts.m; sourceTree = "<group>"; };
+		907D743F20F74D4500C1D7D7 /* KIMIUITestAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIUITestAsserts.h; sourceTree = "<group>"; };
+		907D744020F74D4500C1D7D7 /* KIMIUITestAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIUITestAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -257,13 +289,8 @@
 		90F4B7DA20F468CC00E13294 /* NSFileManager+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Kimi.m"; sourceTree = "<group>"; };
 		90F4B7DC20F5A2EB00E13294 /* FileManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerTests.m; sourceTree = "<group>"; };
 		90F4B7DE20F5AD2C00E13294 /* BundleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BundleTests.m; sourceTree = "<group>"; };
-		90F4B7E020F5AEEC00E13294 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		90F4B7E420F5B02F00E13294 /* URLSessionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLSessionTests.m; sourceTree = "<group>"; };
 		90F4B7E620F5B1FC00E13294 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		90F4B7E820F5B2CA00E13294 /* KimiTestExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KimiTestExpectation.h; path = "Kimi-iOS-SDK/Unit Test Supporing Files/KimiTestExpectation.h"; sourceTree = SOURCE_ROOT; };
-		90F4B7E920F5B2CA00E13294 /* KimiTestExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KimiTestExpectation.m; path = "Kimi-iOS-SDK/Unit Test Supporing Files/KimiTestExpectation.m"; sourceTree = SOURCE_ROOT; };
-		90F4B7EB20F5B32600E13294 /* NSObject+KimiTestExpectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KimiTestExpectation.h"; sourceTree = "<group>"; };
-		90F4B7EC20F5B32600E13294 /* NSObject+KimiTestExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KimiTestExpectation.m"; sourceTree = "<group>"; };
 		90F4B81420F6084F00E13294 /* CAGradientLayer+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+Kimi.h"; sourceTree = "<group>"; };
 		90F4B81520F6084F00E13294 /* CAGradientLayer+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+Kimi.m"; sourceTree = "<group>"; };
 		90F4B81720F60B8700E13294 /* CADisplayLink+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CADisplayLink+Kimi.h"; sourceTree = "<group>"; };
@@ -278,6 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDA4F9418088A9E33890397 /* libPods-Kimi-iOS-SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D742F20F7449900C1D7D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +504,7 @@
 				901C4DED20D3CB6200A71C3D /* Source */,
 				9022D13C20D3C976002F016F /* Kimi-iOS-SDK */,
 				90AAD9C220EF7AA200D82173 /* Kimi-iOS-SDKTests */,
+				907D743320F7449900C1D7D7 /* Kimi-iOS-SDKUITests */,
 				9022D13B20D3C976002F016F /* Products */,
 				961CCC4BDAFFD64368A856C5 /* Pods */,
 				3360B36EDDE0C031825CD25B /* Frameworks */,
@@ -481,6 +516,7 @@
 			children = (
 				9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */,
 				90AAD9C120EF7AA200D82173 /* Kimi-iOS-SDKTests.xctest */,
+				907D743220F7449900C1D7D7 /* Kimi-iOS-SDKUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -488,7 +524,8 @@
 		9022D13C20D3C976002F016F /* Kimi-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				90F4B7A220F33B4600E13294 /* Unit Test Supporing Files */,
+				907D741C20F7063200C1D7D7 /* UI Test Supporting Files */,
+				907D741620F7063200C1D7D7 /* Unit Test Supporting Files */,
 				9022D13D20D3C976002F016F /* AppDelegate.h */,
 				9022D13E20D3C976002F016F /* AppDelegate.m */,
 				9022D14020D3C976002F016F /* ViewController.h */,
@@ -503,25 +540,59 @@
 			path = "Kimi-iOS-SDK";
 			sourceTree = "<group>";
 		};
+		907D741620F7063200C1D7D7 /* Unit Test Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				907D741720F7063200C1D7D7 /* KimiTestExpectation.h */,
+				907D741820F7063200C1D7D7 /* KimiTestExpectation.m */,
+				907D741920F7063200C1D7D7 /* NSObject+KimiTestExpectation.h */,
+				907D741A20F7063200C1D7D7 /* NSObject+KimiTestExpectation.m */,
+				907D741B20F7063200C1D7D7 /* test.txt */,
+			);
+			path = "Unit Test Supporting Files";
+			sourceTree = "<group>";
+		};
+		907D741C20F7063200C1D7D7 /* UI Test Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				907D742920F7089400C1D7D7 /* Tests */,
+				907D742020F7067B00C1D7D7 /* KimiUITest.storyboard */,
+				907D742620F7085400C1D7D7 /* KimiUITestMainTableViewController.h */,
+				907D742720F7085400C1D7D7 /* KimiUITestMainTableViewController.m */,
+				907D742320F7081D00C1D7D7 /* KimiUITestViewsViewController.h */,
+				907D742420F7081D00C1D7D7 /* KimiUITestViewsViewController.m */,
+			);
+			path = "UI Test Supporting Files";
+			sourceTree = "<group>";
+		};
+		907D742920F7089400C1D7D7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				907D742A20F7089400C1D7D7 /* UIViewTests.js */,
+				907D743F20F74D4500C1D7D7 /* KIMIUITestAsserts.h */,
+				907D744020F74D4500C1D7D7 /* KIMIUITestAsserts.m */,
+				907D743C20F74CDB00C1D7D7 /* UIViewAsserts.h */,
+				907D743D20F74CDB00C1D7D7 /* UIViewAsserts.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		907D743320F7449900C1D7D7 /* Kimi-iOS-SDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				907D743420F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m */,
+				907D743620F7449900C1D7D7 /* Info.plist */,
+			);
+			path = "Kimi-iOS-SDKUITests";
+			sourceTree = "<group>";
+		};
 		90AAD9C220EF7AA200D82173 /* Kimi-iOS-SDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				90F4B7E820F5B2CA00E13294 /* KimiTestExpectation.h */,
-				90F4B7E920F5B2CA00E13294 /* KimiTestExpectation.m */,
 				90F4B7A620F33E8B00E13294 /* Foundation */,
 				90AAD9C520EF7AA200D82173 /* Info.plist */,
 			);
 			path = "Kimi-iOS-SDKTests";
-			sourceTree = "<group>";
-		};
-		90F4B7A220F33B4600E13294 /* Unit Test Supporing Files */ = {
-			isa = PBXGroup;
-			children = (
-				90F4B7E020F5AEEC00E13294 /* test.txt */,
-				90F4B7EB20F5B32600E13294 /* NSObject+KimiTestExpectation.h */,
-				90F4B7EC20F5B32600E13294 /* NSObject+KimiTestExpectation.m */,
-			);
-			path = "Unit Test Supporing Files";
 			sourceTree = "<group>";
 		};
 		90F4B7A620F33E8B00E13294 /* Foundation */ = {
@@ -570,6 +641,24 @@
 			productReference = 9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */;
 			productType = "com.apple.product-type.application";
 		};
+		907D743120F7449900C1D7D7 /* Kimi-iOS-SDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907D743920F7449900C1D7D7 /* Build configuration list for PBXNativeTarget "Kimi-iOS-SDKUITests" */;
+			buildPhases = (
+				907D742E20F7449900C1D7D7 /* Sources */,
+				907D742F20F7449900C1D7D7 /* Frameworks */,
+				907D743020F7449900C1D7D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				907D743820F7449900C1D7D7 /* PBXTargetDependency */,
+			);
+			name = "Kimi-iOS-SDKUITests";
+			productName = "Kimi-iOS-SDKUITests";
+			productReference = 907D743220F7449900C1D7D7 /* Kimi-iOS-SDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		90AAD9C020EF7AA200D82173 /* Kimi-iOS-SDKTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90AAD9C820EF7AA200D82173 /* Build configuration list for PBXNativeTarget "Kimi-iOS-SDKTests" */;
@@ -600,6 +689,10 @@
 					9022D13920D3C976002F016F = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					907D743120F7449900C1D7D7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9022D13920D3C976002F016F;
+					};
 					90AAD9C020EF7AA200D82173 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 9022D13920D3C976002F016F;
@@ -621,6 +714,7 @@
 			targets = (
 				9022D13920D3C976002F016F /* Kimi-iOS-SDK */,
 				90AAD9C020EF7AA200D82173 /* Kimi-iOS-SDKTests */,
+				907D743120F7449900C1D7D7 /* Kimi-iOS-SDKUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -631,10 +725,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9022D14A20D3C976002F016F /* LaunchScreen.storyboard in Resources */,
+				907D742120F7067B00C1D7D7 /* KimiUITest.storyboard in Resources */,
+				907D742B20F7089400C1D7D7 /* UIViewTests.js in Resources */,
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
 				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
-				90F4B7E320F5AF6B00E13294 /* test.txt in Resources */,
+				907D741F20F7063200C1D7D7 /* test.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D743020F7449900C1D7D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +778,7 @@
 			files = (
 				90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */,
 				90AAD90420E6060100D82173 /* KIMIConfirm.m in Sources */,
+				907D742820F7085400C1D7D7 /* KimiUITestMainTableViewController.m in Sources */,
 				90AAD91320E645F400D82173 /* NSAttributedString+Kimi.m in Sources */,
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
@@ -690,7 +794,6 @@
 				902D65DE20E2163B00A32EB8 /* UITextView+Kimi.m in Sources */,
 				902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */,
 				90AAD90D20E62E8600D82173 /* UISlider+Kimi.m in Sources */,
-				90F4B7ED20F5B32600E13294 /* NSObject+KimiTestExpectation.m in Sources */,
 				907D740720F6141600C1D7D7 /* CAGradientLayer+Kimi.m in Sources */,
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
 				90AAD95B20EB700E00D82173 /* UIScreen+Kimi.m in Sources */,
@@ -706,6 +809,7 @@
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
 				90F4B7BF20F3660200E13294 /* KIMITimer.m in Sources */,
+				907D743E20F74CDB00C1D7D7 /* UIViewAsserts.m in Sources */,
 				90AAD9A720ECB93A00D82173 /* UINavigationItem+Kimi.m in Sources */,
 				901C4E2220DBB17900A71C3D /* UIImageView+Kimi.m in Sources */,
 				901C4E1C20DB958800A71C3D /* UIButton+Kimi.m in Sources */,
@@ -718,6 +822,7 @@
 				90F4B7C920F45E8500E13294 /* NSURLRequest+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				90AAD90720E6265B00D82173 /* UIActivityIndicatorView+Kimi.m in Sources */,
+				907D742520F7081D00C1D7D7 /* KimiUITestViewsViewController.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
 				90F4B7C420F374FF00E13294 /* NSURL+Kimi.m in Sources */,
 				90AAD9B020ECC41F00D82173 /* UITabBar+Kimi.m in Sources */,
@@ -734,6 +839,7 @@
 				90F4B7B220F3425C00E13294 /* NSData+Kimi.m in Sources */,
 				90F4B7B720F358F500E13294 /* NSMutableData+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,
+				907D744120F74D4500C1D7D7 /* KIMIUITestAsserts.m in Sources */,
 				90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */,
 				90AAD9AA20ECBD6000D82173 /* UIBarButtonItem+Kimi.m in Sources */,
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,
@@ -741,8 +847,17 @@
 				90F4B7BA20F35BBE00E13294 /* NSUserDefaults+Kimi.m in Sources */,
 				90F4B7CC20F4602400E13294 /* NSMutableURLRequest+Kimi.m in Sources */,
 				90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */,
+				907D741E20F7063200C1D7D7 /* NSObject+KimiTestExpectation.m in Sources */,
 				907D741520F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907D742E20F7449900C1D7D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907D743520F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,7 +867,7 @@
 			files = (
 				90F4B7DD20F5A2EB00E13294 /* FileManagerTests.m in Sources */,
 				90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */,
-				90F4B7EA20F5B2CA00E13294 /* KimiTestExpectation.m in Sources */,
+				907D742220F706C900C1D7D7 /* KimiTestExpectation.m in Sources */,
 				90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */,
 				90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */,
 				90F4B7C620F3783100E13294 /* URLTests.m in Sources */,
@@ -766,6 +881,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		907D743820F7449900C1D7D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9022D13920D3C976002F016F /* Kimi-iOS-SDK */;
+			targetProxy = 907D743720F7449900C1D7D7 /* PBXContainerItemProxy */;
+		};
 		90AAD9C720EF7AA200D82173 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9022D13920D3C976002F016F /* Kimi-iOS-SDK */;
@@ -946,6 +1066,44 @@
 			};
 			name = Release;
 		};
+		907D743A20F7449900C1D7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 544P5CH38C;
+				INFOPLIST_FILE = "Kimi-iOS-SDKUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xt.Kimi-iOS-SDKUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kimi-iOS-SDK";
+			};
+			name = Debug;
+		};
+		907D743B20F7449900C1D7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 544P5CH38C;
+				INFOPLIST_FILE = "Kimi-iOS-SDKUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xt.Kimi-iOS-SDKUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kimi-iOS-SDK";
+			};
+			name = Release;
+		};
 		90AAD9C920EF7AA200D82173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1001,6 +1159,15 @@
 			buildConfigurations = (
 				9022D15120D3C976002F016F /* Debug */,
 				9022D15220D3C976002F016F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907D743920F7449900C1D7D7 /* Build configuration list for PBXNativeTarget "Kimi-iOS-SDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907D743A20F7449900C1D7D7 /* Debug */,
+				907D743B20F7449900C1D7D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

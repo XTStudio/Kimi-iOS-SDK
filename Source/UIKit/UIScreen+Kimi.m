@@ -18,7 +18,7 @@
     EDO_EXPORT_INITIALIZER({
         return [UIScreen mainScreen];
     });
-    EDO_EXPORT_SCRIPT(@"Initializer.mainScreen = new Initializer();");
+    EDO_EXPORT_SCRIPT(@"Initializer.main = new Initializer();");
 }
 
 @end

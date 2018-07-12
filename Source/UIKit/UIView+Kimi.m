@@ -60,6 +60,7 @@
     EDO_EXPORT_PROPERTY(@"accessibilityLabel");
     EDO_EXPORT_PROPERTY(@"accessibilityHint");
     EDO_EXPORT_PROPERTY(@"accessibilityValue");
+    EDO_EXPORT_PROPERTY(@"accessibilityIdentifier");
     [[EDOExporter sharedExporter] exportEnum:@"UIViewContentMode"
                                       values:@{
                                                @"scaleToFill": @(UIViewContentModeScaleToFill),
