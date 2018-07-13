@@ -42,7 +42,7 @@ class MainView extends UIView {
             return 2
         })
         this.sampleView.on('cellForItem', function (indexPath) {
-            let cell = this.sampleView.dequeueReusableCell("Cell", indexPath)
+            var cell = this.sampleView.dequeueReusableCell("Cell", indexPath)
             if (indexPath.section == 0 && indexPath.row == 0) {
                 cell.tag = 1000;
             }
