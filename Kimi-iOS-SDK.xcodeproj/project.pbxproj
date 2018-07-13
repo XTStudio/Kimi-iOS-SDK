@@ -50,6 +50,16 @@
 		907D743520F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D743420F7449900C1D7D7 /* Kimi_iOS_SDKUITests.m */; };
 		907D743E20F74CDB00C1D7D7 /* UIViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D743D20F74CDB00C1D7D7 /* UIViewAsserts.m */; };
 		907D744120F74D4500C1D7D7 /* KIMIUITestAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D744020F74D4500C1D7D7 /* KIMIUITestAsserts.m */; };
+		907D744520F84C6900C1D7D7 /* UIButtonTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D744420F84C6900C1D7D7 /* UIButtonTests.js */; };
+		907D744820F84C7A00C1D7D7 /* UIButtonAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D744720F84C7A00C1D7D7 /* UIButtonAsserts.m */; };
+		907D744A20F8583500C1D7D7 /* UIImageViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D744920F8583500C1D7D7 /* UIImageViewTests.js */; };
+		907D744D20F8583F00C1D7D7 /* UIImageViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D744C20F8583F00C1D7D7 /* UIImageViewAsserts.m */; };
+		907D744F20F879F300C1D7D7 /* UILabelTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D744E20F879F300C1D7D7 /* UILabelTests.js */; };
+		907D745220F879FD00C1D7D7 /* UILabelAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D745120F879FD00C1D7D7 /* UILabelAsserts.m */; };
+		907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D745320F87EE100C1D7D7 /* UITextFieldTests.js */; };
+		907D745720F87EEA00C1D7D7 /* UITextFieldAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D745620F87EEA00C1D7D7 /* UITextFieldAsserts.m */; };
+		907D745920F88CA100C1D7D7 /* UITextViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D745820F88CA000C1D7D7 /* UITextViewTests.js */; };
+		907D745C20F88CB400C1D7D7 /* UITextViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D745B20F88CB400C1D7D7 /* UITextViewAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -198,6 +208,21 @@
 		907D743D20F74CDB00C1D7D7 /* UIViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAsserts.m; sourceTree = "<group>"; };
 		907D743F20F74D4500C1D7D7 /* KIMIUITestAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIUITestAsserts.h; sourceTree = "<group>"; };
 		907D744020F74D4500C1D7D7 /* KIMIUITestAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIUITestAsserts.m; sourceTree = "<group>"; };
+		907D744420F84C6900C1D7D7 /* UIButtonTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIButtonTests.js; sourceTree = "<group>"; };
+		907D744620F84C7A00C1D7D7 /* UIButtonAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButtonAsserts.h; sourceTree = "<group>"; };
+		907D744720F84C7A00C1D7D7 /* UIButtonAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButtonAsserts.m; sourceTree = "<group>"; };
+		907D744920F8583500C1D7D7 /* UIImageViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIImageViewTests.js; sourceTree = "<group>"; };
+		907D744B20F8583F00C1D7D7 /* UIImageViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewAsserts.h; sourceTree = "<group>"; };
+		907D744C20F8583F00C1D7D7 /* UIImageViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewAsserts.m; sourceTree = "<group>"; };
+		907D744E20F879F300C1D7D7 /* UILabelTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UILabelTests.js; sourceTree = "<group>"; };
+		907D745020F879FD00C1D7D7 /* UILabelAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelAsserts.h; sourceTree = "<group>"; };
+		907D745120F879FD00C1D7D7 /* UILabelAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelAsserts.m; sourceTree = "<group>"; };
+		907D745320F87EE100C1D7D7 /* UITextFieldTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UITextFieldTests.js; sourceTree = "<group>"; };
+		907D745520F87EEA00C1D7D7 /* UITextFieldAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldAsserts.h; sourceTree = "<group>"; };
+		907D745620F87EEA00C1D7D7 /* UITextFieldAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldAsserts.m; sourceTree = "<group>"; };
+		907D745820F88CA000C1D7D7 /* UITextViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UITextViewTests.js; sourceTree = "<group>"; };
+		907D745A20F88CB400C1D7D7 /* UITextViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewAsserts.h; sourceTree = "<group>"; };
+		907D745B20F88CB400C1D7D7 /* UITextViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -568,11 +593,26 @@
 		907D742920F7089400C1D7D7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				907D742A20F7089400C1D7D7 /* UIViewTests.js */,
 				907D743F20F74D4500C1D7D7 /* KIMIUITestAsserts.h */,
 				907D744020F74D4500C1D7D7 /* KIMIUITestAsserts.m */,
+				907D742A20F7089400C1D7D7 /* UIViewTests.js */,
 				907D743C20F74CDB00C1D7D7 /* UIViewAsserts.h */,
 				907D743D20F74CDB00C1D7D7 /* UIViewAsserts.m */,
+				907D744420F84C6900C1D7D7 /* UIButtonTests.js */,
+				907D744620F84C7A00C1D7D7 /* UIButtonAsserts.h */,
+				907D744720F84C7A00C1D7D7 /* UIButtonAsserts.m */,
+				907D744920F8583500C1D7D7 /* UIImageViewTests.js */,
+				907D744B20F8583F00C1D7D7 /* UIImageViewAsserts.h */,
+				907D744C20F8583F00C1D7D7 /* UIImageViewAsserts.m */,
+				907D744E20F879F300C1D7D7 /* UILabelTests.js */,
+				907D745020F879FD00C1D7D7 /* UILabelAsserts.h */,
+				907D745120F879FD00C1D7D7 /* UILabelAsserts.m */,
+				907D745320F87EE100C1D7D7 /* UITextFieldTests.js */,
+				907D745520F87EEA00C1D7D7 /* UITextFieldAsserts.h */,
+				907D745620F87EEA00C1D7D7 /* UITextFieldAsserts.m */,
+				907D745820F88CA000C1D7D7 /* UITextViewTests.js */,
+				907D745A20F88CB400C1D7D7 /* UITextViewAsserts.h */,
+				907D745B20F88CB400C1D7D7 /* UITextViewAsserts.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -724,12 +764,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907D744520F84C6900C1D7D7 /* UIButtonTests.js in Resources */,
+				907D744F20F879F300C1D7D7 /* UILabelTests.js in Resources */,
 				9022D14A20D3C976002F016F /* LaunchScreen.storyboard in Resources */,
 				907D742120F7067B00C1D7D7 /* KimiUITest.storyboard in Resources */,
 				907D742B20F7089400C1D7D7 /* UIViewTests.js in Resources */,
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
 				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
+				907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
+				907D744A20F8583500C1D7D7 /* UIImageViewTests.js in Resources */,
+				907D745920F88CA100C1D7D7 /* UITextViewTests.js in Resources */,
 				907D741F20F7063200C1D7D7 /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,6 +824,7 @@
 				90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */,
 				90AAD90420E6060100D82173 /* KIMIConfirm.m in Sources */,
 				907D742820F7085400C1D7D7 /* KimiUITestMainTableViewController.m in Sources */,
+				907D745720F87EEA00C1D7D7 /* UITextFieldAsserts.m in Sources */,
 				90AAD91320E645F400D82173 /* NSAttributedString+Kimi.m in Sources */,
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
 				9022D14220D3C976002F016F /* ViewController.m in Sources */,
@@ -788,6 +834,8 @@
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
+				907D745220F879FD00C1D7D7 /* UILabelAsserts.m in Sources */,
+				907D744D20F8583F00C1D7D7 /* UIImageViewAsserts.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
 				907D740620F613F900C1D7D7 /* CADisplayLink+Kimi.m in Sources */,
 				90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */,
@@ -795,6 +843,7 @@
 				902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */,
 				90AAD90D20E62E8600D82173 /* UISlider+Kimi.m in Sources */,
 				907D740720F6141600C1D7D7 /* CAGradientLayer+Kimi.m in Sources */,
+				907D745C20F88CB400C1D7D7 /* UITextViewAsserts.m in Sources */,
 				901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */,
 				90AAD95B20EB700E00D82173 /* UIScreen+Kimi.m in Sources */,
 				901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */,
@@ -836,6 +885,7 @@
 				907D740D20F61A8100C1D7D7 /* UIBezierPath+Kimi.m in Sources */,
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
+				907D744820F84C7A00C1D7D7 /* UIButtonAsserts.m in Sources */,
 				90F4B7B220F3425C00E13294 /* NSData+Kimi.m in Sources */,
 				90F4B7B720F358F500E13294 /* NSMutableData+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,

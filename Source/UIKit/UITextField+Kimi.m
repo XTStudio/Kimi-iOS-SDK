@@ -162,10 +162,8 @@
     [self edo_emitWithEventName:@"didEndEditing" arguments:@[textField]];
 }
 
-- (BOOL)shouldChangeTextInRange:(UITextRange *)range replacementText:(NSString *)text {
-    UITextPosition *beginning = [self beginningOfDocument];
-    NSRange nsRange = NSMakeRange([self offsetFromPosition:beginning toPosition:range.start], [self offsetFromPosition:range.start toPosition:range.end]);
-    NSNumber *value = [self edo_valueWithEventName:@"shouldChange" arguments:@[self, [NSValue valueWithRange:nsRange], text]];
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSNumber *value = [self edo_valueWithEventName:@"shouldChange" arguments:@[self, [NSValue valueWithRange:range], string ?: [NSNull null]]];
     if ([value isKindOfClass:[NSNumber class]]) {
         return [value boolValue];
     }

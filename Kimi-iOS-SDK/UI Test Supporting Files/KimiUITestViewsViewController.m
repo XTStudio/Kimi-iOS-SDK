@@ -104,7 +104,7 @@ static UIWindow *tipsWindow;
             }];
             self.testIdx++;
         };
-        if ([name containsString:@" - Tap"]) {
+        if ([name containsString:@" - "]) {
             self.gestureWaitingBlock = assertBlock;
         }
         else {
