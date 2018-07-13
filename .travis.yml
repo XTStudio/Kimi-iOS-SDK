@@ -3,5 +3,5 @@ podfile: Podfile
 language: objective-c
 script:
 - xcodebuild -workspace Kimi-iOS-SDK.xcworkspace -scheme "Kimi-iOS-SDKTests" -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' test
-- xcodebuild -workspace Kimi-iOS-SDK.xcworkspace -scheme "Kimi-iOS-SDKTests" -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' test
+- xcodebuild -workspace Kimi-iOS-SDK.xcworkspace -scheme "Kimi-iOS-SDKTests" -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.1' test
 - xcodebuild -workspace Kimi-iOS-SDK.xcworkspace -scheme "Kimi-iOS-SDKTests" -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.4' test

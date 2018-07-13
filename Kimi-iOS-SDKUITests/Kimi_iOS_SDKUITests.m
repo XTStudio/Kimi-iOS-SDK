@@ -42,7 +42,7 @@
         }
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
-    [self.app.navigationBars.buttons[@"Kimi-iOS-SDK"] tap];
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
 - (void)testUIButton {
@@ -57,7 +57,7 @@
         }
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
-    [self.app.navigationBars.buttons[@"Kimi-iOS-SDK"] tap];
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
 - (void)testUIImageView {
@@ -68,7 +68,7 @@
         [self.app.buttons[@"Next"] tap];
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
-    [self.app.navigationBars.buttons[@"Kimi-iOS-SDK"] tap];
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
 - (void)testUILabel {
@@ -79,7 +79,7 @@
         [self.app.buttons[@"Next"] tap];
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
-    [self.app.navigationBars.buttons[@"Kimi-iOS-SDK"] tap];
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
 - (void)testUITextField {
@@ -102,7 +102,7 @@
         }
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
-    [self.app.navigationBars.buttons[@"Kimi-iOS-SDK"] tap];
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
 - (void)testUITextView {
@@ -117,7 +117,91 @@
         }
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
-    [self.app.navigationBars.buttons[@"Kimi-iOS-SDK"] tap];
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUICollectionView {
+    [self.app.tables.cells[@"UICollectionView"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    XCTAssertTrue(self.app.collectionViews[@"sample view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.cells[@"Tap Require"].exists) {
+            [self.app.cells[@"Tap Require"] tap];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUIDialogs {
+    [self.app.tables.cells[@"UIDialogs"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.buttons[@"Tap Require"].exists) {
+            [self.app.buttons[@"Tap Require"] tap];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUIActivityIndicatorView {
+    [self.app.tables.cells[@"UIActivityIndicatorView"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUISwitch {
+    [self.app.tables.cells[@"UISwitch"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    XCTAssertTrue(self.app.switches[@"sample view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.switches[@"Tap Require"].exists) {
+            [self.app.switches[@"Tap Require"] tap];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUISlider {
+    [self.app.tables.cells[@"UISlider"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    XCTAssertTrue(self.app.sliders[@"sample view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.sliders[@"Slide Require"].exists) {
+            [self.app.sliders[@"Slide Require"] adjustToNormalizedSliderPosition:1.0];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUIWebView {
+    [self.app.tables.cells[@"UIWebView"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    XCTAssertTrue(self.app.otherElements[@"sample view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.otherElements[@"Wait Require"].exists) {
+            XCTAssertTrue([self.app.otherElements[@"sample view"] waitForExistenceWithTimeout:10.0]);
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
 @end

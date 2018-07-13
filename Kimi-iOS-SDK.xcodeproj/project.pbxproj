@@ -60,6 +60,18 @@
 		907D745720F87EEA00C1D7D7 /* UITextFieldAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D745620F87EEA00C1D7D7 /* UITextFieldAsserts.m */; };
 		907D745920F88CA100C1D7D7 /* UITextViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D745820F88CA000C1D7D7 /* UITextViewTests.js */; };
 		907D745C20F88CB400C1D7D7 /* UITextViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D745B20F88CB400C1D7D7 /* UITextViewAsserts.m */; };
+		907D745E20F893AB00C1D7D7 /* UICollectionViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D745D20F893AA00C1D7D7 /* UICollectionViewTests.js */; };
+		907D746120F893BA00C1D7D7 /* UICollectionViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D746020F893BA00C1D7D7 /* UICollectionViewAsserts.m */; };
+		907D746320F89BCF00C1D7D7 /* UIDialogsTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D746220F89BCF00C1D7D7 /* UIDialogsTests.js */; };
+		907D746620F89BDA00C1D7D7 /* UIDialogsAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D746520F89BDA00C1D7D7 /* UIDialogsAsserts.m */; };
+		907D746820F8A01E00C1D7D7 /* UIActivityIndicatorViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D746720F8A01E00C1D7D7 /* UIActivityIndicatorViewTests.js */; };
+		907D746B20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D746A20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m */; };
+		907D746D20F8A46900C1D7D7 /* UISwitchTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D746C20F8A46800C1D7D7 /* UISwitchTests.js */; };
+		907D747020F8A47100C1D7D7 /* UISwitchAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D746F20F8A47100C1D7D7 /* UISwitchAsserts.m */; };
+		907D747220F8A61500C1D7D7 /* UISliderTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D747120F8A61500C1D7D7 /* UISliderTests.js */; };
+		907D747520F8A62000C1D7D7 /* UISliderAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747420F8A62000C1D7D7 /* UISliderAsserts.m */; };
+		907D747720F8A9EE00C1D7D7 /* UIWebViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D747620F8A9EE00C1D7D7 /* UIWebViewTests.js */; };
+		907D747A20F8A9F800C1D7D7 /* UIWebViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -223,6 +235,24 @@
 		907D745820F88CA000C1D7D7 /* UITextViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UITextViewTests.js; sourceTree = "<group>"; };
 		907D745A20F88CB400C1D7D7 /* UITextViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewAsserts.h; sourceTree = "<group>"; };
 		907D745B20F88CB400C1D7D7 /* UITextViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewAsserts.m; sourceTree = "<group>"; };
+		907D745D20F893AA00C1D7D7 /* UICollectionViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UICollectionViewTests.js; sourceTree = "<group>"; };
+		907D745F20F893BA00C1D7D7 /* UICollectionViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewAsserts.h; sourceTree = "<group>"; };
+		907D746020F893BA00C1D7D7 /* UICollectionViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewAsserts.m; sourceTree = "<group>"; };
+		907D746220F89BCF00C1D7D7 /* UIDialogsTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIDialogsTests.js; sourceTree = "<group>"; };
+		907D746420F89BDA00C1D7D7 /* UIDialogsAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDialogsAsserts.h; sourceTree = "<group>"; };
+		907D746520F89BDA00C1D7D7 /* UIDialogsAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDialogsAsserts.m; sourceTree = "<group>"; };
+		907D746720F8A01E00C1D7D7 /* UIActivityIndicatorViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIActivityIndicatorViewTests.js; sourceTree = "<group>"; };
+		907D746920F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIActivityIndicatorViewAsserts.h; sourceTree = "<group>"; };
+		907D746A20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIActivityIndicatorViewAsserts.m; sourceTree = "<group>"; };
+		907D746C20F8A46800C1D7D7 /* UISwitchTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UISwitchTests.js; sourceTree = "<group>"; };
+		907D746E20F8A47100C1D7D7 /* UISwitchAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchAsserts.h; sourceTree = "<group>"; };
+		907D746F20F8A47100C1D7D7 /* UISwitchAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchAsserts.m; sourceTree = "<group>"; };
+		907D747120F8A61500C1D7D7 /* UISliderTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UISliderTests.js; sourceTree = "<group>"; };
+		907D747320F8A61F00C1D7D7 /* UISliderAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISliderAsserts.h; sourceTree = "<group>"; };
+		907D747420F8A62000C1D7D7 /* UISliderAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISliderAsserts.m; sourceTree = "<group>"; };
+		907D747620F8A9EE00C1D7D7 /* UIWebViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIWebViewTests.js; sourceTree = "<group>"; };
+		907D747820F8A9F800C1D7D7 /* UIWebViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewAsserts.h; sourceTree = "<group>"; };
+		907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -613,6 +643,24 @@
 				907D745820F88CA000C1D7D7 /* UITextViewTests.js */,
 				907D745A20F88CB400C1D7D7 /* UITextViewAsserts.h */,
 				907D745B20F88CB400C1D7D7 /* UITextViewAsserts.m */,
+				907D745D20F893AA00C1D7D7 /* UICollectionViewTests.js */,
+				907D745F20F893BA00C1D7D7 /* UICollectionViewAsserts.h */,
+				907D746020F893BA00C1D7D7 /* UICollectionViewAsserts.m */,
+				907D746220F89BCF00C1D7D7 /* UIDialogsTests.js */,
+				907D746420F89BDA00C1D7D7 /* UIDialogsAsserts.h */,
+				907D746520F89BDA00C1D7D7 /* UIDialogsAsserts.m */,
+				907D746720F8A01E00C1D7D7 /* UIActivityIndicatorViewTests.js */,
+				907D746920F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.h */,
+				907D746A20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m */,
+				907D746C20F8A46800C1D7D7 /* UISwitchTests.js */,
+				907D746E20F8A47100C1D7D7 /* UISwitchAsserts.h */,
+				907D746F20F8A47100C1D7D7 /* UISwitchAsserts.m */,
+				907D747120F8A61500C1D7D7 /* UISliderTests.js */,
+				907D747320F8A61F00C1D7D7 /* UISliderAsserts.h */,
+				907D747420F8A62000C1D7D7 /* UISliderAsserts.m */,
+				907D747620F8A9EE00C1D7D7 /* UIWebViewTests.js */,
+				907D747820F8A9F800C1D7D7 /* UIWebViewAsserts.h */,
+				907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -764,17 +812,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907D747220F8A61500C1D7D7 /* UISliderTests.js in Resources */,
 				907D744520F84C6900C1D7D7 /* UIButtonTests.js in Resources */,
 				907D744F20F879F300C1D7D7 /* UILabelTests.js in Resources */,
+				907D746320F89BCF00C1D7D7 /* UIDialogsTests.js in Resources */,
 				9022D14A20D3C976002F016F /* LaunchScreen.storyboard in Resources */,
+				907D746820F8A01E00C1D7D7 /* UIActivityIndicatorViewTests.js in Resources */,
 				907D742120F7067B00C1D7D7 /* KimiUITest.storyboard in Resources */,
 				907D742B20F7089400C1D7D7 /* UIViewTests.js in Resources */,
+				907D747720F8A9EE00C1D7D7 /* UIWebViewTests.js in Resources */,
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
 				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
 				907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
 				907D744A20F8583500C1D7D7 /* UIImageViewTests.js in Resources */,
+				907D745E20F893AB00C1D7D7 /* UICollectionViewTests.js in Resources */,
 				907D745920F88CA100C1D7D7 /* UITextViewTests.js in Resources */,
+				907D746D20F8A46900C1D7D7 /* UISwitchTests.js in Resources */,
 				907D741F20F7063200C1D7D7 /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -821,9 +875,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907D747A20F8A9F800C1D7D7 /* UIWebViewAsserts.m in Sources */,
 				90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */,
 				90AAD90420E6060100D82173 /* KIMIConfirm.m in Sources */,
 				907D742820F7085400C1D7D7 /* KimiUITestMainTableViewController.m in Sources */,
+				907D747020F8A47100C1D7D7 /* UISwitchAsserts.m in Sources */,
 				907D745720F87EEA00C1D7D7 /* UITextFieldAsserts.m in Sources */,
 				90AAD91320E645F400D82173 /* NSAttributedString+Kimi.m in Sources */,
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
@@ -831,12 +887,15 @@
 				901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */,
 				901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */,
 				90F4B7D520F462BE00E13294 /* NSURLSessionTask+Kimi.m in Sources */,
+				907D746B20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m in Sources */,
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
 				907D745220F879FD00C1D7D7 /* UILabelAsserts.m in Sources */,
+				907D746120F893BA00C1D7D7 /* UICollectionViewAsserts.m in Sources */,
 				907D744D20F8583F00C1D7D7 /* UIImageViewAsserts.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
+				907D746620F89BDA00C1D7D7 /* UIDialogsAsserts.m in Sources */,
 				907D740620F613F900C1D7D7 /* CADisplayLink+Kimi.m in Sources */,
 				90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */,
 				902D65DE20E2163B00A32EB8 /* UITextView+Kimi.m in Sources */,
@@ -867,6 +926,7 @@
 				90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */,
 				90AAD8F820E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m in Sources */,
 				90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */,
+				907D747520F8A62000C1D7D7 /* UISliderAsserts.m in Sources */,
 				907D740A20F618AF00C1D7D7 /* CAShapeLayer+Kimi.m in Sources */,
 				90F4B7C920F45E8500E13294 /* NSURLRequest+Kimi.m in Sources */,
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
