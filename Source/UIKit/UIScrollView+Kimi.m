@@ -64,6 +64,10 @@
     [self edo_emitWithEventName:@"willBeginDecelerating" arguments:@[scrollView]];
 }
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self edo_emitWithEventName:@"didEndDecelerating" arguments:@[scrollView]];
+}
+
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     [self edo_emitWithEventName:@"didEndScrollingAnimation" arguments:@[scrollView]];
 }

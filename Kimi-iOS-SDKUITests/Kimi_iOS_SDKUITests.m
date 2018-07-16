@@ -135,6 +135,35 @@
     [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
+- (void)testUIScrollView {
+    [self.app.tables.cells[@"UIScrollView"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.scrollViews[@"Pan Require"].exists) {
+            [self.app.scrollViews[@"Pan Require"] swipeUp];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUITableView {
+    [self.app.tables.cells[@"UITableView"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    XCTAssertTrue(self.app.tables[@"sample view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        if (self.app.cells[@"Tap Require"].exists) {
+            [self.app.cells[@"Tap Require"] tap];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
 - (void)testUIDialogs {
     [self.app.tables.cells[@"UIDialogs"] tap];
     XCTAssertTrue(self.app.otherElements[@"main view"].exists);

@@ -83,6 +83,10 @@
 		907D749220FC8E6100C1D7D7 /* UITabBarControllerAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D749120FC8E6100C1D7D7 /* UITabBarControllerAsserts.m */; };
 		907D749420FC90B700C1D7D7 /* UIPageViewControllerTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D749320FC90B600C1D7D7 /* UIPageViewControllerTests.js */; };
 		907D749720FC916000C1D7D7 /* UIPageViewControllerAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D749620FC916000C1D7D7 /* UIPageViewControllerAsserts.m */; };
+		907D749920FC998100C1D7D7 /* UIScrollViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D749820FC998000C1D7D7 /* UIScrollViewTests.js */; };
+		907D749C20FC998C00C1D7D7 /* UIScrollViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D749B20FC998C00C1D7D7 /* UIScrollViewAsserts.m */; };
+		907D749E20FCA45300C1D7D7 /* UITableViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D749D20FCA45300C1D7D7 /* UITableViewTests.js */; };
+		907D74A120FCA45D00C1D7D7 /* UITableViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D74A020FCA45D00C1D7D7 /* UITableViewAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -281,6 +285,12 @@
 		907D749320FC90B600C1D7D7 /* UIPageViewControllerTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIPageViewControllerTests.js; sourceTree = "<group>"; };
 		907D749520FC916000C1D7D7 /* UIPageViewControllerAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPageViewControllerAsserts.h; sourceTree = "<group>"; };
 		907D749620FC916000C1D7D7 /* UIPageViewControllerAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPageViewControllerAsserts.m; sourceTree = "<group>"; };
+		907D749820FC998000C1D7D7 /* UIScrollViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIScrollViewTests.js; sourceTree = "<group>"; };
+		907D749A20FC998C00C1D7D7 /* UIScrollViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScrollViewAsserts.h; sourceTree = "<group>"; };
+		907D749B20FC998C00C1D7D7 /* UIScrollViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewAsserts.m; sourceTree = "<group>"; };
+		907D749D20FCA45300C1D7D7 /* UITableViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UITableViewTests.js; sourceTree = "<group>"; };
+		907D749F20FCA45D00C1D7D7 /* UITableViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewAsserts.h; sourceTree = "<group>"; };
+		907D74A020FCA45D00C1D7D7 /* UITableViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -694,6 +704,12 @@
 				907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */,
 				907D747D20F8C08100C1D7D7 /* UIStackViewAsserts.h */,
 				907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */,
+				907D749820FC998000C1D7D7 /* UIScrollViewTests.js */,
+				907D749A20FC998C00C1D7D7 /* UIScrollViewAsserts.h */,
+				907D749B20FC998C00C1D7D7 /* UIScrollViewAsserts.m */,
+				907D749D20FCA45300C1D7D7 /* UITableViewTests.js */,
+				907D749F20FCA45D00C1D7D7 /* UITableViewAsserts.h */,
+				907D74A020FCA45D00C1D7D7 /* UITableViewAsserts.m */,
 				907D748320FC496C00C1D7D7 /* UIViewControllerTests.js */,
 				907D748520FC49F200C1D7D7 /* UIViewControllerAsserts.h */,
 				907D748620FC49F200C1D7D7 /* UIViewControllerAsserts.m */,
@@ -859,6 +875,7 @@
 			files = (
 				907D747220F8A61500C1D7D7 /* UISliderTests.js in Resources */,
 				907D744520F84C6900C1D7D7 /* UIButtonTests.js in Resources */,
+				907D749920FC998100C1D7D7 /* UIScrollViewTests.js in Resources */,
 				907D744F20F879F300C1D7D7 /* UILabelTests.js in Resources */,
 				907D748420FC496C00C1D7D7 /* UIViewControllerTests.js in Resources */,
 				907D746320F89BCF00C1D7D7 /* UIDialogsTests.js in Resources */,
@@ -880,6 +897,7 @@
 				907D745920F88CA100C1D7D7 /* UITextViewTests.js in Resources */,
 				907D746D20F8A46900C1D7D7 /* UISwitchTests.js in Resources */,
 				907D741F20F7063200C1D7D7 /* test.txt in Resources */,
+				907D749E20FCA45300C1D7D7 /* UITableViewTests.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,6 +1012,7 @@
 				90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */,
 				90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */,
 				907D749220FC8E6100C1D7D7 /* UITabBarControllerAsserts.m in Sources */,
+				907D749C20FC998C00C1D7D7 /* UIScrollViewAsserts.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,
 				90AAD9AD20ECC17900D82173 /* UITabBarController+Kimi.m in Sources */,
 				90F4B7DB20F468CC00E13294 /* NSFileManager+Kimi.m in Sources */,
@@ -1001,6 +1020,7 @@
 				90AAD90120E603D900D82173 /* KIMIPrompt.m in Sources */,
 				901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */,
 				907D744820F84C7A00C1D7D7 /* UIButtonAsserts.m in Sources */,
+				907D74A120FCA45D00C1D7D7 /* UITableViewAsserts.m in Sources */,
 				90F4B7B220F3425C00E13294 /* NSData+Kimi.m in Sources */,
 				90F4B7B720F358F500E13294 /* NSMutableData+Kimi.m in Sources */,
 				901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */,
