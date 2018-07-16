@@ -50,6 +50,7 @@
 
 - (void)edo_layoutArrangedSubview:(UIView *)subview size:(NSDictionary *)size {
     [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [subview removeConstraints:subview.constraints];
     if ([size[@"width"] isKindOfClass:[NSNumber class]]) {
         [[subview.widthAnchor constraintEqualToConstant:[size[@"width"] floatValue]] setActive:YES];
     }

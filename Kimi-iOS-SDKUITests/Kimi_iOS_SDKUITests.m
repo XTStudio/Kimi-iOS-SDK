@@ -183,8 +183,7 @@
         if (self.app.sliders[@"Slide Require"].exists) {
             [self.app.sliders[@"Slide Require"] adjustToNormalizedSliderPosition:1.0];
             continue;
-        }
-        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+        }        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
     [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
@@ -199,6 +198,17 @@
             XCTAssertTrue([self.app.otherElements[@"sample view"] waitForExistenceWithTimeout:10.0]);
             continue;
         }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+    [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
+}
+
+- (void)testUIStackView {
+    [self.app.tables.cells[@"UIStackView"] tap];
+    XCTAssertTrue(self.app.otherElements[@"main view"].exists);
+    XCTAssertTrue(self.app.otherElements[@"sample view"].exists);
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
         XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
     }
     [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];

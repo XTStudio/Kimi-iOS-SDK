@@ -72,6 +72,8 @@
 		907D747520F8A62000C1D7D7 /* UISliderAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747420F8A62000C1D7D7 /* UISliderAsserts.m */; };
 		907D747720F8A9EE00C1D7D7 /* UIWebViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D747620F8A9EE00C1D7D7 /* UIWebViewTests.js */; };
 		907D747A20F8A9F800C1D7D7 /* UIWebViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */; };
+		907D747C20F8C07800C1D7D7 /* UIStackViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */; };
+		907D747F20F8C08100C1D7D7 /* UIStackViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -253,6 +255,9 @@
 		907D747620F8A9EE00C1D7D7 /* UIWebViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIWebViewTests.js; sourceTree = "<group>"; };
 		907D747820F8A9F800C1D7D7 /* UIWebViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewAsserts.h; sourceTree = "<group>"; };
 		907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewAsserts.m; sourceTree = "<group>"; };
+		907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIStackViewTests.js; sourceTree = "<group>"; };
+		907D747D20F8C08100C1D7D7 /* UIStackViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewAsserts.h; sourceTree = "<group>"; };
+		907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStackViewAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -661,6 +666,9 @@
 				907D747620F8A9EE00C1D7D7 /* UIWebViewTests.js */,
 				907D747820F8A9F800C1D7D7 /* UIWebViewAsserts.h */,
 				907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */,
+				907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */,
+				907D747D20F8C08100C1D7D7 /* UIStackViewAsserts.h */,
+				907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -824,6 +832,7 @@
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
 				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
 				907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */,
+				907D747C20F8C07800C1D7D7 /* UIStackViewTests.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
 				907D744A20F8583500C1D7D7 /* UIImageViewTests.js in Resources */,
 				907D745E20F893AB00C1D7D7 /* UICollectionViewTests.js in Resources */,
@@ -890,6 +899,7 @@
 				907D746B20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m in Sources */,
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
+				907D747F20F8C08100C1D7D7 /* UIStackViewAsserts.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
 				907D745220F879FD00C1D7D7 /* UILabelAsserts.m in Sources */,
 				907D746120F893BA00C1D7D7 /* UICollectionViewAsserts.m in Sources */,
