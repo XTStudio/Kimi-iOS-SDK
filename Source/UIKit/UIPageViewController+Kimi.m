@@ -87,6 +87,9 @@ static int kLoopsTag;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    if (viewController == nil) {
+        return nil;
+    }
     if (self.edo_pageItems != nil) {
         NSUInteger currentIdx = [self.edo_pageItems indexOfObject:viewController];
         if (currentIdx <= 0) {
@@ -111,6 +114,9 @@ static int kLoopsTag;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    if (viewController == nil) {
+        return nil;
+    }
     if (self.edo_pageItems != nil) {
         NSUInteger currentIdx = [self.edo_pageItems indexOfObject:viewController];
         if (currentIdx + 1 >= self.edo_pageItems.count) {

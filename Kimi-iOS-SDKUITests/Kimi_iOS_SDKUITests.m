@@ -214,4 +214,40 @@
     [[self.app.navigationBars.buttons elementBoundByIndex:0] tap];
 }
 
+- (void)testUIViewController {
+    [self.app.tables.cells[@"UIViewController"] tap];
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+}
+
+- (void)testUINavigationController {
+    [self.app.tables.cells[@"UINavigationController"] tap];
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        while (self.app.buttons[@"Tap Require"].exists) {
+            [self.app.buttons[@"Tap Require"] tap];
+            continue;
+        }
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+}
+
+- (void)testUITabBarController {
+    [self.app.tables.cells[@"UITabBarController"] tap];
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+}
+
+- (void)testUIPageViewController {
+    [self.app.tables.cells[@"UIPageViewController"] tap];
+    while (self.app.buttons[@"Next"].exists) {
+        [self.app.buttons[@"Next"] tap];
+        XCTAssertFalse(self.app.staticTexts[@"Fail"].exists);
+    }
+}
+
 @end

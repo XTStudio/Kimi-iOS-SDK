@@ -74,6 +74,15 @@
 		907D747A20F8A9F800C1D7D7 /* UIWebViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747920F8A9F800C1D7D7 /* UIWebViewAsserts.m */; };
 		907D747C20F8C07800C1D7D7 /* UIStackViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */; };
 		907D747F20F8C08100C1D7D7 /* UIStackViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */; };
+		907D748220FC46CE00C1D7D7 /* KimiUITestVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D748120FC46CE00C1D7D7 /* KimiUITestVCController.m */; };
+		907D748420FC496C00C1D7D7 /* UIViewControllerTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D748320FC496C00C1D7D7 /* UIViewControllerTests.js */; };
+		907D748720FC49F200C1D7D7 /* UIViewControllerAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D748620FC49F200C1D7D7 /* UIViewControllerAsserts.m */; };
+		907D748A20FC836700C1D7D7 /* UINavigationControllerTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D748920FC836600C1D7D7 /* UINavigationControllerTests.js */; };
+		907D748D20FC837500C1D7D7 /* UINavigationControllerAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D748C20FC837500C1D7D7 /* UINavigationControllerAsserts.m */; };
+		907D748F20FC8E5400C1D7D7 /* UITabBarControllerTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D748E20FC8E5300C1D7D7 /* UITabBarControllerTests.js */; };
+		907D749220FC8E6100C1D7D7 /* UITabBarControllerAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D749120FC8E6100C1D7D7 /* UITabBarControllerAsserts.m */; };
+		907D749420FC90B700C1D7D7 /* UIPageViewControllerTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D749320FC90B600C1D7D7 /* UIPageViewControllerTests.js */; };
+		907D749720FC916000C1D7D7 /* UIPageViewControllerAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D749620FC916000C1D7D7 /* UIPageViewControllerAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
@@ -258,6 +267,20 @@
 		907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIStackViewTests.js; sourceTree = "<group>"; };
 		907D747D20F8C08100C1D7D7 /* UIStackViewAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewAsserts.h; sourceTree = "<group>"; };
 		907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStackViewAsserts.m; sourceTree = "<group>"; };
+		907D748020FC46CE00C1D7D7 /* KimiUITestVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KimiUITestVCController.h; sourceTree = "<group>"; };
+		907D748120FC46CE00C1D7D7 /* KimiUITestVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KimiUITestVCController.m; sourceTree = "<group>"; };
+		907D748320FC496C00C1D7D7 /* UIViewControllerTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIViewControllerTests.js; sourceTree = "<group>"; };
+		907D748520FC49F200C1D7D7 /* UIViewControllerAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerAsserts.h; sourceTree = "<group>"; };
+		907D748620FC49F200C1D7D7 /* UIViewControllerAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerAsserts.m; sourceTree = "<group>"; };
+		907D748920FC836600C1D7D7 /* UINavigationControllerTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UINavigationControllerTests.js; sourceTree = "<group>"; };
+		907D748B20FC837500C1D7D7 /* UINavigationControllerAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerAsserts.h; sourceTree = "<group>"; };
+		907D748C20FC837500C1D7D7 /* UINavigationControllerAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerAsserts.m; sourceTree = "<group>"; };
+		907D748E20FC8E5300C1D7D7 /* UITabBarControllerTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UITabBarControllerTests.js; sourceTree = "<group>"; };
+		907D749020FC8E6100C1D7D7 /* UITabBarControllerAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITabBarControllerAsserts.h; sourceTree = "<group>"; };
+		907D749120FC8E6100C1D7D7 /* UITabBarControllerAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITabBarControllerAsserts.m; sourceTree = "<group>"; };
+		907D749320FC90B600C1D7D7 /* UIPageViewControllerTests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIPageViewControllerTests.js; sourceTree = "<group>"; };
+		907D749520FC916000C1D7D7 /* UIPageViewControllerAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPageViewControllerAsserts.h; sourceTree = "<group>"; };
+		907D749620FC916000C1D7D7 /* UIPageViewControllerAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPageViewControllerAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
@@ -621,6 +644,8 @@
 				907D742720F7085400C1D7D7 /* KimiUITestMainTableViewController.m */,
 				907D742320F7081D00C1D7D7 /* KimiUITestViewsViewController.h */,
 				907D742420F7081D00C1D7D7 /* KimiUITestViewsViewController.m */,
+				907D748020FC46CE00C1D7D7 /* KimiUITestVCController.h */,
+				907D748120FC46CE00C1D7D7 /* KimiUITestVCController.m */,
 			);
 			path = "UI Test Supporting Files";
 			sourceTree = "<group>";
@@ -669,6 +694,18 @@
 				907D747B20F8C07700C1D7D7 /* UIStackViewTests.js */,
 				907D747D20F8C08100C1D7D7 /* UIStackViewAsserts.h */,
 				907D747E20F8C08100C1D7D7 /* UIStackViewAsserts.m */,
+				907D748320FC496C00C1D7D7 /* UIViewControllerTests.js */,
+				907D748520FC49F200C1D7D7 /* UIViewControllerAsserts.h */,
+				907D748620FC49F200C1D7D7 /* UIViewControllerAsserts.m */,
+				907D748920FC836600C1D7D7 /* UINavigationControllerTests.js */,
+				907D748B20FC837500C1D7D7 /* UINavigationControllerAsserts.h */,
+				907D748C20FC837500C1D7D7 /* UINavigationControllerAsserts.m */,
+				907D748E20FC8E5300C1D7D7 /* UITabBarControllerTests.js */,
+				907D749020FC8E6100C1D7D7 /* UITabBarControllerAsserts.h */,
+				907D749120FC8E6100C1D7D7 /* UITabBarControllerAsserts.m */,
+				907D749320FC90B600C1D7D7 /* UIPageViewControllerTests.js */,
+				907D749520FC916000C1D7D7 /* UIPageViewControllerAsserts.h */,
+				907D749620FC916000C1D7D7 /* UIPageViewControllerAsserts.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -823,15 +860,19 @@
 				907D747220F8A61500C1D7D7 /* UISliderTests.js in Resources */,
 				907D744520F84C6900C1D7D7 /* UIButtonTests.js in Resources */,
 				907D744F20F879F300C1D7D7 /* UILabelTests.js in Resources */,
+				907D748420FC496C00C1D7D7 /* UIViewControllerTests.js in Resources */,
 				907D746320F89BCF00C1D7D7 /* UIDialogsTests.js in Resources */,
 				9022D14A20D3C976002F016F /* LaunchScreen.storyboard in Resources */,
+				907D748A20FC836700C1D7D7 /* UINavigationControllerTests.js in Resources */,
 				907D746820F8A01E00C1D7D7 /* UIActivityIndicatorViewTests.js in Resources */,
 				907D742120F7067B00C1D7D7 /* KimiUITest.storyboard in Resources */,
 				907D742B20F7089400C1D7D7 /* UIViewTests.js in Resources */,
 				907D747720F8A9EE00C1D7D7 /* UIWebViewTests.js in Resources */,
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
+				907D748F20FC8E5400C1D7D7 /* UITabBarControllerTests.js in Resources */,
 				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
 				907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */,
+				907D749420FC90B700C1D7D7 /* UIPageViewControllerTests.js in Resources */,
 				907D747C20F8C07800C1D7D7 /* UIStackViewTests.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
 				907D744A20F8583500C1D7D7 /* UIImageViewTests.js in Resources */,
@@ -900,11 +941,13 @@
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
 				907D747F20F8C08100C1D7D7 /* UIStackViewAsserts.m in Sources */,
+				907D748220FC46CE00C1D7D7 /* KimiUITestVCController.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
 				907D745220F879FD00C1D7D7 /* UILabelAsserts.m in Sources */,
 				907D746120F893BA00C1D7D7 /* UICollectionViewAsserts.m in Sources */,
 				907D744D20F8583F00C1D7D7 /* UIImageViewAsserts.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
+				907D748720FC49F200C1D7D7 /* UIViewControllerAsserts.m in Sources */,
 				907D746620F89BDA00C1D7D7 /* UIDialogsAsserts.m in Sources */,
 				907D740620F613F900C1D7D7 /* CADisplayLink+Kimi.m in Sources */,
 				90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */,
@@ -946,9 +989,11 @@
 				90F4B7C420F374FF00E13294 /* NSURL+Kimi.m in Sources */,
 				90AAD9B020ECC41F00D82173 /* UITabBar+Kimi.m in Sources */,
 				909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */,
+				907D749720FC916000C1D7D7 /* UIPageViewControllerAsserts.m in Sources */,
 				90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */,
 				90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */,
 				90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */,
+				907D749220FC8E6100C1D7D7 /* UITabBarControllerAsserts.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,
 				90AAD9AD20ECC17900D82173 /* UITabBarController+Kimi.m in Sources */,
 				90F4B7DB20F468CC00E13294 /* NSFileManager+Kimi.m in Sources */,
@@ -970,6 +1015,7 @@
 				907D741E20F7063200C1D7D7 /* NSObject+KimiTestExpectation.m in Sources */,
 				907D741520F7027500C1D7D7 /* NSMutableParagraphStyle+Kimi.m in Sources */,
 				90AAD8FB20E4EFE300D82173 /* UICollectionViewCell+Kimi.m in Sources */,
+				907D748D20FC837500C1D7D7 /* UINavigationControllerAsserts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@
 }
 
 - (void)kimi_handleTouchUpInside {
-    [self edo_emitWithEventName:@"touch" arguments:@[self]];
+    [self edo_emitWithEventName:@"touchUpInside" arguments:@[self]];
 }
 
 @end

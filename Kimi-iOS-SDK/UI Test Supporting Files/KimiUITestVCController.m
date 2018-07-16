@@ -1,72 +1,69 @@
 //
-//  KimiUITestViewsViewController.m
+//  KimiUITestVCController.m
 //  Kimi-iOS-SDK
 //
-//  Created by PonyCui on 2018/7/12.
+//  Created by PonyCui on 2018/7/16.
 //  Copyright © 2018年 XT Studio. All rights reserved.
 //
 
-#import "KimiUITestViewsViewController.h"
+#import "KimiUITestVCController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <Endo/EDOExporter.h>
 #import "KIMIUITestAsserts.h"
 
-typedef void(^GestureWaitingBlock)(void);
+typedef void(^GestureWaitingBlock2)(void);
 
-@interface KimiUITestViewsViewController ()
+@interface KimiUITestVCController()
 
 @property (nonatomic, strong) JSContext *context;
-@property (nonatomic, strong) UIView *main;
-@property (nonatomic, strong) NSString *testName;
+@property (nonatomic, strong) UIViewController *main;
+@property (nonatomic, strong) UIButton *nextButton;
 @property (nonatomic, assign) NSInteger testIdx;
 @property (nonatomic, strong) KIMIUITestAsserts *asserts;
-@property (nonatomic, copy) GestureWaitingBlock gestureWaitingBlock;
+@property (nonatomic, copy) GestureWaitingBlock2 gestureWaitingBlock;
 
 @end
 
-@implementation KimiUITestViewsViewController
+@implementation KimiUITestVCController
 
+static UIWindow *optWindow;
 static UIWindow *tipsWindow;
 
 - (instancetype)initWithTestName:(NSString *)testName
 {
-    self = [super initWithNibName:nil bundle:nil];
+    self = [super init];
     if (self) {
-        _testName = testName;
+        NSString *scriptPath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@Tests", testName] ofType:@"js"];
+        NSString *script = [NSString stringWithContentsOfFile:scriptPath encoding:NSUTF8StringEncoding error:NULL];
+        self.asserts = [NSClassFromString([NSString stringWithFormat:@"%@Asserts", testName]) new];
+        self.context = [[JSContext alloc] init];
+        [[EDOExporter sharedExporter] exportWithContext:self.context];
+        [self.context evaluateScript:script];
+        self.main = [[EDOExporter sharedExporter] nsValueWithJSValue:[self.context objectForKeyedSubscript:@"main"]];
+        [self setupTestCase];
     }
     return self;
 }
 
-- (void)loadView {
-    [super loadView];
-    self.title = self.testName;
-    self.view.backgroundColor = [UIColor whiteColor];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    NSString *scriptPath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@Tests", self.testName] ofType:@"js"];
-    NSString *script = [NSString stringWithContentsOfFile:scriptPath encoding:NSUTF8StringEncoding error:NULL];
-    self.asserts = [NSClassFromString([NSString stringWithFormat:@"%@Asserts", self.testName]) new];
-    self.context = [[JSContext alloc] init];
-    [[EDOExporter sharedExporter] exportWithContext:self.context];
-    [self.context evaluateScript:script];
-    self.main = [[EDOExporter sharedExporter] nsValueWithJSValue:[self.context objectForKeyedSubscript:@"main"]];
-    if ([self.main isKindOfClass:[UIView class]]) {
-        [self.view addSubview:self.main];
-    }
-    [self setupTestCase];
+- (void)present:(UIViewController *)fromViewController {
+    [fromViewController presentViewController:self.main animated:NO completion:nil];
 }
 
 - (void)setupTestCase {
     self.testIdx = 0;
-    UIBarButtonItem *nextButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(handleNext)];
-    self.navigationItem.rightBarButtonItem = nextButtonItem;
+    if (self.nextButton == nil) {
+        self.nextButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        self.nextButton.backgroundColor = [UIColor redColor];
+        self.nextButton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 44, [UIScreen mainScreen].bounds.size.width - 120, 44, 44);
+        self.nextButton.accessibilityIdentifier = @"Next";
+        [[UIApplication sharedApplication].keyWindow addSubview:self.nextButton];
+        [self.nextButton addTarget:self action:@selector(handleNext) forControlEvents:UIControlEventTouchUpInside];
+    }
     if (tipsWindow == nil) {
         tipsWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, 20)];
         tipsWindow.hidden = NO;
         tipsWindow.userInteractionEnabled = NO;
-        tipsWindow.windowLevel = UIWindowLevelStatusBar + 1;
+        tipsWindow.windowLevel = UIWindowLevelStatusBar + 2;
     }
 }
 
@@ -112,14 +109,9 @@ static UIWindow *tipsWindow;
         }
     }
     else {
-        self.navigationItem.rightBarButtonItem = nil;
+        [self.nextButton removeFromSuperview];
         self.fulfilled = YES;
     }
-}
-
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    self.main.frame = self.view.bounds;
 }
 
 @end

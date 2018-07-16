@@ -8,8 +8,11 @@
 
 #import "KimiUITestMainTableViewController.h"
 #import "KimiUITestViewsViewController.h"
+#import "KimiUITestVCController.h"
 
 @interface KimiUITestMainTableViewController ()
+
+@property (nonatomic, strong) KimiUITestVCController *testVCController;
 
 @end
 
@@ -21,10 +24,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    KimiUITestViewsViewController *nextViewController = [[KimiUITestViewsViewController alloc] initWithTestName:cell.textLabel.text];
-    [self.navigationController pushViewController:nextViewController animated:YES];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *testName = cell.textLabel.text;
+    if ([testName hasSuffix:@"Controller"]) {
+        self.testVCController = [[KimiUITestVCController alloc] initWithTestName:testName];
+        [self.testVCController present:self];
+    }
+    else {
+        KimiUITestViewsViewController *nextViewController = [[KimiUITestViewsViewController alloc] initWithTestName:cell.textLabel.text];
+        [self.navigationController pushViewController:nextViewController animated:YES];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
-
 
 @end

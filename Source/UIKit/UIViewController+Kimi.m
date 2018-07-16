@@ -30,7 +30,6 @@
     EDO_EXPORT_PROPERTY(@"title");
     EDO_EXPORT_PROPERTY(@"view");
     EDO_EXPORT_READONLY_PROPERTY(@"edo_safeAreaInsets");
-    EDO_BIND_METHOD(loadView);
     EDO_BIND_METHOD(viewDidLoad);
     EDO_BIND_METHOD(viewWillAppear:);
     EDO_BIND_METHOD(viewDidAppear:);
@@ -41,8 +40,8 @@
     EDO_EXPORT_READONLY_PROPERTY(@"parentViewController");
     EDO_EXPORT_READONLY_PROPERTY(@"presentedViewController");
     EDO_EXPORT_READONLY_PROPERTY(@"presentingViewController");
-    EDO_EXPORT_METHOD_ALIAS(presentViewController:animated:completion:, @"presentViewController");
-    EDO_EXPORT_METHOD_ALIAS(dismissViewControllerAnimated:completion:, @"dismissViewController");
+    EDO_EXPORT_METHOD_ALIAS(edo_presentViewController:animated:completion:, @"presentViewController");
+    EDO_EXPORT_METHOD_ALIAS(edo_dismissViewControllerAnimated:completion:, @"dismissViewController");
     EDO_EXPORT_READONLY_PROPERTY(@"childViewControllers");
     EDO_EXPORT_METHOD(addChildViewController:);
     EDO_EXPORT_METHOD(removeFromParentViewController);
@@ -67,6 +66,25 @@
     } else {
         return UIEdgeInsetsMake(self.topLayoutGuide.length, 0.0, self.bottomLayoutGuide.length, 0.0);
     }
+}
+
+- (void)edo_presentViewController:(UIViewController *)viewControllerToPresent animated:(NSNumber *)animated completion:(void (^)(NSArray *))completion {
+    [self presentViewController:viewControllerToPresent
+                       animated:[animated isKindOfClass:[NSNumber class]] ? [animated boolValue] : YES
+                     completion:^{
+                         if (completion) {
+                             completion(nil);
+                         }
+                     }];
+}
+
+- (void)edo_dismissViewControllerAnimated:(NSNumber *)animated completion:(void (^)(NSArray *))completion {
+    [self dismissViewControllerAnimated:[animated isKindOfClass:[NSNumber class]] ? [animated boolValue] : YES
+                             completion:^{
+                                 if (completion) {
+                                     completion(nil);
+                                 }
+                             }];
 }
 
 @end
