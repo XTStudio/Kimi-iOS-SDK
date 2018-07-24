@@ -13,7 +13,7 @@
 @implementation UIPanGestureRecognizer (Kimi)
 
 + (void)load {
-    EDO_EXPORT_CLASS(@"UILongPressGestureRecognizer", @"UIGestureRecognizer");
+    EDO_EXPORT_CLASS(@"UIPanGestureRecognizer", @"UIGestureRecognizer");
     EDO_EXPORT_PROPERTY(@"minimumNumberOfTouches");
     EDO_EXPORT_PROPERTY(@"maximumNumberOfTouches");
     EDO_EXPORT_METHOD(translationInView:);
