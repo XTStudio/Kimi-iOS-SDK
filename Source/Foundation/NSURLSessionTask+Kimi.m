@@ -23,6 +23,7 @@
     [[EDOExporter sharedExporter] exportEnum:@"URLSessionTaskState"
                                       values:@{
                                                @"running": @(NSURLSessionTaskStateRunning),
+                                               @"suspended": @(NSURLSessionTaskStateSuspended),
                                                @"cancelling": @(NSURLSessionTaskStateCanceling),
                                                @"completed": @(NSURLSessionTaskStateCompleted),
                                                }];

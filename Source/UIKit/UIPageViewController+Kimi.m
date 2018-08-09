@@ -144,7 +144,7 @@ static int kLoopsTag;
         didFinishAnimating:(BOOL)finished
    previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers
        transitionCompleted:(BOOL)completed {
-    [self edo_emitWithEventName:@"didFinishAnimating" arguments:@[self, previousViewControllers]];
+    [self edo_emitWithEventName:@"didFinishAnimating" arguments:@[self, (previousViewControllers.firstObject ?: [NSNull null])]];
 }
 
 @end
