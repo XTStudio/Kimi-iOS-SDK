@@ -9,6 +9,7 @@
 #import "KimiUITestMainTableViewController.h"
 #import "KimiUITestViewsViewController.h"
 #import "KimiUITestVCController.h"
+#import "CustomTestViewController.h"
 
 @interface KimiUITestMainTableViewController ()
 
@@ -25,7 +26,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *testName = cell.textLabel.text;
-    if ([testName hasSuffix:@"Controller"]) {
+    if ([testName isEqualToString:@"Custom"]) {
+        [self.navigationController pushViewController:[[CustomTestViewController alloc] init] animated:YES];
+    }
+    else if ([testName hasSuffix:@"Controller"]) {
         self.testVCController = [[KimiUITestVCController alloc] initWithTestName:testName];
         [self.testVCController present:self];
     }

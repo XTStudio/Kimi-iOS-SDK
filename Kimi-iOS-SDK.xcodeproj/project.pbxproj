@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */; };
 		901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */; };
-		901C4DF620D8A69C00A71C3D /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 901C4DF520D8A69C00A71C3D /* test.js */; };
+		901C4DF620D8A69C00A71C3D /* custom.js in Resources */ = {isa = PBXBuildFile; fileRef = 901C4DF520D8A69C00A71C3D /* custom.js */; };
 		901C4DFA20D8BCC800A71C3D /* KIMIDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF920D8BCC800A71C3D /* KIMIDispatchQueue.m */; };
 		901C4DFD20D8E75D00A71C3D /* KIMIUIAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */; };
 		901C4E0020DA093000A71C3D /* UIGestureRecognizer+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DFF20DA093000A71C3D /* UIGestureRecognizer+Kimi.m */; };
@@ -26,7 +26,7 @@
 		901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E2720DBC92900A71C3D /* UILabel+Kimi.m */; };
 		901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4E2A20DBCDCA00A71C3D /* UITextField+Kimi.m */; };
 		9022D13F20D3C976002F016F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D13E20D3C976002F016F /* AppDelegate.m */; };
-		9022D14220D3C976002F016F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* ViewController.m */; };
+		9022D14220D3C976002F016F /* CustomTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9022D14120D3C976002F016F /* CustomTestViewController.m */; };
 		9022D14520D3C976002F016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14320D3C976002F016F /* Main.storyboard */; };
 		9022D14720D3C976002F016F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14620D3C976002F016F /* Assets.xcassets */; };
 		9022D14A20D3C976002F016F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9022D14820D3C976002F016F /* LaunchScreen.storyboard */; };
@@ -162,7 +162,7 @@
 		901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Kimi.m"; sourceTree = "<group>"; };
 		901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Kimi.h"; sourceTree = "<group>"; };
 		901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Kimi.m"; sourceTree = "<group>"; };
-		901C4DF520D8A69C00A71C3D /* test.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		901C4DF520D8A69C00A71C3D /* custom.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = custom.js; sourceTree = "<group>"; };
 		901C4DF820D8BCC800A71C3D /* KIMIDispatchQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIDispatchQueue.h; sourceTree = "<group>"; };
 		901C4DF920D8BCC800A71C3D /* KIMIDispatchQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIDispatchQueue.m; sourceTree = "<group>"; };
 		901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIUIAnimator.h; sourceTree = "<group>"; };
@@ -196,8 +196,8 @@
 		9022D13A20D3C976002F016F /* Kimi-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimi-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9022D13D20D3C976002F016F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9022D13E20D3C976002F016F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9022D14020D3C976002F016F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9022D14120D3C976002F016F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9022D14020D3C976002F016F /* CustomTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTestViewController.h; sourceTree = "<group>"; };
+		9022D14120D3C976002F016F /* CustomTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTestViewController.m; sourceTree = "<group>"; };
 		9022D14420D3C976002F016F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9022D14620D3C976002F016F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9022D14920D3C976002F016F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -621,9 +621,9 @@
 				907D741620F7063200C1D7D7 /* Unit Test Supporting Files */,
 				9022D13D20D3C976002F016F /* AppDelegate.h */,
 				9022D13E20D3C976002F016F /* AppDelegate.m */,
-				9022D14020D3C976002F016F /* ViewController.h */,
-				9022D14120D3C976002F016F /* ViewController.m */,
-				901C4DF520D8A69C00A71C3D /* test.js */,
+				9022D14020D3C976002F016F /* CustomTestViewController.h */,
+				9022D14120D3C976002F016F /* CustomTestViewController.m */,
+				901C4DF520D8A69C00A71C3D /* custom.js */,
 				9022D14320D3C976002F016F /* Main.storyboard */,
 				9022D14620D3C976002F016F /* Assets.xcassets */,
 				9022D14820D3C976002F016F /* LaunchScreen.storyboard */,
@@ -887,7 +887,7 @@
 				907D747720F8A9EE00C1D7D7 /* UIWebViewTests.js in Resources */,
 				9022D14720D3C976002F016F /* Assets.xcassets in Resources */,
 				907D748F20FC8E5400C1D7D7 /* UITabBarControllerTests.js in Resources */,
-				901C4DF620D8A69C00A71C3D /* test.js in Resources */,
+				901C4DF620D8A69C00A71C3D /* custom.js in Resources */,
 				907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */,
 				907D749420FC90B700C1D7D7 /* UIPageViewControllerTests.js in Resources */,
 				907D747C20F8C07800C1D7D7 /* UIStackViewTests.js in Resources */,
@@ -951,7 +951,7 @@
 				907D745720F87EEA00C1D7D7 /* UITextFieldAsserts.m in Sources */,
 				90AAD91320E645F400D82173 /* NSAttributedString+Kimi.m in Sources */,
 				901C4E0F20DA675B00A71C3D /* UIRotationGestureRecognizer+Kimi.m in Sources */,
-				9022D14220D3C976002F016F /* ViewController.m in Sources */,
+				9022D14220D3C976002F016F /* CustomTestViewController.m in Sources */,
 				901C4E2820DBC92900A71C3D /* UILabel+Kimi.m in Sources */,
 				901C4E1F20DBA0CB00A71C3D /* UIFont+Kimi.m in Sources */,
 				90F4B7D520F462BE00E13294 /* NSURLSessionTask+Kimi.m in Sources */,
