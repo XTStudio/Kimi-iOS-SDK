@@ -10,4 +10,7 @@
 
 @interface NSFileManager (Kimi)
 
+- (NSArray<NSString *> *)edo_subpathsAtPath:(NSString *)atPath deepSearch:(BOOL)deepSearch;
+- (NSData *)edo_readFile:(NSString *)atPath;
+
 @end

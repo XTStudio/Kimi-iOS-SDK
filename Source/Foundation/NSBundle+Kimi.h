@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@interface KIMIJSBundle: NSBundle
+
+@property (nonatomic, strong) NSMutableDictionary *resources;
+
+@end
+
 @interface NSBundle (Kimi)
 
 @end
