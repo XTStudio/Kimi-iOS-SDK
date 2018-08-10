@@ -21,7 +21,7 @@
     EDO_EXPORT_INITIALIZER({
         return [UIDevice currentDevice];
     });
-    EDO_EXPORT_SCRIPT(@"Initializer.currentDevice = new Initializer();");
+    EDO_EXPORT_SCRIPT(@"Initializer.current = new Initializer();");
 }
 
 @end
