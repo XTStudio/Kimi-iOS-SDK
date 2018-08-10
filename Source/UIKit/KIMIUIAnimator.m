@@ -176,9 +176,25 @@ typedef POPPropertyAnimation *(^KIMIAnimationCreater)(void);
     EDO_EXPORT_INITIALIZER({
         return sharedAnimator;
     });
+    EDO_EXPORT_METHOD_ALIAS(curve:animations:completion:, @"curve");
     EDO_EXPORT_METHOD_ALIAS(linear:animations:completion:, @"linear");
     EDO_EXPORT_METHOD_ALIAS(spring:friction:animations:completion:, @"spring");
+    EDO_EXPORT_METHOD_ALIAS(bouncy:speed:animations:completion:, @"bouncy");
+    EDO_EXPORT_GLOBAL_SCRIPT(@"UIAnimator.curve = function(){ UIAnimator.shared.curve.apply(UIAnimator.shared, arguments) }");
+    EDO_EXPORT_GLOBAL_SCRIPT(@"UIAnimator.linear = function(){ UIAnimator.shared.linear.apply(UIAnimator.shared, arguments) }");
+    EDO_EXPORT_GLOBAL_SCRIPT(@"UIAnimator.spring = function(){ UIAnimator.shared.spring.apply(UIAnimator.shared, arguments) }");
+    EDO_EXPORT_GLOBAL_SCRIPT(@"UIAnimator.bouncy = function(){ UIAnimator.shared.bouncy.apply(UIAnimator.shared, arguments) }");
+}
 
+- (void)curve:(double)duration animations:(void (^)(NSArray *))animation completion:(void (^)(NSArray *))completion {
+    activeAnimator = self;
+    self.animationCreater = ^POPPropertyAnimation *{
+        POPBasicAnimation *animation = [POPBasicAnimation defaultAnimation];
+        [animation setDuration:duration];
+        return animation;
+    };
+    animation(@[]);
+    activeAnimator = nil;
 }
 
 - (void)linear:(double)duration animations:(void (^)(NSArray *))animation completion:(void (^)(NSArray *))completion {
@@ -198,6 +214,18 @@ typedef POPPropertyAnimation *(^KIMIAnimationCreater)(void);
         POPSpringAnimation *animation = [POPSpringAnimation animation];
         animation.dynamicsTension = tension;
         animation.dynamicsFriction = friction;
+        return animation;
+    };
+    animation(@[]);
+    activeAnimator = nil;
+}
+
+- (void)bouncy:(double)bounciness speed:(double)speed animations:(void (^)(NSArray *))animation completion:(void (^)(NSArray *))completion {
+    activeAnimator = self;
+    self.animationCreater = ^POPPropertyAnimation *{
+        POPSpringAnimation *animation = [POPSpringAnimation animation];
+        animation.springBounciness = bounciness;
+        animation.springSpeed = speed;
         return animation;
     };
     animation(@[]);

@@ -18,16 +18,20 @@
     });
     EDO_EXPORT_SCRIPT(@";Initializer.defaultManager = new Initializer;");
     [[EDOExporter sharedExporter] exportScriptToJavaScript:[self class]
-                                                    script:[NSString stringWithFormat:@";Initializer.documentDirectory = '%@/';",
-                                                            NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject]];
+                                                    script:[NSString stringWithFormat:@"Initializer.documentDirectory = '%@/'",
+                                                            NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject]
+                                             isInnerScript:YES];
     [[EDOExporter sharedExporter] exportScriptToJavaScript:[self class]
-                                                    script:[NSString stringWithFormat:@";Initializer.libraryDirectory = '%@/';",
-                                                            NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject]];
+                                                    script:[NSString stringWithFormat:@"Initializer.libraryDirectory = '%@/'",
+                                                            NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject]
+                                             isInnerScript:YES];
     [[EDOExporter sharedExporter] exportScriptToJavaScript:[self class]
-                                                    script:[NSString stringWithFormat:@";Initializer.cacheDirectory = '%@/';",
-                                                            NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject]];
+                                                    script:[NSString stringWithFormat:@"Initializer.cacheDirectory = '%@/'",
+                                                            NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject]
+                                             isInnerScript:YES];
     [[EDOExporter sharedExporter] exportScriptToJavaScript:[self class]
-                                                    script:[NSString stringWithFormat:@";Initializer.temporaryDirectory = '%@';", NSTemporaryDirectory()]];
+                                                    script:[NSString stringWithFormat:@"Initializer.temporaryDirectory = '%@'", NSTemporaryDirectory()]
+                                             isInnerScript:YES];
     EDO_EXPORT_METHOD_ALIAS(edo_subpathsAtPath:deepSearch:, @"subpaths");
     EDO_EXPORT_METHOD_ALIAS(edo_createDirectory:withIntermediateDirectories:, @"createDirectory");
     EDO_EXPORT_METHOD_ALIAS(edo_createFile:data:, @"createFile");
