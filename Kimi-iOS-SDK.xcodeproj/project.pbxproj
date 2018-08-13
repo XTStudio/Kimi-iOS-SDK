@@ -114,6 +114,7 @@
 		90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B520ECE14300D82173 /* UIPageViewController+Kimi.m */; };
 		90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */; };
 		90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */; };
+		90D170362121210A00AB4F5F /* KIMINavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */; };
 		90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */; };
 		90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AA20F340AC00E13294 /* NSUUID+Kimi.m */; };
 		90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AD20F3413600E13294 /* UUIDTests.m */; };
@@ -347,6 +348,8 @@
 		90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Kimi.m"; sourceTree = "<group>"; };
 		90AAD9C120EF7AA200D82173 /* Kimi-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kimi-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AAD9C520EF7AA200D82173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D170342121210A00AB4F5F /* KIMINavigationBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMINavigationBarViewController.h; sourceTree = "<group>"; };
+		90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMINavigationBarViewController.m; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueTests.m; sourceTree = "<group>"; };
 		90F4B7A920F340AC00E13294 /* NSUUID+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUUID+Kimi.h"; sourceTree = "<group>"; };
@@ -509,6 +512,8 @@
 				90AAD99D20EC9C7100D82173 /* UIViewController+Kimi.m */,
 				90AAD99F20ECA5B700D82173 /* UINavigationController+Kimi.h */,
 				90AAD9A020ECA5B700D82173 /* UINavigationController+Kimi.m */,
+				90D170342121210A00AB4F5F /* KIMINavigationBarViewController.h */,
+				90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */,
 				90AAD9A220ECB24300D82173 /* UINavigationBar+Kimi.h */,
 				90AAD9A320ECB24400D82173 /* UINavigationBar+Kimi.m */,
 				90AAD9A520ECB93A00D82173 /* UINavigationItem+Kimi.h */,
@@ -1011,6 +1016,7 @@
 				90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */,
 				90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */,
 				90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */,
+				90D170362121210A00AB4F5F /* KIMINavigationBarViewController.m in Sources */,
 				907D749220FC8E6100C1D7D7 /* UITabBarControllerAsserts.m in Sources */,
 				907D749C20FC998C00C1D7D7 /* UIScrollViewAsserts.m in Sources */,
 				90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */,

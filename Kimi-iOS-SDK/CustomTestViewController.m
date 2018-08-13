@@ -29,6 +29,11 @@
     [self.context evaluateScript:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"custom" ofType:@"js"]
                                                            encoding:NSUTF8StringEncoding
                                                               error:nil]];
+    UIViewController *vc = [[EDOExporter sharedExporter] nsValueWithJSValue:self.context[@"main"]];
+    vc.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    vc.view.frame = self.view.bounds;
+    [self addChildViewController:vc];
+    [self.view addSubview:vc.view];
 }
 
 @end
