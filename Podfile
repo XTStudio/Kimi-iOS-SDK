@@ -5,5 +5,6 @@ target 'Kimi-iOS-SDK' do
   pod 'Endo'
   pod 'UULog'
   pod 'pop'
+  pod 'SDWebImage'
 
 end

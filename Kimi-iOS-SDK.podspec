@@ -29,5 +29,6 @@ Pod::Spec.new do |s|
   s.dependency "Endo"
   s.dependency "UULog"
   s.dependency "pop"
+  s.dependency "SDWebImage"
 
 end
