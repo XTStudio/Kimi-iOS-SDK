@@ -18,7 +18,7 @@
         NSDictionary *params = 0 < arguments.count && [arguments[0] isKindOfClass:[NSDictionary class]] ? arguments[0] : @{};
         UIImageRenderingMode renderingMode = [params[@"renderingMode"] isKindOfClass:[NSNumber class]] ? [params[@"renderingMode"] integerValue] : UIImageRenderingModeAutomatic;
         if ([params[@"name"] isKindOfClass:[NSString class]]) {
-            UIImage *bundleImageFromJS = [self edo_loadImageFromJSBundle:params[@"name"]];
+            UIImage *bundleImageFromJS = [self edo_loadImageFromJSBundle:params[@"name"] renderingMode:renderingMode];
             if (bundleImageFromJS != nil) {
                 return bundleImageFromJS;
             }
@@ -42,7 +42,7 @@
                                                }];
 }
 
-+ (UIImage *)edo_loadImageFromJSBundle:(NSString *)name {
++ (UIImage *)edo_loadImageFromJSBundle:(NSString *)name renderingMode:(UIImageRenderingMode)renderingMode {
     NSInteger currentScale = (NSInteger)[UIScreen mainScreen].scale;
     NSString *targetFile = nil;
     NSArray *files = [[NSFileManager defaultManager] edo_subpathsAtPath:@"/com.xt.bundle.js/images/" deepSearch:NO];
@@ -73,7 +73,7 @@
     if (targetFile != nil) {
         NSData *imageData = [[NSFileManager defaultManager] edo_readFile:targetFile];
         if (imageData != nil) {
-            return [UIImage imageWithData:imageData scale:(CGFloat)currentScale];
+            return [[UIImage imageWithData:imageData scale:(CGFloat)currentScale] imageWithRenderingMode:renderingMode];
         }
     }
     return nil;
