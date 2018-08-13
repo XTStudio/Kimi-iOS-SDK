@@ -37,10 +37,13 @@
         request = obj;
     }
     if (request != nil) {
+        NSOperationQueue *queue = [NSOperationQueue currentQueue];
         return [self dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            if (completion != nil) {
-                completion(@[data ?: [NSNull null], response ?: [NSNull null], error ?: [NSNull null]]);
-            }
+            [queue addOperationWithBlock:^{
+                if (completion != nil) {
+                    completion(@[data ?: [NSNull null], response ?: [NSNull null], error ?: [NSNull null]]);
+                }
+            }];
         }];
     }
     return nil;
