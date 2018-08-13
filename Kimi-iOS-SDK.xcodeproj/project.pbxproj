@@ -115,6 +115,7 @@
 		90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9B820EDCF0E00D82173 /* UIStackView+Kimi.m */; };
 		90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */; };
 		90D170362121210A00AB4F5F /* KIMINavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */; };
+		90D1703A21215D8C00AB4F5F /* KIMICore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1703921215D8C00AB4F5F /* KIMICore.m */; };
 		90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */; };
 		90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AA20F340AC00E13294 /* NSUUID+Kimi.m */; };
 		90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AD20F3413600E13294 /* UUIDTests.m */; };
@@ -350,6 +351,8 @@
 		90AAD9C520EF7AA200D82173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D170342121210A00AB4F5F /* KIMINavigationBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMINavigationBarViewController.h; sourceTree = "<group>"; };
 		90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMINavigationBarViewController.m; sourceTree = "<group>"; };
+		90D1703821215D8C00AB4F5F /* KIMICore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMICore.h; sourceTree = "<group>"; };
+		90D1703921215D8C00AB4F5F /* KIMICore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMICore.m; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueTests.m; sourceTree = "<group>"; };
 		90F4B7A920F340AC00E13294 /* NSUUID+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUUID+Kimi.h"; sourceTree = "<group>"; };
@@ -434,6 +437,7 @@
 		901C4DED20D3CB6200A71C3D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				90D1703721215D8200AB4F5F /* Kimi */,
 				901C4DF720D8BCA600A71C3D /* Foundation */,
 				901C4DEE20D3CB6200A71C3D /* UIKit */,
 				901C4E1620DB70DA00A71C3D /* CoreGraphics */,
@@ -749,6 +753,15 @@
 			path = "Kimi-iOS-SDKTests";
 			sourceTree = "<group>";
 		};
+		90D1703721215D8200AB4F5F /* Kimi */ = {
+			isa = PBXGroup;
+			children = (
+				90D1703821215D8C00AB4F5F /* KIMICore.h */,
+				90D1703921215D8C00AB4F5F /* KIMICore.m */,
+			);
+			path = Kimi;
+			sourceTree = "<group>";
+		};
 		90F4B7A620F33E8B00E13294 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -963,6 +976,7 @@
 				907D746B20F8A02700C1D7D7 /* UIActivityIndicatorViewAsserts.m in Sources */,
 				901C4E0920DA65FD00A71C3D /* UIPanGestureRecognizer+Kimi.m in Sources */,
 				90F4B7CF20F460DA00E13294 /* NSURLResponse+Kimi.m in Sources */,
+				90D1703A21215D8C00AB4F5F /* KIMICore.m in Sources */,
 				907D747F20F8C08100C1D7D7 /* UIStackViewAsserts.m in Sources */,
 				907D748220FC46CE00C1D7D7 /* KimiUITestVCController.m in Sources */,
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
