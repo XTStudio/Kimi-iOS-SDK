@@ -37,7 +37,7 @@
     EDO_EXPORT_CLASS(@"UINavigationBarViewController", @"UIViewController");
     EDO_EXPORT_PROPERTY(@"navigationBarContentHeight");
     EDO_EXPORT_PROPERTY(@"navigationBarInFront");
-    EDO_EXPORT_PROPERTY(@"navigationBar");
+    EDO_EXPORT_READONLY_PROPERTY(@"navigationBar");
     EDO_EXPORT_READONLY_PROPERTY(@"edo_view");
 }
 
