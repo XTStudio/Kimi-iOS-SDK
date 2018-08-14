@@ -41,6 +41,7 @@
     EDO_EXPORT_PROPERTY(@"contentEdgeInsets");
     EDO_EXPORT_PROPERTY(@"titleEdgeInsets");
     EDO_EXPORT_PROPERTY(@"imageEdgeInsets");
+    EDO_BIND_METHOD(layoutSubviews);
     [[EDOExporter sharedExporter] exportEnum:@"UIControlState"
                                       values:@{
                                                @"normal": @(UIControlStateNormal),
