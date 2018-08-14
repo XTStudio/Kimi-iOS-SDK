@@ -9,12 +9,24 @@
 #import "UIButton+Kimi.h"
 #import <Endo/EDOExporter.h>
 
+@interface KIMIButton: UIButton
+
+@end
+
+@implementation KIMIButton
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+}
+
+@end
+
 @implementation UIButton (Kimi)
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UIButton", @"UIView");
     EDO_EXPORT_INITIALIZER({
-        UIButton *button = [UIButton buttonWithType:[arguments count] >= 1 && [arguments[0] boolValue] == YES ? UIButtonTypeCustom : UIButtonTypeSystem];
+        KIMIButton *button = [KIMIButton buttonWithType:[arguments count] >= 1 && [arguments[0] boolValue] == YES ? UIButtonTypeCustom : UIButtonTypeSystem];
         [button addTarget:button action:@selector(edo_handleTouchDown) forControlEvents:UIControlEventTouchDown];
         [button addTarget:button action:@selector(edo_handleTouchDownRepeat) forControlEvents:UIControlEventTouchDownRepeat];
         [button addTarget:button action:@selector(edo_handleTouchDragInside) forControlEvents:UIControlEventTouchDragInside];
@@ -41,7 +53,7 @@
     EDO_EXPORT_PROPERTY(@"contentEdgeInsets");
     EDO_EXPORT_PROPERTY(@"titleEdgeInsets");
     EDO_EXPORT_PROPERTY(@"imageEdgeInsets");
-    EDO_BIND_METHOD(layoutSubviews);
+    [[EDOExporter sharedExporter] bindMethodToJavaScript:[KIMIButton class] selector:@selector(layoutSubviews)];
     [[EDOExporter sharedExporter] exportEnum:@"UIControlState"
                                       values:@{
                                                @"normal": @(UIControlStateNormal),
