@@ -27,6 +27,7 @@
     // Rendering
     EDO_EXPORT_PROPERTY(@"hidden");
     EDO_EXPORT_PROPERTY(@"mask");
+    EDO_EXPORT_PROPERTY(@"masksToBounds");
     EDO_EXPORT_PROPERTY(@"edo_backgroundColor");
     EDO_EXPORT_PROPERTY(@"cornerRadius");
     EDO_EXPORT_PROPERTY(@"borderWidth");
