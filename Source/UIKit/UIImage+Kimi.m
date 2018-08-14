@@ -30,6 +30,12 @@
                 return [[UIImage imageWithData:data] imageWithRenderingMode:renderingMode];
             }
         }
+        else if ([params[@"data"] isKindOfClass:[NSData class]]) {
+            NSData *data = params[@"data"];
+            if (data != nil) {
+                return [[UIImage imageWithData:data] imageWithRenderingMode:renderingMode];
+            }
+        }
         return nil;
     });
     EDO_EXPORT_READONLY_PROPERTY(@"size");
