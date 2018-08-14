@@ -60,10 +60,6 @@
     [self.view addSubview:self.navigationBar];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     if (self.navigationController != nil) {
@@ -88,7 +84,6 @@
 }
 
 - (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
     if (@available(iOS 11.0, *)) {
         self.navigationBar.frame = CGRectMake(0.0,
                                               0.0,
@@ -101,6 +96,7 @@
                                         CGRectGetMaxY(self.navigationBar.frame),
                                         CGRectGetWidth(self.view.bounds),
                                         CGRectGetHeight(self.view.bounds) - CGRectGetHeight(self.navigationBar.bounds));
+    [super viewWillLayoutSubviews];
 }
 
 - (void)setNavigationBarContentHeight:(CGFloat)navigationBarContentHeight {

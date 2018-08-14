@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class KIMIFetchMoreControl;
+
 @interface UIScrollView (Kimi) <UIScrollViewDelegate>
+
+@property (nonatomic, strong) KIMIFetchMoreControl *kimi_fetchMoreControl;
 
 @end

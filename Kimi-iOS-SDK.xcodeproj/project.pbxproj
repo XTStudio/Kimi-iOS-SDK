@@ -116,6 +116,10 @@
 		90AAD9BC20EE0C1400D82173 /* UIProgressView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */; };
 		90D170362121210A00AB4F5F /* KIMINavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */; };
 		90D1703A21215D8C00AB4F5F /* KIMICore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1703921215D8C00AB4F5F /* KIMICore.m */; };
+		90D170612122B05F00AB4F5F /* UIRefreshControl+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D170602122B05F00AB4F5F /* UIRefreshControl+Kimi.m */; };
+		90D170632122B36100AB4F5F /* UIRefreshControlTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D170622122B36100AB4F5F /* UIRefreshControlTests.js */; };
+		90D170662122B79C00AB4F5F /* KIMIFetchMoreControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D170652122B79C00AB4F5F /* KIMIFetchMoreControl.m */; };
+		90D170682122BE7800AB4F5F /* UIFetchMoreControlTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D170672122BE7800AB4F5F /* UIFetchMoreControlTests.js */; };
 		90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */; };
 		90F4B7AC20F340CF00E13294 /* NSUUID+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AA20F340AC00E13294 /* NSUUID+Kimi.m */; };
 		90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4B7AD20F3413600E13294 /* UUIDTests.m */; };
@@ -353,6 +357,12 @@
 		90D170352121210A00AB4F5F /* KIMINavigationBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMINavigationBarViewController.m; sourceTree = "<group>"; };
 		90D1703821215D8C00AB4F5F /* KIMICore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMICore.h; sourceTree = "<group>"; };
 		90D1703921215D8C00AB4F5F /* KIMICore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMICore.m; sourceTree = "<group>"; };
+		90D1705F2122B05F00AB4F5F /* UIRefreshControl+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+Kimi.h"; sourceTree = "<group>"; };
+		90D170602122B05F00AB4F5F /* UIRefreshControl+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+Kimi.m"; sourceTree = "<group>"; };
+		90D170622122B36100AB4F5F /* UIRefreshControlTests.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = UIRefreshControlTests.js; sourceTree = "<group>"; };
+		90D170642122B79C00AB4F5F /* KIMIFetchMoreControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIFetchMoreControl.h; sourceTree = "<group>"; };
+		90D170652122B79C00AB4F5F /* KIMIFetchMoreControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIFetchMoreControl.m; sourceTree = "<group>"; };
+		90D170672122BE7800AB4F5F /* UIFetchMoreControlTests.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = UIFetchMoreControlTests.js; sourceTree = "<group>"; };
 		90E993CFC01A1A1B21E46B8B /* libPods-Kimi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F4B7A720F33E9900E13294 /* DispatchQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueTests.m; sourceTree = "<group>"; };
 		90F4B7A920F340AC00E13294 /* NSUUID+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUUID+Kimi.h"; sourceTree = "<group>"; };
@@ -546,6 +556,10 @@
 				90AAD90020E603D900D82173 /* KIMIPrompt.m */,
 				90AAD90220E6060100D82173 /* KIMIConfirm.h */,
 				90AAD90320E6060100D82173 /* KIMIConfirm.m */,
+				90D1705F2122B05F00AB4F5F /* UIRefreshControl+Kimi.h */,
+				90D170602122B05F00AB4F5F /* UIRefreshControl+Kimi.m */,
+				90D170642122B79C00AB4F5F /* KIMIFetchMoreControl.h */,
+				90D170652122B79C00AB4F5F /* KIMIFetchMoreControl.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -731,6 +745,8 @@
 				907D749320FC90B600C1D7D7 /* UIPageViewControllerTests.js */,
 				907D749520FC916000C1D7D7 /* UIPageViewControllerAsserts.h */,
 				907D749620FC916000C1D7D7 /* UIPageViewControllerAsserts.m */,
+				90D170622122B36100AB4F5F /* UIRefreshControlTests.js */,
+				90D170672122BE7800AB4F5F /* UIFetchMoreControlTests.js */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -892,6 +908,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				907D747220F8A61500C1D7D7 /* UISliderTests.js in Resources */,
+				90D170682122BE7800AB4F5F /* UIFetchMoreControlTests.js in Resources */,
 				907D744520F84C6900C1D7D7 /* UIButtonTests.js in Resources */,
 				907D749920FC998100C1D7D7 /* UIScrollViewTests.js in Resources */,
 				907D744F20F879F300C1D7D7 /* UILabelTests.js in Resources */,
@@ -907,6 +924,7 @@
 				907D748F20FC8E5400C1D7D7 /* UITabBarControllerTests.js in Resources */,
 				901C4DF620D8A69C00A71C3D /* custom.js in Resources */,
 				907D745420F87EE100C1D7D7 /* UITextFieldTests.js in Resources */,
+				90D170632122B36100AB4F5F /* UIRefreshControlTests.js in Resources */,
 				907D749420FC90B700C1D7D7 /* UIPageViewControllerTests.js in Resources */,
 				907D747C20F8C07800C1D7D7 /* UIStackViewTests.js in Resources */,
 				9022D14520D3C976002F016F /* Main.storyboard in Resources */,
@@ -982,6 +1000,7 @@
 				901C4E2B20DBCDCA00A71C3D /* UITextField+Kimi.m in Sources */,
 				907D745220F879FD00C1D7D7 /* UILabelAsserts.m in Sources */,
 				907D746120F893BA00C1D7D7 /* UICollectionViewAsserts.m in Sources */,
+				90D170612122B05F00AB4F5F /* UIRefreshControl+Kimi.m in Sources */,
 				907D744D20F8583F00C1D7D7 /* UIImageViewAsserts.m in Sources */,
 				901C4E0620DA64AA00A71C3D /* UILongPressGestureRecognizer+Kimi.m in Sources */,
 				907D748720FC49F200C1D7D7 /* UIViewControllerAsserts.m in Sources */,
@@ -1030,6 +1049,7 @@
 				90AAD9A420ECB24400D82173 /* UINavigationBar+Kimi.m in Sources */,
 				90AAD9A120ECA5B700D82173 /* UINavigationController+Kimi.m in Sources */,
 				90AAD9B920EDCF0E00D82173 /* UIStackView+Kimi.m in Sources */,
+				90D170662122B79C00AB4F5F /* KIMIFetchMoreControl.m in Sources */,
 				90D170362121210A00AB4F5F /* KIMINavigationBarViewController.m in Sources */,
 				907D749220FC8E6100C1D7D7 /* UITabBarControllerAsserts.m in Sources */,
 				907D749C20FC998C00C1D7D7 /* UIScrollViewAsserts.m in Sources */,
