@@ -88,6 +88,7 @@
 		907D749E20FCA45300C1D7D7 /* UITableViewTests.js in Resources */ = {isa = PBXBuildFile; fileRef = 907D749D20FCA45300C1D7D7 /* UITableViewTests.js */; };
 		907D74A120FCA45D00C1D7D7 /* UITableViewAsserts.m in Sources */ = {isa = PBXBuildFile; fileRef = 907D74A020FCA45D00C1D7D7 /* UITableViewAsserts.m */; };
 		909365FE20E39F60008E4BCA /* NSIndexPath+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */; };
+		90A637BE21242DB8001D6587 /* UIWindow+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A637BD21242DB8001D6587 /* UIWindow+Kimi.m */; };
 		90AAD8F220E4EA8C00D82173 /* UICollectionView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */; };
 		90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F420E4EB5600D82173 /* UICollectionViewLayout+Kimi.m */; };
 		90AAD8F820E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD8F720E4ECC300D82173 /* UICollectionViewFlowLayout+Kimi.m */; };
@@ -299,6 +300,8 @@
 		907D74A020FCA45D00C1D7D7 /* UITableViewAsserts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewAsserts.m; sourceTree = "<group>"; };
 		909365FC20E39F60008E4BCA /* NSIndexPath+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Kimi.h"; sourceTree = "<group>"; };
 		909365FD20E39F60008E4BCA /* NSIndexPath+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Kimi.m"; sourceTree = "<group>"; };
+		90A637BC21242DB8001D6587 /* UIWindow+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Kimi.h"; sourceTree = "<group>"; };
+		90A637BD21242DB8001D6587 /* UIWindow+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F020E4EA8C00D82173 /* UICollectionView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Kimi.h"; sourceTree = "<group>"; };
 		90AAD8F120E4EA8C00D82173 /* UICollectionView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Kimi.m"; sourceTree = "<group>"; };
 		90AAD8F320E4EB5600D82173 /* UICollectionViewLayout+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewLayout+Kimi.h"; sourceTree = "<group>"; };
@@ -548,6 +551,8 @@
 				90AAD9BB20EE0C1400D82173 /* UIProgressView+Kimi.m */,
 				907D740B20F61A8100C1D7D7 /* UIBezierPath+Kimi.h */,
 				907D740C20F61A8100C1D7D7 /* UIBezierPath+Kimi.m */,
+				90A637BC21242DB8001D6587 /* UIWindow+Kimi.h */,
+				90A637BD21242DB8001D6587 /* UIWindow+Kimi.m */,
 				901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */,
 				901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */,
 				90AAD8FC20E600A700D82173 /* KIMIAlert.h */,
@@ -1008,6 +1013,7 @@
 				907D740620F613F900C1D7D7 /* CADisplayLink+Kimi.m in Sources */,
 				90F4B7D220F4612200E13294 /* NSURLSession+Kimi.m in Sources */,
 				902D65DE20E2163B00A32EB8 /* UITextView+Kimi.m in Sources */,
+				90A637BE21242DB8001D6587 /* UIWindow+Kimi.m in Sources */,
 				902D65E420E222BF00A32EB8 /* UITableView+Kimi.m in Sources */,
 				90AAD90D20E62E8600D82173 /* UISlider+Kimi.m in Sources */,
 				907D740720F6141600C1D7D7 /* CAGradientLayer+Kimi.m in Sources */,

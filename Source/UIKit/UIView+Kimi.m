@@ -23,6 +23,7 @@
     EDO_EXPORT_PROPERTY(@"tag");
     EDO_EXPORT_READONLY_PROPERTY(@"superview");
     EDO_EXPORT_READONLY_PROPERTY(@"subviews");
+    EDO_EXPORT_READONLY_PROPERTY(@"window");
     EDO_EXPORT_METHOD(removeFromSuperview);
     EDO_EXPORT_METHOD(insertSubview:atIndex:);
     EDO_EXPORT_METHOD_ALIAS(exchangeSubviewAtIndex:withSubviewAtIndex:, @"exchangeSubview");
