@@ -12,6 +12,9 @@
 
 @interface KIMIDefaultViewController: UIViewController
 
+@property (nonatomic, strong) id keyboardWillShowObserver;
+@property (nonatomic, strong) id keyboardWillHideObserver;
+
 @end
 
 @implementation KIMIDefaultViewController
@@ -19,6 +22,35 @@
 - (void)loadView {
     [super loadView];
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.keyboardWillShowObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillShowNotification
+                                                                                      object:nil
+                                                                                       queue:[NSOperationQueue mainQueue]
+                                                                                  usingBlock:^(NSNotification * _Nonnull note) {
+                                                                                      [self edo_emitWithEventName:@"keyboardWillShow"
+                                                                                                        arguments:@[
+                                                                                                                    note.userInfo[UIKeyboardFrameEndUserInfoKey] ?: [NSValue valueWithCGRect:CGRectZero],
+                                                                                                                    note.userInfo[UIKeyboardAnimationDurationUserInfoKey] ?: @(0),
+                                                                                                                    ]];
+                                                                                  }];
+    self.keyboardWillHideObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillHideNotification
+                                                                                      object:nil
+                                                                                       queue:[NSOperationQueue mainQueue]
+                                                                                  usingBlock:^(NSNotification * _Nonnull note) {
+                                                                                      [self edo_emitWithEventName:@"keyboardWillHide"
+                                                                                                        arguments:@[
+                                                                                                                    note.userInfo[UIKeyboardAnimationDurationUserInfoKey] ?: @(0),
+                                                                                                                    ]];
+                                                                                  }];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self.keyboardWillShowObserver];
+    [[NSNotificationCenter defaultCenter] removeObserver:self.keyboardWillHideObserver];
 }
 
 @end
