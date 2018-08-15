@@ -10,13 +10,6 @@
 #import <Endo/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
-@interface KIMIDefaultViewController: UIViewController
-
-@property (nonatomic, strong) id keyboardWillShowObserver;
-@property (nonatomic, strong) id keyboardWillHideObserver;
-
-@end
-
 @implementation KIMIDefaultViewController
 
 - (void)loadView {

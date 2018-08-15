@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@interface KIMIDefaultViewController: UIViewController
+
+@property (nonatomic, strong) id keyboardWillShowObserver;
+@property (nonatomic, strong) id keyboardWillHideObserver;
+
+@end
+
 @interface UIViewController (Kimi)
 
 @end

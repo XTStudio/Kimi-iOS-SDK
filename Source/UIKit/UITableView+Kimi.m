@@ -69,9 +69,6 @@ static int kCellInitializerTag;
         [footerView setBackgroundColor:[UIColor redColor]];
         footerView.frame = CGRectMake(0, 0, 0, 0.01);
         view.tableFooterView = footerView;
-        if (@available(iOS 11.0, *)) {
-            view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        }
         view.delegate = view;
         view.dataSource = view;
         return view;

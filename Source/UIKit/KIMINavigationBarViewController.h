@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+Kimi.h"
 
-@interface KIMINavigationBarViewController : UIViewController
+@interface KIMINavigationBarViewController : KIMIDefaultViewController
 
 @end
