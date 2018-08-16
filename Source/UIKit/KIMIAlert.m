@@ -42,9 +42,19 @@
 - (void)show:(void (^)(NSArray *))callback {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:self.message preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:self.buttonText style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        callback(nil);
+        if (callback) {
+            callback(nil);
+        }
     }]];
-    [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:alertController animated:YES completion:nil];
+    [[self visibleViewController] presentViewController:alertController animated:YES completion:nil];
+}
+
+- (UIViewController *)visibleViewController {
+    UIViewController *current = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    while (current.presentedViewController != nil) {
+        current = current.presentedViewController;
+    }
+    return current;
 }
 
 @end

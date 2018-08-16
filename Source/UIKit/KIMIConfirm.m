@@ -55,7 +55,15 @@
             canncelled(nil);
         }
     }]];
-    [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:alertController animated:YES completion:nil];
+    [[self visibleViewController] presentViewController:alertController animated:YES completion:nil];
+}
+
+- (UIViewController *)visibleViewController {
+    UIViewController *current = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    while (current.presentedViewController != nil) {
+        current = current.presentedViewController;
+    }
+    return current;
 }
 
 @end
