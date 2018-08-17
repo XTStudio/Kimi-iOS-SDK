@@ -8,7 +8,7 @@
 
 #import "UIScrollView+Kimi.h"
 #import <Endo/EDOExporter.h>
-#import <Aspects/Aspects.h>'
+#import <Aspects/Aspects.h>
 #import <objc/runtime.h>
 #import "KIMIFetchMoreControl.h"
 

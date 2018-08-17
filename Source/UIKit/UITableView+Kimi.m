@@ -59,6 +59,7 @@ static int kCellInitializerTag;
     EDO_EXPORT_METHOD_ALIAS(deselectRowAtIndexPath:animated:, @"deselectRow");
     [[EDOExporter sharedExporter] exportInitializer:[self class] initializer:^id(NSArray *arguments) {
         UITableView *view = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        view.estimatedRowHeight = 0;
         view.kimi_context = [JSContext currentContext];
         view.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
         view.backgroundColor = [UIColor clearColor];
