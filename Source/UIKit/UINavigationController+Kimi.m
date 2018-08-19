@@ -8,6 +8,19 @@
 
 #import "UINavigationController+Kimi.h"
 #import <Endo/EDOExporter.h>
+#import <Aspects/Aspects.h>
+
+@interface KIMINavigationController: UINavigationController
+
+@end
+
+@implementation KIMINavigationController
+
+- (UIViewController *)childViewControllerForStatusBarStyle {
+    return self.childViewControllers.lastObject;
+}
+
+@end
 
 @implementation UINavigationController (Kimi)
 
@@ -23,10 +36,10 @@
     EDO_EXPORT_INITIALIZER({
         UIViewController *rootViewController = 0 < arguments.count && [arguments[0] isKindOfClass:[UIViewController class]] ? arguments[0] : nil;
         if (rootViewController != nil) {
-            return [[UINavigationController alloc] initWithRootViewController:rootViewController];
+            return [[KIMINavigationController alloc] initWithRootViewController:rootViewController];
         }
         else {
-            return [[UINavigationController alloc] init];
+            return [[KIMINavigationController alloc] init];
         }
     });
 }
