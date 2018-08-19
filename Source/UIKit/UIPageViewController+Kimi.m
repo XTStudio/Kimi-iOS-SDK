@@ -13,6 +13,41 @@
 static int kPageItemsTag;
 static int kLoopsTag;
 
+@interface KIMIPageViewController: UIPageViewController
+
+@end
+
+@implementation KIMIPageViewController
+
+- (void)setEdo_pageItems:(NSArray<UIViewController *> *)edo_pageItems {
+    [super setEdo_pageItems:edo_pageItems];
+    [self kimi_resetBounceSetting];
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
+    [super pageViewController:pageViewController
+           didFinishAnimating:finished
+      previousViewControllers:previousViewControllers
+          transitionCompleted:completed];
+    [self kimi_resetBounceSetting];
+}
+
+- (void)kimi_resetBounceSetting {
+    for (UIScrollView *scrollView in self.view.subviews) {
+        if ([scrollView isKindOfClass:[UIScrollView class]]) {
+            scrollView.bounces = NO;
+            if (self.navigationOrientation == UIPageViewControllerNavigationOrientationVertical) {
+                scrollView.contentInset = UIEdgeInsetsMake(100, 0, 100, 0);
+            }
+            else {
+                scrollView.contentInset = UIEdgeInsetsMake(0, 100, 0, 100);
+            }
+        }
+    }
+}
+
+@end
+
 @implementation UIPageViewController (Kimi)
 
 + (void)load {
@@ -23,7 +58,7 @@ static int kLoopsTag;
     EDO_EXPORT_METHOD(edo_scrollToNextPage:);
     EDO_EXPORT_METHOD(edo_scrollToPreviousPage:);
     EDO_EXPORT_INITIALIZER({
-        UIPageViewController *instance = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
+        KIMIPageViewController *instance = [[KIMIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                          navigationOrientation:0 < arguments.count && [arguments[0] isKindOfClass:[NSNumber class]] && [arguments[0] boolValue] ? UIPageViewControllerNavigationOrientationVertical :  UIPageViewControllerNavigationOrientationHorizontal
                                                                                        options:nil];
         instance.dataSource = instance;
