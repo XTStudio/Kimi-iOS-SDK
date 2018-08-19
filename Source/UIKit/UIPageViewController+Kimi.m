@@ -13,7 +13,20 @@
 static int kPageItemsTag;
 static int kLoopsTag;
 
+@interface KIMIPageView: UIView
+
+@end
+
+@implementation KIMIPageView
+
+@end
+
 @interface KIMIPageViewController: UIPageViewController
+
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, assign) BOOL hasFailToNavigationGesture;
+@property (nonatomic, assign) BOOL hasPreviousPage;
+@property (nonatomic, assign) BOOL hasNextPage;
 
 @end
 
@@ -21,6 +34,11 @@ static int kLoopsTag;
 
 - (void)setEdo_pageItems:(NSArray<UIViewController *> *)edo_pageItems {
     [super setEdo_pageItems:edo_pageItems];
+    [self kimi_resetBounceSetting];
+}
+
+- (void)setEdo_currentPage:(UIViewController *)edo_currentPage {
+    [super setEdo_currentPage:edo_currentPage];
     [self kimi_resetBounceSetting];
 }
 
@@ -33,16 +51,42 @@ static int kLoopsTag;
 }
 
 - (void)kimi_resetBounceSetting {
-    for (UIScrollView *scrollView in self.view.subviews) {
-        if ([scrollView isKindOfClass:[UIScrollView class]]) {
-            scrollView.bounces = NO;
-            if (self.navigationOrientation == UIPageViewControllerNavigationOrientationVertical) {
-                scrollView.contentInset = UIEdgeInsetsMake(100, 0, 100, 0);
-            }
-            else {
-                scrollView.contentInset = UIEdgeInsetsMake(0, 100, 0, 100);
+    if (self.scrollView == nil) {
+        for (UIScrollView *scrollView in self.view.subviews) {
+            if ([scrollView isKindOfClass:[UIScrollView class]]) {
+                self.scrollView = scrollView;
+                [self.scrollView.panGestureRecognizer addTarget:self action:@selector(handleScroll:)];
             }
         }
+    }
+    if (self.navigationController.interactivePopGestureRecognizer != nil && !self.hasFailToNavigationGesture) {
+        self.hasFailToNavigationGesture = YES;
+        [self.scrollView.panGestureRecognizer requireGestureRecognizerToFail:self.navigationController.interactivePopGestureRecognizer];
+    }
+    self.hasPreviousPage = [self pageViewController:self
+              viewControllerBeforeViewController:self.viewControllers.firstObject];
+    self.hasNextPage = [self pageViewController:self
+              viewControllerAfterViewController:self.viewControllers.firstObject];
+}
+
+- (void)handleScroll:(UIPanGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateBegan ||
+        sender.state == UIGestureRecognizerStateChanged) {
+        if (self.hasNextPage && [sender translationInView:nil].x < 0.0) {
+            self.scrollView.bounces = YES;
+        }
+        else if (self.hasPreviousPage && [sender translationInView:nil].x > 0.0) {
+            self.scrollView.bounces = YES;
+        }
+        else {
+            self.scrollView.bounces = NO;
+        }
+    }
+    else if (sender.state == UIGestureRecognizerStateEnded ||
+             sender.state == UIGestureRecognizerStateCancelled) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.scrollView.bounces = YES;
+        });
     }
 }
 
