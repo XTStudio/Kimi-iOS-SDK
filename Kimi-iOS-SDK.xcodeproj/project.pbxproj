@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63165994212E97B000D12ACA /* KMCoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63165993212E97B000D12ACA /* KMCoreTestCase.m */; };
 		901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */; };
 		901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */; };
 		901C4DF620D8A69C00A71C3D /* custom.js in Resources */ = {isa = PBXBuildFile; fileRef = 901C4DF520D8A69C00A71C3D /* custom.js */; };
@@ -165,6 +166,7 @@
 
 /* Begin PBXFileReference section */
 		0ABCAEF4154C941559666683 /* libPods-Kimi-iOS-SDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63165993212E97B000D12ACA /* KMCoreTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCoreTestCase.m; sourceTree = "<group>"; };
 		901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Kimi.h"; sourceTree = "<group>"; };
 		901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Kimi.m"; sourceTree = "<group>"; };
 		901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Kimi.h"; sourceTree = "<group>"; };
@@ -445,6 +447,14 @@
 				0ABCAEF4154C941559666683 /* libPods-Kimi-iOS-SDKTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6316598E212E96F400D12ACA /* KMCore */ = {
+			isa = PBXGroup;
+			children = (
+				63165993212E97B000D12ACA /* KMCoreTestCase.m */,
+			);
+			path = KMCore;
 			sourceTree = "<group>";
 		};
 		901C4DED20D3CB6200A71C3D /* Source */ = {
@@ -768,6 +778,7 @@
 		90AAD9C220EF7AA200D82173 /* Kimi-iOS-SDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				6316598E212E96F400D12ACA /* KMCore */,
 				90F4B7A620F33E8B00E13294 /* Foundation */,
 				90AAD9C520EF7AA200D82173 /* Info.plist */,
 			);
@@ -1099,6 +1110,7 @@
 			files = (
 				90F4B7DD20F5A2EB00E13294 /* FileManagerTests.m in Sources */,
 				90F4B7BC20F35DE200E13294 /* UserDefaultsTests.m in Sources */,
+				63165994212E97B000D12ACA /* KMCoreTestCase.m in Sources */,
 				907D742220F706C900C1D7D7 /* KimiTestExpectation.m in Sources */,
 				90F4B7AE20F3413600E13294 /* UUIDTests.m in Sources */,
 				90F4B7A820F33E9900E13294 /* DispatchQueueTests.m in Sources */,
