@@ -32,9 +32,11 @@ static int kLoopsTag;
 
 @implementation KIMIPageViewController
 
-- (void)didMoveToParentViewController:(UIViewController *)parent {
-    [super didMoveToParentViewController:parent];
-    [self kimi_resetBounceSetting];
+- (void)willMoveToParentViewController:(UIViewController *)parent {
+    [super willMoveToParentViewController:parent];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self kimi_resetBounceSetting];
+    });
 }
 
 - (void)setEdo_pageItems:(NSArray<UIViewController *> *)edo_pageItems {
