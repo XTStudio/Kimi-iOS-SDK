@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "90AAD9D020EF861600D82173"
+               BlueprintIdentifier = "907D743120F7449900C1D7D7"
                BuildableName = "Kimi-iOS-SDKUITests.xctest"
                BlueprintName = "Kimi-iOS-SDKUITests"
                ReferencedContainer = "container:Kimi-iOS-SDK.xcodeproj">

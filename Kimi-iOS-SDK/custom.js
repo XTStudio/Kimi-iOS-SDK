@@ -1,7 +1,5 @@
-var main = new UINavigationBarViewController
-main.navigationBar.backgroundColor = UIColor.yellow
+var main = new UIViewController
 main.view.backgroundColor = UIColor.green
-
 main.view.addGestureRecognizer(new UITapGestureRecognizer().on("touch", function(){
-                                                               main.navigationController.pushViewController(new UIViewController())
+                                                               main.view.backgroundColor = UIColor.yellow
                                                                }))
