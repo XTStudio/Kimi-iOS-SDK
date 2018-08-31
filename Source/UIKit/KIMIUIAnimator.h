@@ -10,7 +10,9 @@
 
 @interface KIMIUIAnimator : NSObject
 
+- (void)curve:(double)duration animations:(nonnull void (^)(NSArray *))animation completion:(nullable void (^)(NSArray *))completion;
 - (void)linear:(double)duration animations:(nonnull void (^)(NSArray *))animation completion:(nullable void (^)(NSArray *))completion;
 - (void)spring:(double)tension friction:(double)friction animations:(void (^)(NSArray *))animation completion:(void (^)(NSArray *))completion;
+- (void)bouncy:(double)bounciness speed:(double)speed animations:(void (^)(NSArray *))animation completion:(void (^)(NSArray *))completion;
 
 @end

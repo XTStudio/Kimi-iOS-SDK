@@ -14,11 +14,13 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UIView", nil);
     EDO_EXPORT_READONLY_PROPERTY(@"layer");
+    EDO_EXPORT_METHOD(endEditing:);
     // Geometry
     EDO_EXPORT_PROPERTY(@"frame");
     EDO_EXPORT_PROPERTY(@"bounds");
     EDO_EXPORT_PROPERTY(@"center");
     EDO_EXPORT_PROPERTY(@"transform");
+    EDO_EXPORT_PROPERTY(@"edo_opaque");
     // Hierarchy
     EDO_EXPORT_PROPERTY(@"tag");
     EDO_EXPORT_READONLY_PROPERTY(@"superview");
@@ -68,6 +70,14 @@
                                                @"scaleAspectFit": @(UIViewContentModeScaleAspectFit),
                                                @"scaleAspectFill": @(UIViewContentModeScaleAspectFill),
                                                }];
+}
+
+- (BOOL)edo_opaque {
+    return self.isOpaque;
+}
+
+- (void)setEdo_opaque:(BOOL)opaque {
+    [self setOpaque:opaque];
 }
 
 @end

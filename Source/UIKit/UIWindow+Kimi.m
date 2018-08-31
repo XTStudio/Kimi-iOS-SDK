@@ -14,7 +14,6 @@
 + (void)load {
     EDO_EXPORT_CLASS(@"UIWindow", @"UIView");
     EDO_EXPORT_PROPERTY(@"rootViewController");
-    EDO_EXPORT_METHOD(endEditing:);
 }
 
 @end
