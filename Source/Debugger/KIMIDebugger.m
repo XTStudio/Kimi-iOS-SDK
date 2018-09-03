@@ -204,6 +204,8 @@
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * _Nonnull action) {
                                                           self.remoteAddress = alertController.textFields[0].text;
+                                                          [[NSUserDefaults standardUserDefaults] setObject:self.remoteAddress
+                                                                                                    forKey:@"com.xt.kimi.debugger.address"];
                                                           [self connect:callback fallback:fallback];
                                                       }]];
     [[self visibleViewController] presentViewController:alertController animated:NO completion:nil];
