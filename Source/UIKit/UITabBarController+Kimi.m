@@ -27,6 +27,17 @@
     }
 }
 
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    NSUInteger itemIndex = [tabBar.items indexOfObject:item];
+    if (itemIndex != NSNotFound) {
+        [self edo_emitWithEventName:@"onSelectedViewController"
+                          arguments:@[
+                                      self,
+                                      @(self.selectedIndex == itemIndex),
+                                      ]];
+    }
+}
+
 @end
 
 @implementation UITabBarController (Kimi)
