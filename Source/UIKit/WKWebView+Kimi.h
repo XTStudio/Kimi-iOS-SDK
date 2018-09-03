@@ -8,6 +8,10 @@
 
 #import <WebKit/WebKit.h>
 
-@interface WKWebView (Kimi)<WKNavigationDelegate>
+@interface KIMIWebView: WKWebView<WKNavigationDelegate>
+
+@end
+
+@interface WKWebView (Kimi)
 
 @end
