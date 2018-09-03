@@ -110,6 +110,9 @@
                                              [self fetchUpdate:callback fallback:fallback];
                                          }
                                          else {
+                                             if (!self.closed) {
+                                                 return ;
+                                             }
                                              [self.activeAlertController dismissViewControllerAnimated:NO completion:nil];
                                              self.activeAlertController = nil;
                                              if (fallback) {

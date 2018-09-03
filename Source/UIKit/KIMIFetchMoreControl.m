@@ -49,6 +49,9 @@
         if (self.fetching || (self.triggerDelay != nil && [self.triggerDelay timeIntervalSinceNow] > 0)) {
             return;
         }
+        if (self.scrollView.contentSize.height < self.scrollView.bounds.size.height) {
+            return;
+        }
         if (self.scrollView.contentOffset.y + self.scrollView.bounds.size.height > self.scrollView.contentSize.height - self.scrollView.bounds.size.height) {
             [self beginFetching];
             [self edo_emitWithEventName:@"fetch" arguments:@[self]];
