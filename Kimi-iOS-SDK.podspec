@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Kimi-iOS-SDK"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Kimi helps you build mobile application easier and faster."
 
   s.description  = <<-DESC
