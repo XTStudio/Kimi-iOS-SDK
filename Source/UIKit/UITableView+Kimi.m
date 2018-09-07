@@ -85,7 +85,10 @@ static int kCellInitializerTag;
 
 - (UITableViewCell *)edo_dequeueReusableCell:(NSString *)reuseIdentifier indexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
-    [[EDOExporter sharedExporter] scriptObjectWithObject:cell context:self.kimi_context initializer:self.kimi_cellInitializer[reuseIdentifier] createIfNeeded:YES];
+    [[EDOExporter sharedExporter] createScriptObjectIfNeed:cell
+                                                   context:self.kimi_context
+                                               initializer:self.kimi_cellInitializer[reuseIdentifier]
+                                            createIfNeeded:YES];
     return cell;
 }
 

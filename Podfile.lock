@@ -6,7 +6,7 @@ PODS:
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
-  - Endo (0.1.1):
+  - Endo (0.1.2):
     - Aspects
     - UULog
   - pop (1.0.10)
@@ -34,7 +34,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  Endo: da65c14d21bfb179e5cf4dcabff58f121022cd37
+  Endo: b2eb6acef23a5022ea65903a91b518b95fa6bbf4
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   UULog: 4a114befc5f9590748b0b9f9846f9797414cfecd
