@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		63024F0821392B0700896FBB /* KIMIDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63024F0721392B0700896FBB /* KIMIDebugger.m */; };
 		63165994212E97B000D12ACA /* KMCoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63165993212E97B000D12ACA /* KMCoreTestCase.m */; };
+		63985A5B21467B0E006FED30 /* KIMIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63985A5A21467B0E006FED30 /* KIMIActionSheet.m */; };
 		901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */; };
 		901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */; };
 		901C4DF620D8A69C00A71C3D /* custom.js in Resources */ = {isa = PBXBuildFile; fileRef = 901C4DF520D8A69C00A71C3D /* custom.js */; };
@@ -170,6 +171,8 @@
 		63024F0621392B0700896FBB /* KIMIDebugger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIDebugger.h; sourceTree = "<group>"; };
 		63024F0721392B0700896FBB /* KIMIDebugger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIDebugger.m; sourceTree = "<group>"; };
 		63165993212E97B000D12ACA /* KMCoreTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCoreTestCase.m; sourceTree = "<group>"; };
+		63985A5921467B0E006FED30 /* KIMIActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIActionSheet.h; sourceTree = "<group>"; };
+		63985A5A21467B0E006FED30 /* KIMIActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIActionSheet.m; sourceTree = "<group>"; };
 		901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Kimi.h"; sourceTree = "<group>"; };
 		901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Kimi.m"; sourceTree = "<group>"; };
 		901C4DF220D8A4AE00A71C3D /* UIColor+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Kimi.h"; sourceTree = "<group>"; };
@@ -584,6 +587,8 @@
 				90AAD90020E603D900D82173 /* KIMIPrompt.m */,
 				90AAD90220E6060100D82173 /* KIMIConfirm.h */,
 				90AAD90320E6060100D82173 /* KIMIConfirm.m */,
+				63985A5921467B0E006FED30 /* KIMIActionSheet.h */,
+				63985A5A21467B0E006FED30 /* KIMIActionSheet.m */,
 				90D1705F2122B05F00AB4F5F /* UIRefreshControl+Kimi.h */,
 				90D170602122B05F00AB4F5F /* UIRefreshControl+Kimi.m */,
 				90D170642122B79C00AB4F5F /* KIMIFetchMoreControl.h */,
@@ -1061,6 +1066,7 @@
 				90AAD9A720ECB93A00D82173 /* UINavigationItem+Kimi.m in Sources */,
 				901C4E2220DBB17900A71C3D /* UIImageView+Kimi.m in Sources */,
 				901C4E1C20DB958800A71C3D /* UIButton+Kimi.m in Sources */,
+				63985A5B21467B0E006FED30 /* KIMIActionSheet.m in Sources */,
 				90AAD91020E6420800D82173 /* WKWebView+Kimi.m in Sources */,
 				90AAD9B320ECC5E100D82173 /* UITabBarItem+Kimi.m in Sources */,
 				90AAD8F520E4EB5600D82173 /* UICollectionViewLayout+Kimi.m in Sources */,
