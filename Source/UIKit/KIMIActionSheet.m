@@ -12,6 +12,7 @@
 @interface KIMIActionSheet()
 
 @property (nonatomic, strong) UIAlertController *alertController;
+@property (nonatomic, strong) NSString *message;
 
 @end
 
@@ -19,6 +20,7 @@
 
 + (void)load {
     EDO_EXPORT_CLASS(@"UIActionSheet", nil);
+    EDO_EXPORT_PROPERTY(@"message");
     EDO_EXPORT_METHOD_ALIAS(addRegularAction:actionBlock:, @"addRegularAction")
     EDO_EXPORT_METHOD_ALIAS(addDangerAction:actionBlock:, @"addDangerAction")
     EDO_EXPORT_METHOD_ALIAS(addCancelAction:actionBlock:, @"addCancelAction")
@@ -34,6 +36,11 @@
                                                         preferredStyle:UIAlertControllerStyleActionSheet];
     }
     return self;
+}
+
+- (void)setMessage:(NSString *)message {
+    _message = message;
+    [self.alertController setMessage:message];
 }
 
 - (void)addRegularAction:(NSString *)title actionBlock:(void (^)(NSArray *))actionBlock {
