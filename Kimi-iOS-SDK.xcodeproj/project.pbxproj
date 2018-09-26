@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		63024F0821392B0700896FBB /* KIMIDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63024F0721392B0700896FBB /* KIMIDebugger.m */; };
 		63165994212E97B000D12ACA /* KMCoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63165993212E97B000D12ACA /* KMCoreTestCase.m */; };
+		634957C3215B53D000A43086 /* UIPasteboard+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */; };
+		634957C6215B54EC00A43086 /* KIMIMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 634957C5215B54EC00A43086 /* KIMIMenu.m */; };
 		63985A5B21467B0E006FED30 /* KIMIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63985A5A21467B0E006FED30 /* KIMIActionSheet.m */; };
 		901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */; };
 		901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */; };
@@ -171,6 +173,10 @@
 		63024F0621392B0700896FBB /* KIMIDebugger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIDebugger.h; sourceTree = "<group>"; };
 		63024F0721392B0700896FBB /* KIMIDebugger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIDebugger.m; sourceTree = "<group>"; };
 		63165993212E97B000D12ACA /* KMCoreTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCoreTestCase.m; sourceTree = "<group>"; };
+		634957C1215B53D000A43086 /* UIPasteboard+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+Kimi.h"; sourceTree = "<group>"; };
+		634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+Kimi.m"; sourceTree = "<group>"; };
+		634957C4215B54EC00A43086 /* KIMIMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIMenu.h; sourceTree = "<group>"; };
+		634957C5215B54EC00A43086 /* KIMIMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIMenu.m; sourceTree = "<group>"; };
 		63985A5921467B0E006FED30 /* KIMIActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIActionSheet.h; sourceTree = "<group>"; };
 		63985A5A21467B0E006FED30 /* KIMIActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIActionSheet.m; sourceTree = "<group>"; };
 		901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Kimi.h"; sourceTree = "<group>"; };
@@ -579,6 +585,8 @@
 				907D740C20F61A8100C1D7D7 /* UIBezierPath+Kimi.m */,
 				90A637BC21242DB8001D6587 /* UIWindow+Kimi.h */,
 				90A637BD21242DB8001D6587 /* UIWindow+Kimi.m */,
+				634957C1215B53D000A43086 /* UIPasteboard+Kimi.h */,
+				634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */,
 				901C4DFB20D8E75D00A71C3D /* KIMIUIAnimator.h */,
 				901C4DFC20D8E75D00A71C3D /* KIMIUIAnimator.m */,
 				90AAD8FC20E600A700D82173 /* KIMIAlert.h */,
@@ -589,6 +597,8 @@
 				90AAD90320E6060100D82173 /* KIMIConfirm.m */,
 				63985A5921467B0E006FED30 /* KIMIActionSheet.h */,
 				63985A5A21467B0E006FED30 /* KIMIActionSheet.m */,
+				634957C4215B54EC00A43086 /* KIMIMenu.h */,
+				634957C5215B54EC00A43086 /* KIMIMenu.m */,
 				90D1705F2122B05F00AB4F5F /* UIRefreshControl+Kimi.h */,
 				90D170602122B05F00AB4F5F /* UIRefreshControl+Kimi.m */,
 				90D170642122B79C00AB4F5F /* KIMIFetchMoreControl.h */,
@@ -1078,6 +1088,7 @@
 				9022D13F20D3C976002F016F /* AppDelegate.m in Sources */,
 				90AAD90720E6265B00D82173 /* UIActivityIndicatorView+Kimi.m in Sources */,
 				907D742520F7081D00C1D7D7 /* KimiUITestViewsViewController.m in Sources */,
+				634957C3215B53D000A43086 /* UIPasteboard+Kimi.m in Sources */,
 				901C4E0320DA0BCE00A71C3D /* UITapGestureRecognizer+Kimi.m in Sources */,
 				90F4B7C420F374FF00E13294 /* NSURL+Kimi.m in Sources */,
 				90AAD9B020ECC41F00D82173 /* UITabBar+Kimi.m in Sources */,
@@ -1104,6 +1115,7 @@
 				907D744120F74D4500C1D7D7 /* KIMIUITestAsserts.m in Sources */,
 				90AAD95E20EB71CF00D82173 /* UIDevice+Kimi.m in Sources */,
 				90AAD9AA20ECBD6000D82173 /* UIBarButtonItem+Kimi.m in Sources */,
+				634957C6215B54EC00A43086 /* KIMIMenu.m in Sources */,
 				902D65E720E22BB000A32EB8 /* UITableViewCell+Kimi.m in Sources */,
 				90AAD99E20EC9C7100D82173 /* UIViewController+Kimi.m in Sources */,
 				90F4B7BA20F35BBE00E13294 /* NSUserDefaults+Kimi.m in Sources */,

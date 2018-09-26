@@ -2,7 +2,7 @@
 //  KMCoreGTestCase.m
 //  Kimi-iOS-SDKTests
 //
-//  Created by 崔 明辉 on 2018/8/23.
+//  Created by PonyCui on 2018/8/23.
 //  Copyright © 2018年 XT Studio. All rights reserved.
 //
 

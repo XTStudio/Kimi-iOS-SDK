@@ -2,7 +2,7 @@
 //  KIMIDebugger.h
 //  Kimi-iOS-SDK
 //
-//  Created by 崔 明辉 on 2018/8/31.
+//  Created by PonyCui on 2018/8/31.
 //  Copyright © 2018年 XT Studio. All rights reserved.
 //
 
