@@ -8,6 +8,7 @@
 
 #import "UIView+Kimi.h"
 #import <Endo/EDOExporter.h>
+#import <objc/runtime.h>
 
 @implementation UIView (Kimi)
 
@@ -20,7 +21,25 @@
     EDO_EXPORT_PROPERTY(@"bounds");
     EDO_EXPORT_PROPERTY(@"center");
     EDO_EXPORT_PROPERTY(@"transform");
+    EDO_EXPORT_PROPERTY(@"edo_touchAreaInsets");
     EDO_EXPORT_PROPERTY(@"edo_opaque");
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [UIView class];
+        SEL originalSelector = @selector(pointInside:withEvent:);
+        SEL swizzledSelector = @selector(edo_pointInside:withEvent:);
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        BOOL didAddMethod = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod),
+                                            method_getTypeEncoding(swizzledMethod));
+        
+        if (didAddMethod) {
+            class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod),
+                                method_getTypeEncoding(originalMethod));
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
     // Hierarchy
     EDO_EXPORT_PROPERTY(@"tag");
     EDO_EXPORT_READONLY_PROPERTY(@"superview");
@@ -78,6 +97,28 @@
 
 - (void)setEdo_opaque:(BOOL)opaque {
     [self setOpaque:opaque];
+}
+
+static int kTouchAreaInsetsKey;
+
+- (UIEdgeInsets)edo_touchAreaInsets {
+    return [objc_getAssociatedObject(self, &kTouchAreaInsetsKey) UIEdgeInsetsValue];
+}
+
+- (void)setEdo_touchAreaInsets:(UIEdgeInsets)edo_touchAreaInsets {
+    objc_setAssociatedObject(self, &kTouchAreaInsetsKey, [NSValue valueWithUIEdgeInsets:edo_touchAreaInsets], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BOOL)edo_pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    if (objc_getAssociatedObject(self, &kTouchAreaInsetsKey) != nil) {
+        UIEdgeInsets touchAreaInsets = self.edo_touchAreaInsets;
+        return CGRectContainsPoint(CGRectMake(0.0 - touchAreaInsets.left,
+                                              0.0 - touchAreaInsets.top,
+                                              self.bounds.size.width + touchAreaInsets.left + touchAreaInsets.right,
+                                              self.bounds.size.height + touchAreaInsets.top + touchAreaInsets.bottom),
+                                   point);
+    }
+    return [self edo_pointInside:point withEvent:event];
 }
 
 @end

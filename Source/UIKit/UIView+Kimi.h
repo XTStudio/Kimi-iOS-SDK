@@ -10,4 +10,6 @@
 
 @interface UIView (Kimi)
 
+@property (nonatomic, assign) UIEdgeInsets edo_touchAreaInsets;
+
 @end
