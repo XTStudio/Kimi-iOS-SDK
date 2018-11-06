@@ -7,7 +7,7 @@
 //
 
 #import "UICollectionViewCell+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
 @implementation UICollectionViewCell (Kimi)

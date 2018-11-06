@@ -7,7 +7,7 @@
 //
 
 #import "KIMICore.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 
 @implementation KIMICore
 

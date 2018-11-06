@@ -7,8 +7,8 @@
 //
 
 #import "NSObject+KimiTestExpectation.h"
-#import <xt-engine/EDOExporter.h>
-#import <xt-engine/EDOObjectTransfer.h>
+#import <xt_engine/EDOExporter.h>
+#import <xt_engine/EDOObjectTransfer.h>
 
 @implementation NSObject (KimiTestExpectation)
 

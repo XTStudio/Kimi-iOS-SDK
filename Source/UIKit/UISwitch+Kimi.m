@@ -7,7 +7,7 @@
 //
 
 #import "UISwitch+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 
 @implementation UISwitch (Kimi)
 

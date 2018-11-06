@@ -8,7 +8,7 @@
 
 #import "UIImageView+Kimi.h"
 #import "UIView+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 #import <Aspects/Aspects.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 

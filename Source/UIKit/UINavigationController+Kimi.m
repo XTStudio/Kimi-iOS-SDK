@@ -7,7 +7,7 @@
 //
 
 #import "UINavigationController+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
 @interface KIMINavigationController: UINavigationController

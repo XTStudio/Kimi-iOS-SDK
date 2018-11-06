@@ -7,7 +7,7 @@
 //
 
 #import "KIMIPrompt.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 
 @interface KIMIPrompt()
 

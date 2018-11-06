@@ -7,7 +7,7 @@
 //
 
 #import "NSUUID+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import <xt_engine/EDOExporter.h>
 
 @implementation NSUUID (Kimi)
 
