@@ -7,7 +7,7 @@
 //
 
 #import "UICollectionViewLayout+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation UICollectionViewLayout (Kimi)
 

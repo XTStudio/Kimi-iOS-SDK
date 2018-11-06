@@ -7,7 +7,7 @@
 //
 
 #import "KIMIUIAnimator.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 #import <pop/POP.h>
 #import <Aspects/Aspects.h>
 

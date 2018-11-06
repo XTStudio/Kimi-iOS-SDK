@@ -7,7 +7,7 @@
 //
 
 #import "UITabBarController+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @interface KIMITabBarController: UITabBarController
 

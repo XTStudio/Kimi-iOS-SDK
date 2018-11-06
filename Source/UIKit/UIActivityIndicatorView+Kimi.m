@@ -7,7 +7,7 @@
 //
 
 #import "UIActivityIndicatorView+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation UIActivityIndicatorView (Kimi)
 

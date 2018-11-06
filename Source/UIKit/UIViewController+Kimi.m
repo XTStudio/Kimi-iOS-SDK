@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 #import <Aspects/Aspects.h>
 
 @implementation KIMIDefaultViewController

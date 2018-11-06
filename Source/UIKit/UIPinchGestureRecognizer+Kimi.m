@@ -7,7 +7,7 @@
 //
 
 #import "UIPinchGestureRecognizer+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 #import "UIGestureRecognizer+Kimi.h"
 
 @implementation UIPinchGestureRecognizer (Kimi)

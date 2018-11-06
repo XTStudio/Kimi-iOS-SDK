@@ -8,7 +8,7 @@
 
 #import "KimiUITestViewsViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 #import "KIMIUITestAsserts.h"
 
 typedef void(^GestureWaitingBlock)(void);

@@ -7,7 +7,7 @@
 //
 
 #import <JavaScriptCore/JavaScriptCore.h>
-#import "EDOFactory.h"
+#import <xt-engine/EDOFactory.h>
 #import "CustomTestViewController.h"
 
 @interface CustomTestViewController ()

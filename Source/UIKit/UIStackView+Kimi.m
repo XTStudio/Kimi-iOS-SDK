@@ -7,7 +7,7 @@
 //
 
 #import "UIStackView+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation UIStackView (Kimi)
 

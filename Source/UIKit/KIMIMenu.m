@@ -7,7 +7,7 @@
 //
 
 #import "KIMIMenu.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 typedef void(^KIMIMenuItemBlock)(NSArray *);
 

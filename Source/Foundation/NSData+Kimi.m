@@ -7,7 +7,7 @@
 //
 
 #import "NSData+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation NSData (Kimi)
 

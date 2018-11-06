@@ -7,7 +7,7 @@
 //
 
 #import "KIMINavigationBarViewController.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @interface KIMINavigationControllerState: NSObject
 

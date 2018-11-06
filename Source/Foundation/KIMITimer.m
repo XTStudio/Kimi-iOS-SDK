@@ -7,7 +7,7 @@
 //
 
 #import "KIMITimer.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 typedef void(^KIMITimerFireBlock)(NSArray *);
 

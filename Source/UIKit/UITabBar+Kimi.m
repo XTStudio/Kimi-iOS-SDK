@@ -7,7 +7,7 @@
 //
 
 #import "UITabBar+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation UITabBar (Kimi)
 

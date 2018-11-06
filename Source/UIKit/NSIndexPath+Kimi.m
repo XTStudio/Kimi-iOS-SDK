@@ -7,7 +7,7 @@
 //
 
 #import "NSIndexPath+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation NSIndexPath (Kimi)
 

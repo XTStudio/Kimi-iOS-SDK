@@ -7,7 +7,7 @@
 //
 
 #import "CALayer+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation CALayer (Kimi)
 

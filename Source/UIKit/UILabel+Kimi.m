@@ -7,7 +7,7 @@
 //
 
 #import "UILabel+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation UILabel (Kimi)
 

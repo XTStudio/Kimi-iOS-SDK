@@ -17,7 +17,7 @@ PODS:
 DEPENDENCIES:
   - pop
   - SDWebImage
-  - xt-engine
+  - xt-engine (from `https://github.com/XTStudio/engine-ios.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -25,7 +25,15 @@ SPEC REPOS:
     - CocoaLumberjack
     - pop
     - SDWebImage
-    - xt-engine
+
+EXTERNAL SOURCES:
+  xt-engine:
+    :git: https://github.com/XTStudio/engine-ios.git
+
+CHECKOUT OPTIONS:
+  xt-engine:
+    :commit: 8449b768f7ce26bd406f04561815ffd1bb6e43f3
+    :git: https://github.com/XTStudio/engine-ios.git
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
@@ -34,6 +42,6 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   xt-engine: 2299a548d1b094a31b70d9882a2ff7d3039084e3
 
-PODFILE CHECKSUM: 16c2e739bb8c97fe63f7926da001f73580428357
+PODFILE CHECKSUM: e38446247a957292e78b796bd0807bb84c4e5b2e
 
 COCOAPODS: 1.5.3

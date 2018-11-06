@@ -7,7 +7,7 @@
 //
 
 #import "NSMutableParagraphStyle+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation NSMutableParagraphStyle (Kimi)
 

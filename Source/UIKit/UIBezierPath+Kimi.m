@@ -7,7 +7,7 @@
 //
 
 #import "UIBezierPath+Kimi.h"
-#import "EDOExporter.h"
+#import <xt-engine/EDOExporter.h>
 
 @implementation UIBezierPath (Kimi)
 
