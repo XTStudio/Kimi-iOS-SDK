@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+Kimi.h"
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOExporter.h>
 #import "NSFileManager+Kimi.h"
 
 @implementation UIImage (Kimi)

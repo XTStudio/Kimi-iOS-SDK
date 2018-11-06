@@ -7,7 +7,7 @@
 //
 
 #import "WKWebView+Kimi.h"
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOExporter.h>
 
 @interface KIMIWKScriptMessageHandler: NSObject<WKScriptMessageHandler>
 

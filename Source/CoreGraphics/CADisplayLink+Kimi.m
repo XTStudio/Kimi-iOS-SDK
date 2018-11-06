@@ -7,7 +7,7 @@
 //
 
 #import "CADisplayLink+Kimi.h"
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOExporter.h>
 
 typedef void(^KIMICADisplayLinkVsyncBlock)(NSArray *);
 

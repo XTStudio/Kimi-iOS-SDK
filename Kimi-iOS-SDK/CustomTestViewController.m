@@ -7,14 +7,12 @@
 //
 
 #import <JavaScriptCore/JavaScriptCore.h>
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOFactory.h>
 #import "CustomTestViewController.h"
-#import "KIMIDebugger.h"
 
 @interface CustomTestViewController ()
 
 @property (nonatomic, strong) JSContext *context;
-@property (nonatomic, strong) KIMIDebugger *debugger;
 
 @end
 
@@ -28,22 +26,18 @@
 }
 
 - (void)loadContent {
-    self.debugger = [[KIMIDebugger alloc] initWithRemoteAddress:nil];
-    [self.debugger connect:^(JSContext *context) {
-        self.context = context;
-        [self attach];
-    } fallback:^{
-        self.context = [[JSContext alloc] init];
-        [[EDOExporter sharedExporter] exportWithContext:self.context];
-        [self.context evaluateScript:[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"custom" ofType:@"js"]
-                                                               encoding:NSUTF8StringEncoding
-                                                                  error:nil]];
-        [self attach];
+    JSContext *context = [EDOFactory decodeContextFromBundle:@"custom"
+                                         withDebuggerAddress:nil
+                                                onReadyBlock:^(JSContext * _Nonnull context) {
+                                                    self.context = context;
+                                                    [self attach];
     }];
+    self.context = context;
+    [self attach];
 }
 
 - (void)attach {
-    UIViewController *viewController = [[EDOExporter sharedExporter] nsValueWithJSValue:self.context[@"main"]];
+    UIViewController *viewController = [EDOFactory viewControllerFromContext:self.context withName:nil];
     if (![viewController isKindOfClass:[UIViewController class]]) {
         return;
     }

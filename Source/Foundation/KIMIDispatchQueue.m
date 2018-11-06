@@ -7,8 +7,8 @@
 //
 
 #import "KIMIDispatchQueue.h"
-#import <Endo/EDOExporter.h>
-#import <Endo/EDOObjectTransfer.h>
+#import <xt-engine/EDOExporter.h>
+#import <xt-engine/EDOObjectTransfer.h>
 
 @interface KIMIDispatchQueue()
 

@@ -6,39 +6,42 @@ PODS:
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
-  - Endo (0.1.2):
-    - Aspects
-    - UULog
   - pop (1.0.10)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - UULog (0.1.0):
+  - xt-engine (0.6.0):
+    - Aspects
     - CocoaLumberjack
 
 DEPENDENCIES:
-  - Endo
   - pop
   - SDWebImage
-  - UULog
+  - xt-engine (from `https://github.com/XTStudio/engine-ios.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Aspects
     - CocoaLumberjack
-    - Endo
     - pop
     - SDWebImage
-    - UULog
+
+EXTERNAL SOURCES:
+  xt-engine:
+    :git: https://github.com/XTStudio/engine-ios.git
+
+CHECKOUT OPTIONS:
+  xt-engine:
+    :commit: 8449b768f7ce26bd406f04561815ffd1bb6e43f3
+    :git: https://github.com/XTStudio/engine-ios.git
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  Endo: b2eb6acef23a5022ea65903a91b518b95fa6bbf4
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  UULog: 4a114befc5f9590748b0b9f9846f9797414cfecd
+  xt-engine: 2299a548d1b094a31b70d9882a2ff7d3039084e3
 
-PODFILE CHECKSUM: e6deab205b107e7d21fee8f934be328967ed2a7d
+PODFILE CHECKSUM: e38446247a957292e78b796bd0807bb84c4e5b2e
 
 COCOAPODS: 1.5.3

@@ -7,7 +7,7 @@
 //
 
 #import "UIRotationGestureRecognizer+Kimi.h"
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOExporter.h>
 #import "UIGestureRecognizer+Kimi.h"
 
 @implementation UIRotationGestureRecognizer (Kimi)

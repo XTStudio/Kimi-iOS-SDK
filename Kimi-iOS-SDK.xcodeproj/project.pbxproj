@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63024F0821392B0700896FBB /* KIMIDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 63024F0721392B0700896FBB /* KIMIDebugger.m */; };
 		63165994212E97B000D12ACA /* KMCoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63165993212E97B000D12ACA /* KMCoreTestCase.m */; };
 		634957C3215B53D000A43086 /* UIPasteboard+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */; };
 		634957C6215B54EC00A43086 /* KIMIMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 634957C5215B54EC00A43086 /* KIMIMenu.m */; };
@@ -170,8 +169,6 @@
 
 /* Begin PBXFileReference section */
 		0ABCAEF4154C941559666683 /* libPods-Kimi-iOS-SDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kimi-iOS-SDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63024F0621392B0700896FBB /* KIMIDebugger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIDebugger.h; sourceTree = "<group>"; };
-		63024F0721392B0700896FBB /* KIMIDebugger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIDebugger.m; sourceTree = "<group>"; };
 		63165993212E97B000D12ACA /* KMCoreTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCoreTestCase.m; sourceTree = "<group>"; };
 		634957C1215B53D000A43086 /* UIPasteboard+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+Kimi.h"; sourceTree = "<group>"; };
 		634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+Kimi.m"; sourceTree = "<group>"; };
@@ -461,15 +458,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		63024F0521392AF600896FBB /* Debugger */ = {
-			isa = PBXGroup;
-			children = (
-				63024F0621392B0700896FBB /* KIMIDebugger.h */,
-				63024F0721392B0700896FBB /* KIMIDebugger.m */,
-			);
-			path = Debugger;
-			sourceTree = "<group>";
-		};
 		6316598E212E96F400D12ACA /* KMCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,7 +470,6 @@
 			isa = PBXGroup;
 			children = (
 				90D1703721215D8200AB4F5F /* Kimi */,
-				63024F0521392AF600896FBB /* Debugger */,
 				901C4DF720D8BCA600A71C3D /* Foundation */,
 				901C4DEE20D3CB6200A71C3D /* UIKit */,
 				901C4E1620DB70DA00A71C3D /* CoreGraphics */,
@@ -1071,7 +1058,6 @@
 				901C4E0C20DA66C800A71C3D /* UIPinchGestureRecognizer+Kimi.m in Sources */,
 				901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */,
 				90F4B7BF20F3660200E13294 /* KIMITimer.m in Sources */,
-				63024F0821392B0700896FBB /* KIMIDebugger.m in Sources */,
 				907D743E20F74CDB00C1D7D7 /* UIViewAsserts.m in Sources */,
 				90AAD9A720ECB93A00D82173 /* UINavigationItem+Kimi.m in Sources */,
 				901C4E2220DBB17900A71C3D /* UIImageView+Kimi.m in Sources */,

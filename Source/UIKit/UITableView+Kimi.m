@@ -7,7 +7,7 @@
 //
 
 #import "UITableView+Kimi.h"
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOExporter.h>
 #import <objc/runtime.h>
 
 typedef id(^KimiTableViewCellInitializer)(NSArray *arguments, BOOL);

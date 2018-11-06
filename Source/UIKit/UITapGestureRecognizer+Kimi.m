@@ -7,7 +7,7 @@
 //
 
 #import "UITapGestureRecognizer+Kimi.h"
-#import <Endo/EDOExporter.h>
+#import <xt-engine/EDOExporter.h>
 #import "UIGestureRecognizer+Kimi.h"
 
 @implementation UITapGestureRecognizer (Kimi)

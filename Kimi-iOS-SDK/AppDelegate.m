@@ -8,9 +8,7 @@
 
 #import "AppDelegate.h"
 #import <JavaScriptCore/JavaScriptCore.h>
-#import <Endo/EDOExporter.h>
-#import <Endo/EDOObjectTransfer.h>
-#import <UULog/UULog.h>
+#import <xt-engine/Endo.h>
 
 @interface AppDelegate ()
 
@@ -26,7 +24,6 @@
     dispatch_once(&onceToken, ^{
         context = [[JSContext alloc] init];
         [[EDOExporter sharedExporter] exportWithContext:context];
-        [UULog attachToContext:context];
     });
     return context;
 }
