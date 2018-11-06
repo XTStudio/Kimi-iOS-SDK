@@ -7,7 +7,7 @@
 //
 
 #import "NSUserDefaults+Kimi.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation NSUserDefaults (Kimi)
 

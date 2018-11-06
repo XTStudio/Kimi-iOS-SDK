@@ -7,7 +7,7 @@
 //
 
 #import "UIButton+Kimi.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @interface KIMIButton: UIButton
 

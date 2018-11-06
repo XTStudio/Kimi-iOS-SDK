@@ -7,8 +7,8 @@
 //
 
 #import "UIGestureRecognizer+Kimi.h"
-#import <xt_engine/EDOExporter.h>
-#import <xt_engine/NSObject+EDOObjectRef.h>
+#import "EDOExporter.h"
+#import "NSObject+EDOObjectRef.h"
 
 @implementation UIGestureRecognizer (Kimi)
 

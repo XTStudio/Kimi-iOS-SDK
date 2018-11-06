@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <JavaScriptCore/JavaScriptCore.h>
-#import <xt_engine/Endo.h>
+#import "Endo.h"
 
 @interface AppDelegate ()
 

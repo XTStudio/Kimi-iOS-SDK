@@ -7,7 +7,7 @@
 //
 
 #import "KIMIActionSheet.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @interface KIMIActionSheet()
 

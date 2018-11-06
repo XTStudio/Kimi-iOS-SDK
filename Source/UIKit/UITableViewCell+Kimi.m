@@ -7,7 +7,7 @@
 //
 
 #import "UITableViewCell+Kimi.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import <Aspects/Aspects.h>
 
 @implementation UITableViewCell (Kimi)

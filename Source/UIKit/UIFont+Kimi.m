@@ -7,7 +7,7 @@
 //
 
 #import "UIFont+Kimi.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation UIFont (Kimi)
 

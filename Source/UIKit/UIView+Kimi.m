@@ -7,7 +7,7 @@
 //
 
 #import "UIView+Kimi.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import <objc/runtime.h>
 
 @implementation UIView (Kimi)

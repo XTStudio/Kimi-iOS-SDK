@@ -7,7 +7,7 @@
 //
 
 #import "NSFileManager+Kimi.h"
-#import <xt_engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import "NSBundle+Kimi.h"
 
 @implementation NSFileManager (Kimi)
