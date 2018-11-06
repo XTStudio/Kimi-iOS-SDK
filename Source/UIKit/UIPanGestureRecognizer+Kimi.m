@@ -7,7 +7,7 @@
 //
 
 #import "UIPanGestureRecognizer+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import "UIGestureRecognizer+Kimi.h"
 
 @implementation UIPanGestureRecognizer (Kimi)

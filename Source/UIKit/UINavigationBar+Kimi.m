@@ -7,7 +7,7 @@
 //
 
 #import "UINavigationBar+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation UINavigationBar (Kimi)
 

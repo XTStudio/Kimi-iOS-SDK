@@ -7,7 +7,7 @@
 //
 
 #import "KIMIConfirm.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @interface KIMIConfirm()
 

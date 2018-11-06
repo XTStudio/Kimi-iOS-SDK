@@ -7,7 +7,7 @@
 //
 
 #import "NSURLSessionTask+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation NSURLSessionTask (Kimi)
 

@@ -7,7 +7,7 @@
 //
 
 #import "CAGradientLayer+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import <UIKit/UIKit.h>
 
 @implementation CAGradientLayer (Kimi)

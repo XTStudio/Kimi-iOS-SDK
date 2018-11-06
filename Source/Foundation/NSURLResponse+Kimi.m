@@ -7,7 +7,7 @@
 //
 
 #import "NSURLResponse+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation NSURLResponse (Kimi)
 

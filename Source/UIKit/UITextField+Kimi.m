@@ -8,7 +8,7 @@
 
 #import "UITextField+Kimi.h"
 #import "UIView+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import <Aspects/Aspects.h>
 
 @implementation UITextField (Kimi)

@@ -7,7 +7,7 @@
 //
 
 #import "UIPasteboard+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation UIPasteboard (Kimi)
 

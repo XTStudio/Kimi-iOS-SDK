@@ -7,7 +7,7 @@
 //
 
 #import "UIRefreshControl+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation UIRefreshControl (Kimi)
 

@@ -7,7 +7,7 @@
 //
 
 #import "KIMIFetchMoreControl.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @interface KIMIFetchMoreControl()
 

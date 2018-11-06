@@ -7,7 +7,7 @@
 //
 
 #import "UISlider+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation UISlider (Kimi)
 

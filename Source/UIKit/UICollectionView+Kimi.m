@@ -7,7 +7,7 @@
 //
 
 #import "UICollectionView+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 #import <objc/runtime.h>
 
 typedef id(^KimiCollectionViewCellInitializer)(NSArray *arguments, BOOL);

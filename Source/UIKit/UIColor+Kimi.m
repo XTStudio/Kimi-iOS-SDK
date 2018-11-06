@@ -7,7 +7,7 @@
 //
 
 #import "UIColor+Kimi.h"
-#import <xt-engine/EDOExporter.h>
+#import "EDOExporter.h"
 
 @implementation UIColor (Kimi)
 
