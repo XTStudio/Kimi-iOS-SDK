@@ -33,6 +33,8 @@ typedef void(^KIMITimerFireBlock)(NSArray *);
     }];
     EDO_EXPORT_METHOD(edo_fire);
     EDO_EXPORT_METHOD(edo_invalidate);
+    [[EDOExporter sharedExporter] exportScriptToJavaScript:[KIMITimer class]
+                                                    script:@"Initializer.sleep = function (timeInterval) { return new Promise((resolver) => { new Timer(timeInterval, () => { resolver(); }, false) })}" isInnerScript:YES];
 }
 
 - (void)handleFire {

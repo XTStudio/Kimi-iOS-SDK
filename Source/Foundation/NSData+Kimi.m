@@ -36,6 +36,10 @@
     EDO_EXPORT_METHOD(edo_base64EncodedData);
     EDO_EXPORT_METHOD(edo_base64EncodedString);
     EDO_EXPORT_METHOD(edo_mutable);
+    [[EDOExporter sharedExporter]
+     exportScriptToJavaScript:[NSData class]
+     script:@"Initializer.prototype.json=function(){var utf8String=this.utf8String();if(utf8String!==undefined){try{return JSON.parse(utf8String)}catch(error){return undefined}}return undefined};"
+     isInnerScript:YES];
 }
 
 - (JSValue *)edo_arrayBuffer {

@@ -23,6 +23,10 @@
         return [[NSURLSession alloc] init];
     }];
     EDO_EXPORT_METHOD_ALIAS(edo_dataTask:completion:, @"dataTask");
+    [[EDOExporter sharedExporter]
+     exportScriptToJavaScript:[NSURLSession class]
+     script:@"Initializer.prototype.fetch=function(request){var _this=this;return new Promise(function(resolver,rejector){_this.dataTask(request,function(data,response,error){if(error&&data!==undefined){rejector(error)}else{resolver(data)}}).resume()})};"
+     isInnerScript:YES];
 }
 
 - (NSURLSessionTask *)edo_dataTask:(id)obj completion:(void (^)(NSArray *))completion {
