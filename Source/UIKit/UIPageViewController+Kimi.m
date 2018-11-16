@@ -71,9 +71,9 @@ static int kLoopsTag;
         [self.scrollView.panGestureRecognizer requireGestureRecognizerToFail:self.navigationController.interactivePopGestureRecognizer];
     }
     self.hasPreviousPage = [self pageViewController:self
-              viewControllerBeforeViewController:self.viewControllers.firstObject];
+              viewControllerBeforeViewController:self.viewControllers.firstObject] != nil;
     self.hasNextPage = [self pageViewController:self
-              viewControllerAfterViewController:self.viewControllers.firstObject];
+              viewControllerAfterViewController:self.viewControllers.firstObject] != nil;
 }
 
 - (void)handleScroll:(UIPanGestureRecognizer *)sender {
