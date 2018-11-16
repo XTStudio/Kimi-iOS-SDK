@@ -22,7 +22,7 @@
 }
 
 + (NSString *)edo_version {
-    return @"0.1.0";
+    return @"0.7.0";
 }
 
 + (NSString *)edo_hostVersion {
