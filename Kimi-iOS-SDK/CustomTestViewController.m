@@ -26,7 +26,7 @@
 }
 
 - (void)loadContent {
-    JSContext *context = [EDOFactory decodeContextFromBundle:@"custom"
+    JSContext *context = [EDOFactory decodeContextFromBundle:@"custom.js"
                                          withDebuggerAddress:nil
                                                 onReadyBlock:^(JSContext * _Nonnull context) {
                                                     self.context = context;

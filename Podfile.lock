@@ -6,11 +6,11 @@ PODS:
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
-  - pop (1.0.10)
+  - pop (1.0.12)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - xt-engine (0.6.0):
+  - xt-engine (0.7.0):
     - Aspects
     - CocoaLumberjack
 
@@ -30,10 +30,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  xt-engine: 2299a548d1b094a31b70d9882a2ff7d3039084e3
+  xt-engine: 231e79f442909d21c03964b119f83b0026f6df68
 
 PODFILE CHECKSUM: 16c2e739bb8c97fe63f7926da001f73580428357
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2
