@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "xt-framework"
-  s.version      = "0.6.1"
+  s.version      = "0.7.0"
   s.summary      = "XT helps you build mobile application easier and faster."
 
   s.description  = <<-DESC

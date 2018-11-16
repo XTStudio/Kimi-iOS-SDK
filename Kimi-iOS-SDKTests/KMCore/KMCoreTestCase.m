@@ -22,7 +22,7 @@
 
 - (void)testVersion {
     JSContext *context = [AppDelegate unitTestContext];
-    XCTAssertTrue([[context evaluateScript:@"KMCore.version"].toString isEqualToString:@"0.1.0"]);
+    XCTAssertTrue([[context evaluateScript:@"KMCore.version"].toString isEqualToString:@"0.7.0"]);
 }
 
 - (void)testHostVersion {
