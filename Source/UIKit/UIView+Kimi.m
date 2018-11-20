@@ -45,6 +45,7 @@
     EDO_EXPORT_READONLY_PROPERTY(@"superview");
     EDO_EXPORT_READONLY_PROPERTY(@"subviews");
     EDO_EXPORT_READONLY_PROPERTY(@"window");
+    EDO_EXPORT_READONLY_PROPERTY(@"edo_viewController");
     EDO_EXPORT_METHOD(convertPoint:toView:)
     EDO_EXPORT_METHOD(convertPoint:fromView:)
     EDO_EXPORT_METHOD(convertRect:toView:)
@@ -126,6 +127,17 @@ static int kTouchAreaInsetsKey;
                                    point);
     }
     return [self edo_pointInside:point withEvent:event];
+}
+
+- (UIViewController *)edo_viewController {
+    id next = [self nextResponder];
+    while (next != nil) {
+        if ([next isKindOfClass:[UIViewController class]]) {
+            return next;
+        }
+        next = [next nextResponder];
+    }
+    return nil;
 }
 
 @end
