@@ -85,6 +85,9 @@ static int kCellInitializerTag;
 
 - (UITableViewCell *)edo_dequeueReusableCell:(NSString *)reuseIdentifier indexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    if ([cell.contentView.subviews count] == 0) {
+        [cell.contentView addSubview:[UIView new]]; // I don't know why first subview didn't display on screen, so add this patchy.
+    }
     [[EDOExporter sharedExporter] createScriptObjectIfNeed:cell
                                                    context:self.kimi_context
                                                initializer:self.kimi_cellInitializer[reuseIdentifier]
