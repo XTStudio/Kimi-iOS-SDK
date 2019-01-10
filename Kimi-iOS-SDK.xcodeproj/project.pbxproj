@@ -10,6 +10,7 @@
 		63165994212E97B000D12ACA /* KMCoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63165993212E97B000D12ACA /* KMCoreTestCase.m */; };
 		634957C3215B53D000A43086 /* UIPasteboard+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */; };
 		634957C6215B54EC00A43086 /* KIMIMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 634957C5215B54EC00A43086 /* KIMIMenu.m */; };
+		6353646321E742E200D31D27 /* UIReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353646221E742E200D31D27 /* UIReloader.m */; };
 		63985A5B21467B0E006FED30 /* KIMIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63985A5A21467B0E006FED30 /* KIMIActionSheet.m */; };
 		901C4DF120D3CE1600A71C3D /* UIView+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF020D3CE1600A71C3D /* UIView+Kimi.m */; };
 		901C4DF420D8A4AE00A71C3D /* UIColor+Kimi.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C4DF320D8A4AE00A71C3D /* UIColor+Kimi.m */; };
@@ -174,6 +175,8 @@
 		634957C2215B53D000A43086 /* UIPasteboard+Kimi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+Kimi.m"; sourceTree = "<group>"; };
 		634957C4215B54EC00A43086 /* KIMIMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIMenu.h; sourceTree = "<group>"; };
 		634957C5215B54EC00A43086 /* KIMIMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIMenu.m; sourceTree = "<group>"; };
+		6353646121E742E200D31D27 /* UIReloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIReloader.h; sourceTree = "<group>"; };
+		6353646221E742E200D31D27 /* UIReloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIReloader.m; sourceTree = "<group>"; };
 		63985A5921467B0E006FED30 /* KIMIActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIMIActionSheet.h; sourceTree = "<group>"; };
 		63985A5A21467B0E006FED30 /* KIMIActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMIActionSheet.m; sourceTree = "<group>"; };
 		901C4DEF20D3CE1600A71C3D /* UIView+Kimi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Kimi.h"; sourceTree = "<group>"; };
@@ -586,6 +589,8 @@
 				63985A5A21467B0E006FED30 /* KIMIActionSheet.m */,
 				634957C4215B54EC00A43086 /* KIMIMenu.h */,
 				634957C5215B54EC00A43086 /* KIMIMenu.m */,
+				6353646121E742E200D31D27 /* UIReloader.h */,
+				6353646221E742E200D31D27 /* UIReloader.m */,
 				90D1705F2122B05F00AB4F5F /* UIRefreshControl+Kimi.h */,
 				90D170602122B05F00AB4F5F /* UIRefreshControl+Kimi.m */,
 				90D170642122B79C00AB4F5F /* KIMIFetchMoreControl.h */,
@@ -1011,6 +1016,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				907D747A20F8A9F800C1D7D7 /* UIWebViewAsserts.m in Sources */,
+				6353646321E742E200D31D27 /* UIReloader.m in Sources */,
 				90AAD9B620ECE14300D82173 /* UIPageViewController+Kimi.m in Sources */,
 				90AAD90420E6060100D82173 /* KIMIConfirm.m in Sources */,
 				907D742820F7085400C1D7D7 /* KimiUITestMainTableViewController.m in Sources */,
