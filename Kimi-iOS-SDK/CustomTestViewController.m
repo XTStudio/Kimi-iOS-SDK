@@ -32,8 +32,8 @@
                                                     self.context = context;
                                                     [self attach];
     }];
-    self.context = context;
-    [self attach];
+//    self.context = context;
+//    [self attach];
 }
 
 - (void)attach {

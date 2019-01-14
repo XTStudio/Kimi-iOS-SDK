@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "xt-framework"
-  s.version      = "0.7.0"
+  s.version      = "0.8.0"
   s.summary      = "XT helps you build mobile application easier and faster."
 
   s.description  = <<-DESC
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
 
-  s.dependency "xt-engine"
+  s.dependency "xt-engine", ">= 0.8.0"
   s.dependency "pop"
   s.dependency "SDWebImage"
 
