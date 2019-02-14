@@ -28,6 +28,7 @@
     EDO_EXPORT_METHOD(edo_valueForKey:);
     EDO_EXPORT_METHOD_ALIAS(edo_setValue:forKey:, @"setValue");
     EDO_EXPORT_METHOD(edo_reset);
+    EDO_EXPORT_METHOD(edo_dump);
 }
 
 - (id)edo_valueForKey:(NSString *)forKey {
@@ -48,6 +49,10 @@
     for (NSString *aKey in dictionaryRepresentation) {
         [self removeObjectForKey:aKey];
     }
+}
+
+- (id)edo_dump {
+    return [self dictionaryRepresentation];
 }
 
 @end
